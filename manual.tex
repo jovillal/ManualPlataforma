@@ -1,0 +1,44 @@
+\documentclass[ebook, 12pt, oneside]{memoir}
+%change to 10pt, twoside for printing
+
+\usepackage{graphicx}
+
+
+\title{Manual - Plataforma Interinstitucional para compartir infrasestructura de Investigación}
+\author{Fundación Ceiba\thanks{Desarrollado por Geoprocess}\\
+Bogotá}
+\date{\today\thanks{Primer borrador 20 Abril  2019}}
+
+\maketitle
+
+\begin{document}
+
+\frontmatter
+%tabla de contenidos
+%lista de tablas
+%lista de figuras
+
+\mainmatter
+%el manual
+
+\openleft % chapter title on verso page
+\chapter{The title} % chapter title
+\begin{centering} % include a centered illustration
+\includegraphics[width=0.75\textwidth]{...} %logo de Ceiba
+\end{centering}
+\clearpage % go to recto page
+Start of the text % chapter body
+
+\begin{figure}
+\centering
+\includegraphics[ width=0.6\textwidth]{test}
+\caption{A caption, explaining that this is a test.}
+\end{figure}
+
+
+
+
+\backmatter
+%creo que nada
+
+\end{document}
