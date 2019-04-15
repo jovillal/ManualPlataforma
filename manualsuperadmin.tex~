@@ -3,8 +3,6 @@
 
 \usepackage[latin1]{inputenc} 
 \usepackage{graphicx}
-\usepackage{hyperref} %este de último
-
 
 \renewcommand{\chaptername}{Cap\'{\i}tulo}
 
@@ -48,76 +46,6 @@ Start of the text % chapter body
 \end{centering}
 \clearpage % go to recto page
 Start of the text % chapter body
-
-%----------------------------------------------------
-
-\chapter{Acceso} % chapter title
-\label{chap:acceso}
-
-\begin{centering} % include a centered illustration
-\includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
-\end{centering}
-\clearpage % go to recto page
-
-Para tener acceso a la plataforma debe ir al sitio web de la \href{https://ceiba-develop.firebaseapp.com}{plataforma} (\href{https://ceiba-develop.firebaseapp.com}{https://ceiba-develop.firebaseapp.com}).
-
-En esta página podrá registrarse, ingresar a la plataforma o recuperar su contraseña.
-
-\section{Registro}
-\label{sec:registro}
-
-Los usuarios Navegante o Encargado de Equipo pueden hacer su registro en la plataforma haciendo click en el botón ``SOLICITAR REGISTRO DE CUENTA''. 
-Al hacer click sobre ese botón se habre una forma donde deberá ingresar los siguientes datos:
-\begin{itemize}
-\item Correo electrónio. Únicamente se procesarán correos electrónicos que concuerden con el dominio de las Universidades socias de Ceiba.
-
-\item Una contraseña, debe hacer una confirmación de la misma.
-
-\item El perfil con el cual desea registrarse (Navegante o Encargado de Equipo).
-\end{itemize}
-
-Una vez ingresados los datos anteriores deberá realizar estas acciones:
-\begin{itemize}
-\item Aceptar los términos y condiciones de uso de la plataforma. 
-
-\item Dar click en el botón ``ENVIAR SOLICITUD''.
-\end{itemize}
-
-Aparece un aviso indicando que se ha enviado correctamente un link de verificación a su correo.
-Debe verificar su correo entrando a su cuenta y siguiendo las instrucciones que recibirá en unos pocos minutos.
-Una vez haya verificado su correo, y un administrador verifique que puede utilizar la plataforma, podrá tener acceso a esta.
-
-
-\section{Ingreso}
-\label{sec:ingreso}
-
-El ingreso se hace a través del botón de ``INICIO'' (la misma página inicial).
-Para completar el ingreso debe seguir los siguientes pasos: 
-\begin{enumerate}
-\item Ingresar un correo electrónico ya registrado y verificado en el campo que dice Correo
-
-\item Ingresar la contraseña actual.
-
-\item Presionar el botón ``INGRESAR''.
-\end{enumerate}
-
-Una vez dentro de la plataforma encontrará una página de inicio con noticias y contenido relacionado con la plataforma.
-El panel de control se encuentra a la izquierda de la pantalla (ver Figura \ref{fig:paneldecontrol}), en este se muestra la cuenta de correo con la que se ingresó a la plataforma, el tipo de usuario (Usuario navegante, Encargado de equipo, Administrador o Superadministrador) asignado a la cuenta y las funciones a las que se tiene acceso.
-
-\begin{centering} % include a centered illustration
-\begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/fig01.png} 
-  \caption{\label{fig:paneldecontrol} Detalle de la página de inicio para un usuario registrado. Información de usuario y del panel de control.}
-\end{figure}
-\end{centering}
-
-
-\section{Recuperar Contraseña}
-\label{sec:recuperarcontrasena}
-
-
-
-asd
 
 
 %----------------------------------------------------

@@ -1,0 +1,28 @@
+\contentsline {chapter}{Contents}{i}{section*.1}
+\contentsline {chapter}{\chapternumberline {1}Objetivos}{2}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Usuarios}{4}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Acceso}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Registro}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Ingreso}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Recuperar Contrase\~na}{9}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Buscador}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Mis reservas}{12}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Infraestructura}{14}{section.5.1}
+\contentsline {subsection}{Equipos}{14}{section*.2}
+\contentsline {subsection}{Carga equipos}{14}{section*.3}
+\contentsline {subsection}{Servicios}{14}{section*.4}
+\contentsline {subsection}{Carga servicios}{14}{section*.5}
+\contentsline {subsection}{Reservas y solicitudos}{14}{section*.6}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{14}{section.5.2}
+\contentsline {subsection}{Solicitudes}{14}{section*.7}
+\contentsline {subsection}{Usuarios}{14}{section*.8}
+\contentsline {subsection}{Instalaciones}{14}{section*.9}
+\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{16}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equipos}{17}{section.6.1}
+\contentsline {section}{\numberline {6.2}Servicios}{17}{section.6.2}
+\contentsline {section}{\numberline {6.3}Generales}{17}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{19}{chapter.7}
+\contentsline {section}{\numberline {7.1}Correo}{20}{section.7.1}
+\contentsline {section}{\numberline {7.2}Exportar}{20}{section.7.2}
