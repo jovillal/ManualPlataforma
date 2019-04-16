@@ -104,20 +104,21 @@ Para completar el ingreso debe seguir los siguientes pasos:
 Una vez dentro de la plataforma encontrará una página de inicio con noticias y contenido relacionado con la plataforma.
 El panel de control se encuentra a la izquierda de la pantalla (ver Figura \ref{fig:paneldecontrol}), en este se muestra la cuenta de correo con la que se ingresó a la plataforma, el tipo de usuario (Usuario navegante, Encargado de equipo, Administrador o Superadministrador) asignado a la cuenta y las funciones a las que se tiene acceso.
 
-\begin{centering} % include a centered illustration
+\begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/fig01.png} 
+  \includegraphics[width=0.75\textwidth]{Imagenes/paneldecontrol.png} 
   \caption{\label{fig:paneldecontrol} Detalle de la página de inicio para un usuario registrado. Información de usuario y del panel de control.}
 \end{figure}
 \end{centering}
+
+Para salir de la plataforma, haga click sobre su identificación, ahí se despliega la opción de ``Cerrar Sesión''.
 
 
 \section{Recuperar Contraseña}
 \label{sec:recuperarcontrasena}
 
-
-
-asd
+En caso de que el usuario pierda u olvide su contraseña, puede crear una nueva ingresando al sitio web de la \href{https://ceiba-develop.firebaseapp.com}{plataforma}, haciendo click sobre el botón ``RECUPERAR CONTRASEÑA'' e ingresando el correo electrónico con el que está registrado en la plataforma (finalize el proceso haciendo click sobre ``ENVIAR'').
+Una vez hecho este proceso, llegará al correo electrónico un vínculo que le permitirá generar una nueva contraseña de acceso.
 
 
 %----------------------------------------------------
@@ -132,6 +133,98 @@ Start of the text % chapter body
 
 \section{Buscador}
 \label{sec:buscador}
+
+Este ítem se encuentra en el panel de control de todos los usuarios de la plataforma, provee la funcionalidad principal de la plataforma.
+Sirve para hacer búsquedas de equipos o servicios que estén registrados en la plataforma.
+Una vez se identifique el equipo o servicio es posible consultar la información de este o continuar con la reserva del mismo.
+
+\subsection{Buscador simple}
+\label{subsec:buscadorsimple}
+
+El buscador simple es la vista por defecto que se obtiene al hacer click sobre el ítem ``Buscador'' del menú que se despliega bajo ``Navegación'' (ver figura \ref{fig:buscadorsimple}).
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/buscadorsimple.png} 
+  \caption{\label{fig:buscadorsimple} Buscador simple, se tiene acceso haciendo click en el item de ``Navegación'' en el panel de control. Es la vista que se obtiene por defecto. Se utiliza escribiendo unas pocas letras en el campo ``Palabra clave''. Despliega los equipos y servicios que contienen esta palabra en su nombre.}
+\end{figure}
+\end{centering}
+
+El Usuario debe ingresar una palabra clave en el campo de búsqueda para visualizar todos los servicios y equipos que contengan esa palabra.
+Los equipos y servicios se encuentran separados en dos tablas distintas, el campo de palabra clave filtra al mismo tiempo tanto los servicios como los equipos disponibles.
+
+Una vez el Usuario ingrese unos pocos caracteres en el campo de búsqueda podrá ocurrir:
+\begin{enumerate}
+\item[a.] Si se encuentran datos que coinciden con lo escrito en el campo de búsqueda, estos se muestran en la tabla de resultados.
+\item[b.] Si no se encuentran datos que coincidan con lo escrito en el campo de búsqueda, la tabla se mostrará vacía.
+\end{enumerate}
+
+Una vez se muestran los equipos o servicios en la tabla de resultados, puede proceder a dar clic sobre el equipo o servicio del que desee ver a más detalle, esto le arroja una alerta que le pide confirmación, de no darla se quedará en la vista actual.
+
+Cada equipo o servicio cuenta con su págnina de detalle, un ejemplo parcial se puede observar en la figura \ref{fig:detalleequipo}.
+En esta página se encentra información detallada del equipo o servicio de acuerdo con la información que demanda la plataforma, se despliega información de tipo:
+\begin{itemize}
+\item Información básica del equipo (nombre, marca, modelo,ubicación física, unidad de uso, precio base y usos potenciales).
+\item Mediciones y servicios relacionados.
+\item Información detallada (descripción, forma de adquisición, observaciones).
+\item Términos y condiciones de uso.
+\item Información de mantenimiento y calibraciones.
+\item Información del encargado.
+\item Configuraciones.
+\item Información sobre horarios displonibles (ver sección \ref{sec:comohacerreserva}).
+\item Equipos y servicios relacionados.
+
+\end{itemize}
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/detalleequipo.png} 
+  \caption{\label{fig:detalleequipo} Vista inicial de la página de detalle de un equipo o servicio. Las reservas se hacen a través del calendario que se encuentra al final de estas.}
+\end{figure}
+\end{centering}
+
+
+\subsection{Buscador avanzado}
+\label{subsec:buscadoravanzado}
+
+
+El buscador avanzado (ver figura \ref{fig:buscadoravanzado}) permite seleccionar: la institución, entidad, tipo, instalación, y categoría del equipo o servicio.
+Para tener acceso a esta característica haga click sobre el botón ``AVANZADO'' que se encuetra a la derecha del botón ``SIMPLE''.
+El buscador contiene varios campos para restringir la búsqueda de equipos y servicios.
+En la parte inferior derecha se ven dos botones llamados ``Limpiar Búsqueda'' y ``Aplicar filtro'', al hacer click sobre el último se  desplegará la información exacta de la búsqueda aplicada.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/buscadoravanzado.png} 
+  \caption{\label{fig:buscadoravanzado} Buscador avanzado, se tiene acceso haciendo click en el item de ``Navegación'' en el panel de control y luego haciendo click sobre ``AVANZADO'' en la vista que se obtiene por defecto. Se utiliza llenando uno o más de los campos de búsqueda. Despliega los equipos y servicios que contienen estos criterios de búsqueda de manera exacta.}
+\end{figure}
+\end{centering}
+
+Al hacer click sobre los resultados del buscador avanzado se obtiene el mismo comportamiento que el del buscador simple.
+
+\section{¿Cómo hacer una reserva?}
+\label{sec:comohacerreserva}
+
+Todos los usuarios de la plataforma pueden hacer una reserva de un equipo o servicio.
+El usuario debe haber seleccionado un equipo o servicio desde alguno de los buscadores (ver sección \ref{sec:buscador}).
+Una vez en la página de información del equipo o servicio, se debe consultar la disponibilidad del equipo en el calendario que aparece al final. Un ejemplo de calendario se puede observar en la figura \ref{fig:calendarioequipo}.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/calendarioequipo.png} 
+  \caption{\label{fig:calendarioequipo} Calendario de disponibilidad del equipo.}
+\end{figure}
+\end{centering}
+
+accedido a reserva del Equipo:
+
+    1. Ingresar al panel de Calendario de Reservas
+    2.  PodrÃ¡ visualizar la disponibilidad del equipo o 
+servicio segÃºn el menÃº seleccionado, la disponibilidad del equipo se evidencia cuando las casillas se encuentran en blanco.
+    3. De clic en el dÃ­a de preferencia.
+
+En este ejemplo el usuario podrÃ¡ visualizar las horas disponibles en el dÃ­a seleccionado para solicitar la reserva del equipo; las casillas pintadas con un tono claro Ya han sido reservadas, y las casillas en blanco son las horas disponibles para que el usuario solicite correctamente la reserva del equipo de su interÃ©s.
+
 
 \section{Mis reservas}
 \label{sec:reservas}
@@ -233,6 +326,6 @@ Start of the text % chapter body
 
 
 \backmatter
-%creo que nada
+%Meter el modelo CERIF?
 
 \end{document}
