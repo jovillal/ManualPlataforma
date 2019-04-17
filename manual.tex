@@ -91,7 +91,7 @@ Una vez haya verificado su correo, y un administrador verifique que puede utiliz
 \section{Ingreso}
 \label{sec:ingreso}
 
-El ingreso se hace a través del botón de ``INICIO'' (la misma página inicial).
+El ingreso se hace a través del botón de ``INICIO'' (lleva a la página inicial).
 Para completar el ingreso debe seguir los siguientes pasos: 
 \begin{enumerate}
 \item Ingresar un correo electrónico ya registrado y verificado en el campo que dice Correo
@@ -150,12 +150,12 @@ El buscador simple es la vista por defecto que se obtiene al hacer click sobre e
 \end{figure}
 \end{centering}
 
-El Usuario debe ingresar una palabra clave en el campo de búsqueda para visualizar todos los servicios y equipos que contengan esa palabra.
-Los equipos y servicios se encuentran separados en dos tablas distintas, el campo de palabra clave filtra al mismo tiempo tanto los servicios como los equipos disponibles.
+El usuario debe ingresar una palabra clave en el campo de búsqueda para visualizar todos los servicios y equipos que contengan esa palabra.
+Los equipos y servicios se encuentran separados en dos tablas distintas, el campo de palabra clave hace la búsqueda sobre estas dos categorías de manera simultanea. 
 
 Una vez el Usuario ingrese unos pocos caracteres en el campo de búsqueda podrá ocurrir:
 \begin{enumerate}
-\item[a.] Si se encuentran datos que coinciden con lo escrito en el campo de búsqueda, estos se muestran en la tabla de resultados.
+\item[a.] Si se encuentran datos (de los equipos o servicios) que coinciden con lo escrito en el campo de búsqueda, estos se muestran en la tabla de resultados.
 \item[b.] Si no se encuentran datos que coincidan con lo escrito en el campo de búsqueda, la tabla se mostrará vacía.
 \end{enumerate}
 
@@ -164,12 +164,12 @@ Una vez se muestran los equipos o servicios en la tabla de resultados, puede pro
 Cada equipo o servicio cuenta con su págnina de detalle, un ejemplo parcial se puede observar en la figura \ref{fig:detalleequipo}.
 En esta página se encentra información detallada del equipo o servicio de acuerdo con la información que demanda la plataforma, se despliega información de tipo:
 \begin{itemize}
-\item Información básica del equipo (nombre, marca, modelo,ubicación física, unidad de uso, precio base y usos potenciales).
+\item Información básica del equipo (nombre, marca, modelo, ubicación física, unidad de uso, precio base y usos potenciales).
 \item Mediciones y servicios relacionados.
 \item Información detallada (descripción, forma de adquisición, observaciones).
 \item Términos y condiciones de uso.
 \item Información de mantenimiento y calibraciones.
-\item Información del encargado.
+\item Información del encargado de equipo.
 \item Configuraciones.
 \item Información sobre horarios displonibles (ver sección \ref{sec:comohacerreserva}).
 \item Equipos y servicios relacionados.
@@ -179,7 +179,7 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 \begin{centering}
 \begin{figure}
   \includegraphics[width=0.75\textwidth]{Imagenes/detalleequipo.png} 
-  \caption{\label{fig:detalleequipo} Vista inicial de la página de detalle de un equipo o servicio. Las reservas se hacen a través del calendario que se encuentra al final de estas.}
+  \caption{\label{fig:detalleequipo} Vista inicial de la página de detalle de un equipo o servicio. Las reservas se hacen a través del calendario de reservas que se encuentra al final de estas.}
 \end{figure}
 \end{centering}
 
@@ -188,8 +188,8 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 \label{subsec:buscadoravanzado}
 
 
-El buscador avanzado (ver figura \ref{fig:buscadoravanzado}) permite seleccionar: la institución, entidad, tipo, instalación, y categoría del equipo o servicio.
-Para tener acceso a esta característica haga click sobre el botón ``AVANZADO'' que se encuetra a la derecha del botón ``SIMPLE''.
+El buscador avanzado (ver figura \ref{fig:buscadoravanzado}) permite seleccionar: la institución, entidad, tipo y categoría del equipo o servicio.
+Para tener acceso a esta funcionalidad haga click sobre el botón ``AVANZADO'' que se encuetra a la derecha del botón ``SIMPLE''.
 El buscador contiene varios campos para restringir la búsqueda de equipos y servicios.
 En la parte inferior derecha se ven dos botones llamados ``Limpiar Búsqueda'' y ``Aplicar filtro'', al hacer click sobre el último se  desplegará la información exacta de la búsqueda aplicada.
 
@@ -207,23 +207,43 @@ Al hacer click sobre los resultados del buscador avanzado se obtiene el mismo co
 
 Todos los usuarios de la plataforma pueden hacer una reserva de un equipo o servicio.
 El usuario debe haber seleccionado un equipo o servicio desde alguno de los buscadores (ver sección \ref{sec:buscador}).
-Una vez en la página de información del equipo o servicio, se debe consultar la disponibilidad del equipo en el calendario que aparece al final. Un ejemplo de calendario se puede observar en la figura \ref{fig:calendarioequipo}.
+Una vez en la página de información del equipo o servicio, se debe consultar la disponibilidad del equipo en el calendario de reservas que aparece al final. Un ejemplo de calendario se puede observar en la figura \ref{fig:calendarioequipo}.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=0.75\textwidth]{Imagenes/calendarioequipo.png} 
-  \caption{\label{fig:calendarioequipo} Calendario de disponibilidad del equipo.}
+  \caption{\label{fig:calendarioequipo} Calendario de reservas.}
 \end{figure}
 \end{centering}
 
-accedido a reserva del Equipo:
+En el calendario de reservas se puede observar la disponibilidad del equipo o servicio, esta se evidencia a través de un código de colores:
+\begin{itemize}
+\item \textbf{Blanco}: Equipo disponible. 
+\item \textbf{Amarillo claro}: Equipo no disponible.
+\item \textbf{Otro color}: Equipo reservado. 
+\end{itemize}
 
-    1. Ingresar al panel de Calendario de Reservas
-    2.  PodrÃ¡ visualizar la disponibilidad del equipo o 
-servicio segÃºn el menÃº seleccionado, la disponibilidad del equipo se evidencia cuando las casillas se encuentran en blanco.
-    3. De clic en el dÃ­a de preferencia.
+Al hacer click sobre uno de los días en que el equipo o servicio esté disponible, se abre una página nueva donde se informa al usuario sobre algunas restricciones de reserva y se puede ver el detalle de la disponibilidad del día seleccionado.
+Para realizar una reserva se debe hacer click y arrastrar (manteniendo el botón presionado) sobre la hora de inicio deseada hasta la hora final. 
 
-En este ejemplo el usuario podrÃ¡ visualizar las horas disponibles en el dÃ­a seleccionado para solicitar la reserva del equipo; las casillas pintadas con un tono claro Ya han sido reservadas, y las casillas en blanco son las horas disponibles para que el usuario solicite correctamente la reserva del equipo de su interÃ©s.
+Una vez suelte el botón, se despliega un diálogo nuevo de confirmación de reserve (se muestra un ejemplo en la figura \ref{fig:confirmacionreserva}). 
+En la convirmación de reserva se muestra:
+\begin{itemize}
+\item Una opción para escojer la configuración del equipo o la variación del servicio.
+\item Fecha y hora de inicio y finalización de reserva.
+\item Costo del uso del equipo o servicio.
+\item Los términos y condiciones de uso, para confirmar la reserva debe hacer click sobre cada término o condición para aceptarlo.
+\item Un campo de firma digital, debe escribir el correo electrónico con el que está registrado en la plataforma.
+\end{itemize}
+
+La aceptación de todos los términos y condiciones (marcando las casillas de cada uno) y la firma digital (escribiendo el correo electrónico con el que está registrado en la plataforma), habilitan el botón ``RESERVAR'', al hacer click sobre este botón se enviará un correo a su cuenta con la cotización. Adicionalmente, se enviará una notificación al encargado de equipo quien debe aprobar la reserva. Se recomienda que el usuario que hace la reserva se comunique con el encargado de equipo para discutir detalles particulares de sus necesidades de uso del equipo o servicio.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/confirmacionreserva.png} 
+  \caption{\label{fig:confirmacionreserva} Diálogo de confirmación de reserva. Para completar el proceso el usuario debe (a) aceptar (haciendo click sobre) cada término y condición por aparte, (b) escribir su email a manera de firma de aceptación de los términos y condiciones y (c) hacer click sobre el botón ``RESERVAR'' (aparece cuando se cumplen las dos condiciones anteriores).}
+\end{figure}
+\end{centering}
 
 
 \section{Mis reservas}
