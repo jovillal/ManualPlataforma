@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref} %este de último
 
-
+\renewcommand{\figurename}{Figura}
 \renewcommand{\chaptername}{Cap\'{\i}tulo}
 
 
@@ -20,6 +20,7 @@ Bogotá}
 
 \frontmatter
 \tableofcontents
+\listoffigures
 %lista de tablas
 %lista de figuras
 
@@ -123,6 +124,12 @@ Una vez hecho este proceso, llegará al correo electrónico un vínculo que le perm
 
 %----------------------------------------------------
 
+\section{Notificaciones}
+\label{sec:notificaciones}
+
+
+%----------------------------------------------------
+
 \chapter{Navegación} % chapter title
 \label{chap:navegacion}
 \begin{centering} % include a centered illustration
@@ -171,7 +178,7 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 \item Información de mantenimiento y calibraciones.
 \item Información del encargado de equipo.
 \item Configuraciones.
-\item Información sobre horarios displonibles (ver sección \ref{sec:comohacerreserva}).
+\item Información sobre horarios displonibles (ver sección \ref{subsec:comohacerreserva}).
 \item Equipos y servicios relacionados.
 
 \end{itemize}
@@ -202,8 +209,8 @@ En la parte inferior derecha se ven dos botones llamados ``Limpiar Búsqueda'' y 
 
 Al hacer click sobre los resultados del buscador avanzado se obtiene el mismo comportamiento que el del buscador simple.
 
-\section{¿Cómo hacer una reserva?}
-\label{sec:comohacerreserva}
+\subsection{¿Cómo hacer una reserva?}
+\label{subsec:comohacerreserva}
 
 Todos los usuarios de la plataforma pueden hacer una reserva de un equipo o servicio.
 El usuario debe haber seleccionado un equipo o servicio desde alguno de los buscadores (ver sección \ref{sec:buscador}).
@@ -236,7 +243,7 @@ En la convirmación de reserva se muestra:
 \item Un campo de firma digital, debe escribir el correo electrónico con el que está registrado en la plataforma.
 \end{itemize}
 
-La aceptación de todos los términos y condiciones (marcando las casillas de cada uno) y la firma digital (escribiendo el correo electrónico con el que está registrado en la plataforma), habilitan el botón ``RESERVAR'', al hacer click sobre este botón se enviará un correo a su cuenta con la cotización. Adicionalmente, se enviará una notificación al encargado de equipo quien debe aprobar la reserva. Se recomienda que el usuario que hace la reserva se comunique con el encargado de equipo para discutir detalles particulares de sus necesidades de uso del equipo o servicio.
+La aceptación de todos los términos y condiciones (marcando las casillas de cada uno) y la firma digital (escribiendo el correo electrónico con el que está registrado en la plataforma), habilitan el botón ``RESERVAR'', al hacer click sobre este botón se enviará un correo a su cuenta con la cotización. Adicionalmente, se enviará una notificación al encargado de equipo quien debe aprobar la reserva. 
 
 \begin{centering}
 \begin{figure}
@@ -245,9 +252,26 @@ La aceptación de todos los términos y condiciones (marcando las casillas de cada
 \end{figure}
 \end{centering}
 
+{\Large \textbf{IMPORTANTE:}} Se recomienda que el usuario que hace la reserva se comunique con el encargado de equipo para discutir detalles particulares de sus necesidades de uso del equipo o servicio.
+
 
 \section{Mis reservas}
 \label{sec:reservas}
+
+Este ítem se encuentra en el panel de control de todos los usuarios de la plataforma, es el lugar donde los usuarios pueden consultar el estado de sus reservas y consultar su historia de las mismas.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/misreservas.png} 
+  \caption{\label{fig:misreservas} Ejemplo de información desplegada en la opción ``Mis reservas''. En el detalle de la reserva se encuentra el botón ``CANCELAR RESERVA'' en la parte inferior derecha.}
+\end{figure}
+\end{centering}
+
+Para acceder a esta funcionalidad, primero se debe hacer click sobre el ítem de ``Navegación'' en el menú principal, seguido de ``Mis reservas'' en las opciones que se despliegan. La página que se muestra es similar a la de la figura \ref{fig:misreservas}; se encuentran dos botones en la parte superior izquierda (``RESERVAS DE EQUIPO'' y ``SOLICITUDES DE SERVICIO'') que despliegan un listado del todas las reservas de estos tipos hechas por el usuario. 
+
+El listado de reservas se puede reducir a través de un filtro de búsqueda u ordenar según las categorías que se despliegan (haciendo click sobre uno de los encabezados de la tabla desplegada). Hacer click sobre una de las reservas abre información detallada de esta. Si la reserva se encuentra en un estado diferente de ``Cancelada'' es posible cancelarla haciendo click sobre el botón ``CANCELAR RESERVA''.
+
+
 
 
 %----------------------------------------------------
@@ -257,16 +281,73 @@ La aceptación de todos los términos y condiciones (marcando las casillas de cada
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
 \clearpage % go to recto page
-Start of the text % chapter body
+La opción de Administración está disponible para usuarios Encargados de Equipo y Administradores.
+En esta se encuentran las opciones para cargar equipos o servicios, modificar su información, estado de disponibilidad, hacer la gestión de reservas y solicitudes entre otros.
+Adicionalmente, los usuarios Administradores pueden hacer la gestión relacionada con los usuarios de sus instituciones y con la creación o actualización de infraestructura. 
+La figura \ref{fig:vistaadministracion} muestra, en la parte izquierda las opciones del menú de administración de un usuario Encargado de Equipo y en la derecha las de un usuario Administrador. 
+Esta vista se obtiene al hacer click sobre el ítem ``Administración'' en el menú de la izquierda. 
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/vistaadministracion.png} 
+  \caption{\label{fig:vistaadministracion} Vista de las opciones de administración para el usuario Encargado de Equipo (izquierda) y el usuario Administrador (derecha).}
+\end{figure}
+\end{centering}
 
 \section{Infraestructura}
 \label{sec:}
 
+El submenú de ``Infraestructura'' aparece únicamente para el usuario Administrador, los ítems que se despliegan al hacer click sobre este son los mismos que se despliegan cuando el ususario Encargado de Equipo habre el menú de Administración.
+
+Este submenú agrupa las funcionalidades de la plataforma en cuanto a equipos y servicios (permite la creación y modificación de estos).
+Adicionalmente, permite el manejo de las reservas hechos por otros usuarios de la plataforma.
+
 \subsection{Equipos}
 \label{subsec:equipos}
 
+Al hacer click sobre este ítem se despliega una lista con los equipos, la lista se presenta de acuerdo con el perfil de la cuenta: para Encargado de Equipo se presentan los equipos que están asignados al usuario; para Administrador, se presentan todos los equipos que están asociados a la Universidad del Administrador.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/adminequipos.png} 
+  \caption{\label{fig:adminequipos} Vista de la página de administración para equipos. La parte superior presenta la lista de equipos (según el tipo de usuario). La parte inferior presenta los detalles del equipo seleccionado, para seleccionar un equipo se debe dar click sobre su fila correspondiente en la tabla superior.}
+\end{figure}
+\end{centering}
+
+En la esquina superior derecha se encuentran botones para ``SOLICITAR TRANSFERENCIA'' (únicamente el usuario Encargado de Equipos, ver sección \ref{subsec:transferenciaequipos}) o para crear un ``NUEVO EQUIPO'' (ver sección \ref{subsec:creacionequipos}).
+
+La lista de equipos asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
+Al hacer click sobre uno de los equipos de la tabla, se habre el asistente que premite ver los detalles del equipo.
+En este asistente se presentan botones que permiten obtener las estadísticas de reservas del equipo (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{sec:reporteequipos}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
+Se puede ver un ejemplo en la figura \ref{fig:adminequipos}.
+
+
+\subsubsection{Transferencia de equipos}
+\label{subsec:transferenciaequipos}
+
+La transferencia de equipos permite asignarle a un Encargado de Equipo (el receptor) los equipos y servicios asignados a otro usuario Encargado de Equipo (el donante).
+El procedimiento debe ser llevado a cabo por el donante y es el siguiente:
+\begin{enumerate}
+\item En el menú de  Administración, dar clic en ``Equipos'' y en las opciones que se despliegan dar clic en el botón ``SOLICITAR TRANSFERENCIA''.
+\item Se desplegará una ventana modal con un campo de tipo texto, donde deberá ingresar el email de la persona a la cual se le transferirán los equipos (el receptor) el email ingresado deberá cumplir con los siguientes criterios:
+  \begin{itemize}
+  \item Pertenecer a la misma institución (tener el mismo dominio del donante).
+  \item El receptor debe ser Encargado de Equipo.
+  \end{itemize}
+\item Una vez se acepte la identificación del receptor, dar click en el botón de ``ACEPTAR'' en la ventana que se despliega.
+\end{enumerate}
+
+Es importante tener en cuenta que para hacer esta solicitud es necesario que el correo electrónico que se ingresa para la solicitud (el del receptor) debe tener ya equipos previamente creados; se hará la transferencia de todos los equipos y servicios relacionados del donante y pasarán a cargo del receptor. 
+Por último, se eliminarán todas las solicitudes relacionadas con los equipos y servicios.
+
+\subsubsection{Creación de un nuevo equipo}
+\label{subsec:creacionequipos}
+
 \subsection{Carga equipos}
 \label{subsec:cargaequipos}
+
+Esta opción se debe utilizar para hacer carga masiva de equipos.
+
 
 \subsection{Servicios}
 \label{subsec:servicios}
@@ -274,7 +355,7 @@ Start of the text % chapter body
 \subsection{Carga servicios}
 \label{subsec:cargaservicios}
 
-\subsection{Reservas y solicitudos}
+\subsection{Reservas y solicitudes}
 \label{subsec:reservasysolicitudes}
 
 \section{Usuarios/Entidades}
