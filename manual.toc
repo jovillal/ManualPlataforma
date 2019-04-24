@@ -18,18 +18,18 @@
 \contentsline {subsection}{Equipos}{24}{section*.6}
 \contentsline {subsubsection}{Transferencia de equipos}{26}{section*.7}
 \contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{27}{section*.8}
-\contentsline {subsection}{Carga equipos}{27}{section*.9}
-\contentsline {subsection}{Servicios}{27}{section*.10}
-\contentsline {subsection}{Carga servicios}{27}{section*.11}
-\contentsline {subsection}{Reservas y solicitudes}{27}{section*.12}
-\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{27}{section.5.2}
-\contentsline {subsection}{Solicitudes}{27}{section*.13}
-\contentsline {subsection}{Usuarios}{27}{section*.14}
-\contentsline {subsection}{Instalaciones}{27}{section*.15}
-\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{29}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equipos}{30}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servicios}{30}{section.6.2}
-\contentsline {section}{\numberline {6.3}Generales}{30}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{32}{chapter.7}
-\contentsline {section}{\numberline {7.1}Correo}{33}{section.7.1}
-\contentsline {section}{\numberline {7.2}Exportar}{33}{section.7.2}
+\contentsline {subsection}{Carga equipos}{31}{section*.9}
+\contentsline {subsection}{Servicios}{31}{section*.10}
+\contentsline {subsection}{Carga servicios}{31}{section*.11}
+\contentsline {subsection}{Reservas y solicitudes}{31}{section*.12}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{31}{section.5.2}
+\contentsline {subsection}{Solicitudes}{31}{section*.13}
+\contentsline {subsection}{Usuarios}{31}{section*.14}
+\contentsline {subsection}{Instalaciones}{31}{section*.15}
+\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equipos}{34}{section.6.1}
+\contentsline {section}{\numberline {6.2}Servicios}{34}{section.6.2}
+\contentsline {section}{\numberline {6.3}Generales}{34}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{36}{chapter.7}
+\contentsline {section}{\numberline {7.1}Correo}{37}{section.7.1}
+\contentsline {section}{\numberline {7.2}Exportar}{37}{section.7.2}

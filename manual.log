@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.7)  22 APR 2019 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.7)  24 APR 2019 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,7 +615,7 @@ uipos.
  []
 
 ) [4]
-<Imagenes/logo.png, id=194, 862.22125pt x 867.24pt>
+<Imagenes/logo.png, id=201, 862.22125pt x 867.24pt>
 File: Imagenes/logo.png Graphic file (type png)
 <use Imagenes/logo.png>
 Package pdftex.def Info: Imagenes/logo.png  used on input line 33.
@@ -715,7 +715,7 @@ Overfull \hbox (29.94391pt too wide) in paragraph at lines 105--107
 forma.
  []
 
-<Imagenes/paneldecontrol.png, id=228, 403.5075pt x 350.30875pt>
+<Imagenes/paneldecontrol.png, id=235, 403.5075pt x 350.30875pt>
 File: Imagenes/paneldecontrol.png Graphic file (type png)
 <use Imagenes/paneldecontrol.png>
 Package pdftex.def Info: Imagenes/paneldecontrol.png  used on input line 110.
@@ -759,7 +759,7 @@ Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [12]
-<Imagenes/buscadorsimple.png, id=257, 1305.87875pt x 631.35875pt>
+<Imagenes/buscadorsimple.png, id=263, 1305.87875pt x 631.35875pt>
 File: Imagenes/buscadorsimple.png Graphic file (type png)
 <use Imagenes/buscadorsimple.png>
 Package pdftex.def Info: Imagenes/buscadorsimple.png  used on input line 155.
@@ -795,7 +795,7 @@ Overfull \hbox (28.96059pt too wide) in paragraph at lines 176--177
 ci^^Son,
  []
 
-<Imagenes/detalleequipo.png, id=271, 1571.8725pt x 603.25375pt>
+<Imagenes/detalleequipo.png, id=277, 1571.8725pt x 603.25375pt>
 File: Imagenes/detalleequipo.png Graphic file (type png)
 <use Imagenes/detalleequipo.png>
 Package pdftex.def Info: Imagenes/detalleequipo.png  used on input line 188.
@@ -811,7 +811,7 @@ Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [15]
-<Imagenes/buscadoravanzado.png, id=278, 1479.5275pt x 440.64626pt>
+<Imagenes/buscadoravanzado.png, id=284, 1479.5275pt x 440.64626pt>
 File: Imagenes/buscadoravanzado.png Graphic file (type png)
 <use Imagenes/buscadoravanzado.png>
 Package pdftex.def Info: Imagenes/buscadoravanzado.png  used on input line 205.
@@ -822,7 +822,7 @@ Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [16 <./Imagenes/detalleequipo.png>]
-<Imagenes/calendarioequipo.png, id=288, 1532.72626pt x 707.64375pt>
+<Imagenes/calendarioequipo.png, id=294, 1532.72626pt x 707.64375pt>
 File: Imagenes/calendarioequipo.png Graphic file (type png)
 <use Imagenes/calendarioequipo.png>
 Package pdftex.def Info: Imagenes/calendarioequipo.png  used on input line 221.
@@ -854,7 +854,7 @@ Overfull \hbox (11.40521pt too wide) in paragraph at lines 243--244
  
  []
 
-<Imagenes/confirmacionreserva.png, id=300, 1093.08376pt x 547.04375pt>
+<Imagenes/confirmacionreserva.png, id=306, 1093.08376pt x 547.04375pt>
 File: Imagenes/confirmacionreserva.png Graphic file (type png)
 <use Imagenes/confirmacionreserva.png>
 Package pdftex.def Info: Imagenes/confirmacionreserva.png  used on input line 2
@@ -866,7 +866,7 @@ Overfull \hbox (15.13715pt too wide) in paragraph at lines 255--256
 
  []
 
-<Imagenes/misreservas.png, id=301, 1472.50125pt x 702.625pt>
+<Imagenes/misreservas.png, id=307, 1472.50125pt x 702.625pt>
 File: Imagenes/misreservas.png Graphic file (type png)
 <use Imagenes/misreservas.png>
 Package pdftex.def Info: Imagenes/misreservas.png  used on input line 265.
@@ -896,7 +896,7 @@ Overfull \hbox (11.36633pt too wide) in paragraph at lines 284--289
 usuar-
  []
 
-<Imagenes/vistaadministracion.png, id=323, 511.9125pt x 487.8225pt>
+<Imagenes/vistaadministracion.png, id=329, 511.9125pt x 487.8225pt>
 File: Imagenes/vistaadministracion.png Graphic file (type png)
 <use Imagenes/vistaadministracion.png>
 Package pdftex.def Info: Imagenes/vistaadministracion.png  used on input line 2
@@ -927,7 +927,7 @@ Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 [23
 
 ]
-<Imagenes/adminequipos.png, id=328, 1512.65125pt x 628.3475pt>
+<Imagenes/adminequipos.png, id=334, 1512.65125pt x 628.3475pt>
 File: Imagenes/adminequipos.png Graphic file (type png)
 <use Imagenes/adminequipos.png>
 Package pdftex.def Info: Imagenes/adminequipos.png  used on input line 312.
@@ -951,35 +951,72 @@ Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [26]
+<Imagenes/asistentecreacionequipos.png, id=366, 1510.64375pt x 526.96875pt>
+File: Imagenes/asistentecreacionequipos.png Graphic file (type png)
+<use Imagenes/asistentecreacionequipos.png>
+Package pdftex.def Info: Imagenes/asistentecreacionequipos.png  used on input l
+ine 357.
+(pdftex.def)             Requested size: 216.75pt x 75.60843pt.
+
 Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [27]
-File: Imagenes/logo.png Graphic file (type png)
-<use Imagenes/logo.png>
-Package pdftex.def Info: Imagenes/logo.png  used on input line 384.
-(pdftex.def)             Requested size: 216.75pt x 218.00044pt.
- [28
-
-]
-Overfull \vbox (3.72044pt too high) has occurred while \output is active []
+Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
+[28 <./Imagenes/asistentecreacionequipos.png>]
 Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [29]
+Underfull \hbox (badness 4403) in paragraph at lines 399--399
+[]|\OT1/cmr/bx/n/12 C^^Sodigo de in-ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+[]|\OT1/cmr/bx/n/12 Periodo de an-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
+[]|\OT1/cmr/m/n/12 Informaci^^Son de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
+[]|\OT1/cmr/m/n/12 T^^Serminos y condi-
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 419--419
+[]|\OT1/cmr/m/n/12 Documentos de cal-i-
+ []
+
+
+Overfull \hbox (23.4982pt too wide) in paragraph at lines 395--422
+ [][] 
+ []
+
+
 Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
 [30
 
 ]
+Overfull \vbox (1.21667pt too high) has occurred while \output is active []
+
+
+[31
+
+]
 File: Imagenes/logo.png Graphic file (type png)
 <use Imagenes/logo.png>
-Package pdftex.def Info: Imagenes/logo.png  used on input line 402.
+Package pdftex.def Info: Imagenes/logo.png  used on input line 466.
 (pdftex.def)             Requested size: 216.75pt x 218.00044pt.
- [31
+ [32
 
 ]
 Overfull \vbox (3.72044pt too high) has occurred while \output is active []
@@ -988,18 +1025,38 @@ Overfull \vbox (3.72044pt too high) has occurred while \output is active []
 Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
-[32]
+[33]
 Overfull \vbox (1.21667pt too high) has occurred while \output is active []
 
 
-[33
+[34
+
+]
+File: Imagenes/logo.png Graphic file (type png)
+<use Imagenes/logo.png>
+Package pdftex.def Info: Imagenes/logo.png  used on input line 484.
+(pdftex.def)             Requested size: 216.75pt x 218.00044pt.
+ [35
+
+]
+Overfull \vbox (3.72044pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (1.21667pt too high) has occurred while \output is active []
+
+
+[36]
+Overfull \vbox (1.21667pt too high) has occurred while \output is active []
+
+
+[37
 
 ]
 
 Class memoir Warning: The material used in the headers is too large
 (15.71667pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 431.
+(in both cases you will find help in the memoir manual). on input line 513.
 
 \tf@toc=\write5
 \openout5 = `manual.toc'.
@@ -1007,33 +1064,27 @@ either increase the head height or redesign the header
 \tf@lof=\write6
 \openout6 = `manual.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 513.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 513.
 (./manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 513.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 513.
+Package rerunfilecheck Info: File `manual.out' has not changed.
+(rerunfilecheck)             Checksum: ECE2C93F98C8F3D7A6C26BEC0DD3491B;1202.
 
-
-Package rerunfilecheck Warning: File `manual.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `manual.out':
-(rerunfilecheck)             Before: F79B0A24DF3844BB4585E2C1C5F3F329;1141
-(rerunfilecheck)             After:  ECE2C93F98C8F3D7A6C26BEC0DD3491B;1202.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 513.
  ) 
 Here is how much of TeX's memory you used:
- 8613 strings out of 494861
- 124068 string characters out of 6178804
- 237870 words of memory out of 5000000
- 11801 multiletter control sequences out of 15000+600000
+ 8631 strings out of 494861
+ 124415 string characters out of 6178804
+ 240430 words of memory out of 5000000
+ 11811 multiletter control sequences out of 15000+600000
  10373 words of font info for 36 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 35i,11n,29p,527b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,11n,29p,530b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
@@ -1041,10 +1092,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on manual.pdf (38 pages, 1200664 bytes).
+Output written on manual.pdf (42 pages, 1322659 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 472 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
