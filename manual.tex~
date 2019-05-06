@@ -351,7 +351,20 @@ Los pasos a seguir para crear un equipo son los siguientes:
 \begin{enumerate}
 \item Hacer click sobre el botón ``NUEVO EQUIPO'' en la página de administración de equipos (ver figura \ref{fig:adminequipos}).
 \item En caso de querer que el equipo no esté disponible para reservar hacer click sobre el botón ``PONER EQUIPO COMO NO DISPONIBLE'' (ver figura \ref{fig:asistentecreacionequipos}).
-Esto hará que el equipo no aparezca en las búsquedas hachas por usuarios Navegantes, también bloquea la posibilidad de hacer alguna reserva y bloquea los campos que definen la disponibilidad.
+  Esto hará que el equipo no aparezca en las búsquedas hachas por usuarios Navegantes, también bloquea la posibilidad de hacer alguna reserva y bloquea los campos que definen la disponibilidad.
+\item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
+  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposequipos}.
+  En caso de que el equipo esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
+\item Configurar la disponibilidad del equipo, la disponibilidad es semanal y cada día de la semana puede tener una configuración diferente.
+\item Definir los Términos y Condiciones, cada térmono debe definirse por separado (se añaden nuevos términos haciendo click sobre el botón ``AFREGAR NUEVO TÉRMINO/CONDICIÓN'').
+\item Añadir las diferentes configuraciones disponibles para el equipo.
+\item Cargar la documentación de calidad.
+  Se debe cargar al menos un archivo.
+  Los archivos deben estar en formato pdf y tienen un límite de tamaño de 600KB).
+  De no cargar un archivo de calidad el equipo quedará como \textbf{no disponible}.
+\item Hacer click sobre el botón ``CREAR EQUIPO''.
+  Si los campos obligatorios están completos se registra un nuevo equipo asignado al ususario Encargado de Equipo que hizo el proceso de creación.
+  De no estar completos los campos obligatorios la plataforma informa al usuario y le indica qué campo falta por completar.
 \end{enumerate}
 
 \begin{centering}
@@ -364,31 +377,65 @@ Esto hará que el equipo no aparezca en las búsquedas hachas por usuarios Navegan
 A continuación están las definiciones de cada campo, algunos campos continene un símbolo de interrogación (?) en la plataforma, al pasar el puntero del ratón sobre estos se obtiene mayor información.
 Los campos que están \textbf{resaltados} son obligatorios.
 \begin{itemize}
-\item \textbf{Institución}:
-\item \textbf{Instalación}:
-\item \textbf{Código de inventario}:
-\item \textbf{Nombre}:
-\item \textbf{Marca}:
-\item \textbf{Modelo}:
-\item \textbf{Categoría}:
-\item \textbf{Tipo}:
-\item \textbf{Unidad de uso}:
-\item \textbf{Precio}:
-\item \textbf{Periodo de antelación}:
-\item \textbf{Uso potencial}:
-\item URL de información:
-\item \textbf{Descripción}
-\item Información de adquisición:
-\item Observaciones:
-\item Palabras claves:
-\item Disponibilidad:
-\item Unidades de medida:
-\item Términos y condiciones:
-\item Configuraciones:
-\item Documentos de calidad:
+\item \textbf{Institución}: Se refiere a la universidad asociada a la plataforma.
+  Todo equipo o servicio debe estar asociado a una institución.
+  Es una de las siete universidades asociadas a la Fundación Ceiba.
+\item \textbf{Instalación}: Espacio físico que contiene la infraestructura de investigación dentro de una institución.
+  Generalmente, se trata de un laboratorio, centro o taller.
+  Son creadas dentro de la plataforma por los usuarios Administradores, todo equipo o servicio debe estar asociado a una instalación.
+\item \textbf{Código de inventario}: Es el código de inventario del equipo que se utiliza dentro del sistema de clasificación de activos de su institución.
+  Este código sirve para identificar cada uno de sus equipos.
+  Si su institución no dispone de un sistema de clasificación de activos, utilice un código alfanumérico diferente para para cada equipo.
+\item \textbf{Nombre}: El nombre con el que se refiere al equipo, este nombre se utilizará en las búsquedas de equipos disponibles dentro de la plataforma.
+\item \textbf{Marca}: La marca del equipo.
+\item \textbf{Modelo}: El modelo específico del equipo.
+\item \textbf{Categoría}: Corresponde a una clasificación lógica del aparato.
+  Por ejemplo, para un microscopio de fuerza atómica, la categoría es microscopía.
+\item \textbf{Tipo}: La plataforma utiliza un modelo de datos y una semántica controlada sugerida por euroCRIS en su modelo CERIF (the Common European Research Information Format, versión 1.6).
+  Tipo es uno de los términos derivados del modelo (Class).
+  Esta corresponde a una clasificación física de una entidad del modelo (equipo, servicio, persona, etc).
+  Esta clasificación física depende de la entidad a la que afecte, por ejemplo, para un equipo, el tipo podría definirse como el nombre que se le da al grupo general de aparatos que presentan características similares y cumplen una función determinada (por ejemplo, ``microscopio'' es el nombre genérico que se le da a varios equipos cuya finalidad es magnificar imágenes).
+  Es una clasificación física del aparato.
+  Siguiendo con el ejemplo, para un microscopio de fuerza atómica, el tipo es microscopio.
+\item \textbf{Unidad de uso}: Es la unidad de tiempo o muestral por la que se cobra el uso del equipo.
+  Las reservas y las cotizaciones se hacen en múltiplos enteros de esta unidad.
+  Por ejemplo, la unidad de cobro de un microscopio de fluorescencia es la hora, ya que este equipo se alquila por horas; el equipo no se puede reservar por media hora.
+\item \textbf{Precio}: Defina el costo por unidad de uso que se cobrará con relación a este equipo. Por ejemplo, una hora en un microscopio de fluorescencia podría costar \$ 50000.
+  Ingrese solamente el número, sin puntos, comas, ni signos.
+\item \textbf{Periodo de antelación}: Es el tiempo mínimo, en horas que se reqiere antes de la reserva. Ejemplo, si el tiempo de antelación en 24 horas, la plataforma no permitirá reservar el equipo en las siguientes 24 horas al momento en que se hace la reserva.
+\item \textbf{Uso potencial}: Se refiere a técnicas o protocolos en los que sea útil este equipo y para los cuales se utilice más frecuentemente.
+\item URL de información: Se refiere a una dirección web en la cual se describa en detalle el equipo.
+  Se recomienda agregar un vínculo a la página institucional de las instalaciones en donde se encuentra el equipo.
+  De lo contrario, se sugiere ingresar un vínculo al sitio web del fabricante.
+\item \textbf{Descripción}: Espacio para describir las principales características técnicas del equipo, sus funcionalidades, funciones especiales y/o usos más comunes; introduzca esta información en forma de párrafo.
+  Esta información es la primere que encontrará el usuario Navegante, por lo tanto debe ser relevante. 
+\item Información de adquisición: Espacio para incluir información del equipo en caso de que haya sido adquirido con un proyecto de Colciencias, Ministerio de Ambiente, Regalías u otra fuente de financiación que requiera ser identificada, incluir el nombre del proyecto, el año de inicio y las condiciones de uso impuestas por la institución financiadora.
+\item Observaciones: Registre cualquier información extra que se encuentre fuera de los campos anteriormente diligenciados. 
+\item Palabras claves: Palabras claves relacionadas con el equipo.
+  Utilice el botón ``ADREGAR'' para incluir las palabras clave.  
+\item Disponibilidad: Este aparte permite definir los horarios en los que los usuarios Navegantes podrán hacer uso del equipo.
+  La disponibilidad es semanal y se discrimina en días y horas (bloques contínuos).
+  En la figura \ref{fig:disponibilidadequipo} puede ver un ejemplo de un equipo configurado como disponible el lunes todo el día y jueves en horas de la tarde
+\item Unidades de medida: Corresponde al tipo de medida (unidades, resolución, etc) que resulta del  del uso de una técnica sobre el equipo. 
+\item Términos y condiciones: Es el conjunto de todas las condiciones necesarias para que el solicitante pueda acceder al equipo.
+  Es un conjunto de reglas impuestas por el Encargado de Equipo, la instalación o la institución que determinan y condicionan la utilización de un equipo.
+  Dentro de estas se incluyen aspectos como las condiciones al ingreso a las instalaciones, la seguridad de la muestra y el personal, los límites físicos del equipo o el anílisis, la propiedad de los resultados, los tiempos de análisis, entre otros.
+\item Configuraciones: corresponde al conjunto de cambios que se realizan sobre el uso de un equipo y que redundan en la obtención de resultados de naturaleza diferente a los obtenidos con el equipo base.
+  Estos cambios corresponden al uso de accesorios, otros equipos o técnicas diferentes a los que se utilizan con el equipo base.
+  Pueden incluirse tantas variaciones como se desee.
+  Cada variación presenta unidades de uso, precio y disponibilidades diferentes a las del equipo base.
+\item Documentos de calidad: son documentos relevantes para mostrar el estado y las capacidades del equipo.
+  Ejemplos son certificados de calibración o de mantenimiento.
+  La plataforma exije al menos un certificado de calidad (en la forma de un documento pdf de no más de 600KB) para poder poner el equipo en estado disponible.
 \end{itemize}
 
-
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/disponibilidadequipo.png} 
+  \caption{\label{fig:disponibilidadequipo} Ejemplo del asistente para definir la disponibilidad de equipos para los usuarios Navegante. El equipo se presentará como disponible los dias marcados en la franja horaria señalada.
+    La reserva se debe hacer con, al menos, las horas definidas en el campo ``periodo de antelación'' de anterioridad.}
+\end{figure}
+\end{centering}
 
 
 \clearpage
@@ -430,6 +477,7 @@ Los campos que están \textbf{resaltados} son obligatorios.
 \label{subsec:cargaequipos}
 
 Esta opción se debe utilizar para hacer carga masiva de equipos.
+
 
 
 \subsection{Servicios}
