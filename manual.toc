@@ -2,34 +2,38 @@
 \contentsline {chapter}{List of Figures}{ii}{section*.2}
 \contentsline {chapter}{\chapternumberline {1}Objetivos}{2}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Usuarios}{4}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Acceso}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Registro}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Ingreso}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Recuperar Contrase\~na}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}Notificaciones}{10}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Buscador}{13}{section.4.1}
-\contentsline {subsection}{Buscador simple}{13}{section*.3}
-\contentsline {subsection}{Buscador avanzado}{16}{section*.4}
-\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{17}{section*.5}
-\contentsline {section}{\numberline {4.2}Mis reservas}{19}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Infraestructura}{23}{section.5.1}
-\contentsline {subsection}{Equipos}{24}{section*.6}
-\contentsline {subsubsection}{Transferencia de equipos}{26}{section*.7}
-\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{27}{section*.8}
-\contentsline {subsection}{Carga equipos}{37}{section*.9}
-\contentsline {subsection}{Servicios}{37}{section*.10}
-\contentsline {subsection}{Carga servicios}{37}{section*.11}
-\contentsline {subsection}{Reservas y solicitudes}{37}{section*.12}
-\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{37}{section.5.2}
-\contentsline {subsection}{Solicitudes}{37}{section*.13}
-\contentsline {subsection}{Usuarios}{37}{section*.14}
-\contentsline {subsection}{Instalaciones}{37}{section*.15}
-\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equipos}{40}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servicios}{40}{section.6.2}
-\contentsline {section}{\numberline {6.3}Generales}{40}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{42}{chapter.7}
-\contentsline {section}{\numberline {7.1}Correo}{43}{section.7.1}
-\contentsline {section}{\numberline {7.2}Exportar}{43}{section.7.2}
+\contentsline {section}{\numberline {2.1}Usuario Navegante}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Encargado de Equipo}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Administrador de Universidad}{6}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}Acceso}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Registro}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Ingreso}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Recuperar Contrase\~na}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Notificaciones}{12}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Buscador}{15}{section.4.1}
+\contentsline {subsection}{Buscador simple}{15}{section*.3}
+\contentsline {subsection}{Buscador avanzado}{18}{section*.4}
+\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{19}{section*.5}
+\contentsline {section}{\numberline {4.2}Mis reservas}{21}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Infraestructura}{25}{section.5.1}
+\contentsline {subsection}{Equipos}{26}{section*.6}
+\contentsline {subsubsection}{Transferencia de equipos}{28}{section*.7}
+\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{29}{section*.8}
+\contentsline {subsubsection}{Configuraciones extra de equipos}{40}{section*.9}
+\contentsline {subsection}{Carga equipos}{40}{section*.10}
+\contentsline {subsection}{Servicios}{40}{section*.11}
+\contentsline {subsection}{Carga servicios}{40}{section*.12}
+\contentsline {subsection}{Reservas y solicitudes}{40}{section*.13}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{40}{section.5.2}
+\contentsline {subsection}{Solicitudes}{40}{section*.14}
+\contentsline {subsection}{Usuarios}{40}{section*.15}
+\contentsline {subsection}{Instalaciones}{40}{section*.16}
+\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{42}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equipos}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Servicios}{43}{section.6.2}
+\contentsline {section}{\numberline {6.3}Generales}{43}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Correo}{46}{section.7.1}
+\contentsline {section}{\numberline {7.2}Exportar}{46}{section.7.2}

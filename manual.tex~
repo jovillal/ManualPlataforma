@@ -33,13 +33,14 @@ Bogotá}
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
 \clearpage % go to recto page
-Start of the text % chapter body
 
-\begin{figure}
-\centering
-\includegraphics[ width=0.6\textwidth]{Imagenes/logo.png}
-\caption{A caption, explaining that this is a test.}
-\end{figure}
+La plataforma de infraestructura compartida de la Fundación Ceiba tiene como objetivo principal facilitar la colaboración de los investigadores de las Universidades aliadas a la Fundación a través de centralizar la oferta de equipos o servicios relacionados con actividades de investigación.
+
+La plataforma web le permite a los investigadores y a las Universidades ofrecer equipos (con diferentes configuraciones o variaciones) y servicios para que estos puedan ser reservados por investigadores de otras Universidades que sean miembros de la Fundación Ceiba.
+
+La plataforma no pretende tener utilidad comercial, por lo tanto no está abierta a personas que no sean investigadoras de las Universidades socios de la Fundación.
+
+
 
 %----------------------------------------------------
 
@@ -48,7 +49,45 @@ Start of the text % chapter body
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
 \clearpage % go to recto page
-Start of the text % chapter body
+
+La plataforma maneja cuatro tipos de usuarios con diferentes posibilidades de acción dentro de esta.
+A continuación se presenta una breve descripción de cada uno de los perfiles de usuario junto con los capítulos de este manual a los que deben hacer referencia.
+
+\section{Usuario Navegante}
+
+Es el usuario principal de la plataforma. 
+Es un investigador de una de las Universidades socias de la Fundación Ceiba.
+Tiene permisos para buscar, ver el detalle de la información de equipos y servicios, y realizar cotizaciones y reservas. 
+
+El Usuario Navegante Debe ser una persona adscrita (y con cuenta y rol activo) a una Universidad socia de la Fundación, con interés en buscar y encontrar infraestructura asociada a la investigación. 
+
+Este rol tiene permisos de acceso al sitio web por medio de su usuario y contraseña previamente asignados.
+
+Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{chap:acceso} y \ref{chap:navegacion}.
+
+
+\section{Encargado de Equipo}
+
+Es un usuario con conocimiento técnico de los equipos y servicios.
+Es el usuario que tendrá a su cargo el manejo de los cronogramas de disponibilidad y de las actualizaciones de datos pertinentes. 
+Generalmente, corresponde a la persona que maneja o controla el acceso a un equipo o servicio determinado. 
+Su papel en la plataforma es cargar y mantener actualizada la información de sus equipos y/o servicios, así como gestionar y cumplir las reservas hechas por otros usuarios.
+
+Este rol tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos.
+
+Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{sec:infraestructura} y \ref{chap:reportes}.
+Adicionalmente se cuenta con las mismas posibilidades de los usuarios navegantes.
+
+
+\section{Administrador de Universidad}
+
+Es un usuario centralizado para cada universidad. 
+Debe tener conocimiento de la gestión general de infraestructura en la universidad y debe poder verificar el estado de las cuentas de usuario en la universidad correspondiente. 
+Su papel en la plataforma es la gestión de usuarios y elementos de infraestructura, el apoyo técnico a los usuarios de los dos niveles anteriores y el manejo de los estadísticos entregados por la plataforma.
+
+Este rol tiene los permisos suficientes para llevar a cabo, desde su tablero de control, cualquier tarea que se realice desde los perfiles de usuario navegante y encargado de equipo dentro de su organización.
+
+
 
 %----------------------------------------------------
 
@@ -295,7 +334,7 @@ Esta vista se obtiene al hacer click sobre el ítem ``Administración'' en el menú
 \end{centering}
 
 \section{Infraestructura}
-\label{sec:}
+\label{sec:infraestructura}
 
 El submenú de ``Infraestructura'' aparece únicamente para el usuario Administrador, los ítems que se despliegan al hacer click sobre este son los mismos que se despliegan cuando el ususario Encargado de Equipo habre el menú de Administración.
 
@@ -512,6 +551,8 @@ Esta opción se debe utilizar para hacer carga masiva de equipos.
 %----------------------------------------------------
 
 \chapter{Reportes (Estadísticas)} % chapter title
+\label{chap:reportes}
+
 \begin{centering} % include a centered illustration
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
