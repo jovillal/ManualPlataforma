@@ -167,7 +167,15 @@ Una vez hecho este proceso, llegará al correo electrónico un vínculo que le perm
 \section{Notificaciones}
 \label{sec:notificaciones}
 
+En la parte superior derecha de la pantalla se encuentra la campana de notificaciones (ver figura \ref{fig:notificaciones}), esta campana se activa, con un número encerrado en un circulo rojo, cuando existe algún evento (como una nueva reserva, o un cambio a una reserva existente).
+Al hacer click sobre la campana se despliega la lista de notificaciones existentes, en orden descendente según antiguedad (las más nuevas se presentan en la parte superior).
 
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/notificaciones.png} 
+  \caption{\label{fig:notificaciones} Ejemplo de posibles notificaciones. Para tener acceso a un listado de las notificaciones disponibles hag click sobre la campana (esquina superior derecha).}
+\end{figure}
+\end{centering}
 %----------------------------------------------------
 
 \chapter{Navegación} % chapter title
@@ -439,10 +447,17 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Es conveniente que utilice la designación establecida por el fabricante.
   Por ejemplo, para el Sistema de secuenciación de nueva generación ThermoFisher Scientific, el modelo es ``Ion Proton'''; mientras que para el Microscopio de fluorescencia automatizado Olympus, el modelo es ``BX63''.
   
-\item \textbf{Categoría}: 
-\item \textbf{Tipo}:
-
-  
+\item \textbf{Categoría}: La categoría de equipo corresponde a una clasificación física del aparato con base en su función.
+  La plataforma proporciona algunas opciones en las que puede estar la categoría que cobija a su equipo.
+  Si dentro de las opciones no se encuentra el clasificador deseado, ingrese la categoría de equipo más apropiada para su caso. 
+  Por ejemplo, para el equipo Sistema de secuenciación de nueva generación de marca ThermoFisher Scientific y modelo Ion Proton, la categoría podría ser ``Análisis de ácidos nucleicos''. 
+  Para el equipo Microscopio de fluorescencia automatizado de marca Olympus y modelo es BX63, la categoría podría ser ``Microscopía''.
+\item \textbf{Tipo}: El tipo de equipo corresponde a una clasificación lógica del aparato con base en su finalidad. 
+  La plataforma proporciona algunas opciones en las que puede estar el tipo que cobija a su equipo.
+  Si dentro de las opciones no se encuentra el clasificador deseado, ingrese el tipo de equipo más apropiado para su caso.
+  Por ejemplo, para el equipo Sistema de secuenciación de nueva generación de marca ThermoFisher Scientific y modelo Ion Proton, el tipo podría ser ``Infraestructura para servicios a la industria''.
+  Para el equipo Microscopio de fluorescencia automatizado de marca Olympus y modelo es BX63, el tipo podría ser ``Infraestructura de investigación''. 
+  Dado el alcance de la plataforma, generalmente, el tipo de los equipos de la plataforma podráa definirse como ``Infraestructura de investigación'' o ``Infraestructura para docencia''.  
 \item \textbf{Unidad de uso}: Es la unidad de tiempo o muestral por la que se cobra el uso del equipo.
   Las reservas y las cotizaciones se hacen en múltiplos enteros de esta unidad.
   Por ejemplo, la unidad de cobro de un microscopio de fluorescencia es la hora, ya que este equipo se alquila por horas; el equipo no se puede reservar por media hora.
@@ -540,6 +555,82 @@ Esta opción se debe utilizar para hacer carga masiva de equipos.
 
 \subsection{Servicios}
 \label{subsec:servicios}
+
+Al hacer click sobre este ítem se despliega una lista con los servicios, la lista se presenta de acuerdo con el perfil de la cuenta: para Encargado de Equipo se presentan los servicios que están asignados al usuario; para Administrador, se presentan todos los servicios que están asociados a la Universidad del Administrador.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/adminservicios.png} 
+  \caption{\label{fig:adminservicios} Vista de la página de administración para servicios. La parte superior presenta la lista de servicios (según el tipo de usuario). La parte inferior presenta los detalles del servicio seleccionado, para seleccionar un servicio se debe dar click sobre su fila correspondiente en la tabla superior.}
+\end{figure}
+\end{centering}
+
+En la esquina superior derecha se encuentra un botónes para crear un ``NUEVO SERVICIO'' (ver sección \ref{subsec:creacionservicios}).
+
+La lista de servicios asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
+Al hacer click sobre uno de los servicios de la tabla, se habre el asistente que premite ver los detalles del servicio.
+En este asistente se presentan botones que permiten obtener las estadísticas de reservas del servicio (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{sec:reporteservicios}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
+
+\subsubsection{Creación de un nuevo servicio}
+\label{subsec:creacionservicios}
+
+Esta opción permite la creación de un servicio, para crear más de un servicio a la vez utilice la opción de carga masiva (sección \ref{subsec:cargaservicios}.
+Para crear un servicio haga click sobre el botón ``NUEVO SERVICIO'' (ver figura \ref{fig:adminservicios}).
+Esto despliega el asistente de creación de servicios, tal como lo muestra la figura \ref{fig:asistentecreacionservicios}.
+Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título; adicionalmente en la tabla \ref{tab:camposervicios} encontrará un listado de estos campos con los que son de caracter obligatorio resaltados.
+Los pasos a seguir para crear un servicio son los siguientes:
+\begin{enumerate}
+\item Hacer click sobre el botón ``NUEVO SERVICIO'' en la página de administración de servicios (ver figura \ref{fig:adminservicios}).
+  \textbf{NOTA}: el acceso y el uso del servicio están condicionados al cumplimiento de todos los términos y condiciones impuestos.
+
+\item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
+  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposservicios}.
+  En caso de que el servicio esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
+\item Incluir el o los equipos con los que está relacionado el servicio.
+\item Definir los Términos y Condiciones, cada térmono debe definirse por separado (se añaden nuevos términos haciendo click sobre el botón ``AFREGAR NUEVO TÉRMINO/CONDICIÓN'').
+\item Añadir las diferentes variaciones que presenta el servicio.
+\item Hacer click sobre el botón ``CREAR SERVICIO''.
+  Si los campos obligatorios están completos se registra un nuevo servicio asignado al ususario Encargado de Equipo que hizo el proceso de creación.
+  De no estar completos los campos obligatorios la plataforma informa al usuario y le indica qué campo falta por completar.
+\end{enumerate}
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/asistentecreacionservicios.png} 
+  \caption{\label{fig:asistentecreacionservicios} Asistente para la creación de servicios.}
+\end{figure}
+\end{centering}
+
+
+
+\clearpage
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|p{.4 \textwidth}|p{.05 \textwidth}||p{.4 \textwidth}|p{.05 \textwidth}|}
+    \hline
+    \textbf{Institución}            & $\Box$ & \textbf{Instalación} & $\Box$ \\
+    \hline
+    \textbf{Nombre}                & $\Box$  & \textbf{Categoría} & $\Box$ \\
+    \hline
+    \textbf{Tipo}                  & $\Box$ URL de información  & $\Box$ \\
+    \hline
+    \textbf{Unidad de uso}          & $\Box$ & \textbf{Precio}    & $\Box$ \\
+    \hline
+    \textbf{Descripción técnica}     & $\Box$ & Observaciones     & $\Box$ \\
+    \hline
+    \textbf{Directrices o regulaciones} & $\Box$ & Palabras claves & $\Box$ \\
+    \hline
+    Equipos relacionados            & $\Box$ & Unidades de medida & $\Box$ \\ 
+    \hline
+    Términos y condiciones         & $\Box$ Variaciones           & $\Box$ \\
+    \hline
+  \end{tabular}
+  \caption{Listado de campos utilizados en la creación de servicios. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionservicios}.}
+  \label{tab:camposservicios}
+\end{table}
+\clearpage
+
+
 
 \subsection{Carga servicios}
 \label{subsec:cargaservicios}

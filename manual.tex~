@@ -1,6 +1,7 @@
 \documentclass[ebook, 12pt, oneside]{memoir}
 %change to 10pt, twoside for printing
 
+\usepackage{latexsym}
 \usepackage[latin1]{inputenc} 
 \usepackage{graphicx}
 \usepackage{hyperref} %este de último
@@ -391,6 +392,10 @@ Los pasos a seguir para crear un equipo son los siguientes:
 \item Hacer click sobre el botón ``NUEVO EQUIPO'' en la página de administración de equipos (ver figura \ref{fig:adminequipos}).
 \item En caso de querer que el equipo no esté disponible para reservar hacer click sobre el botón ``PONER EQUIPO COMO NO DISPONIBLE'' (ver figura \ref{fig:asistentecreacionequipos}).
   Esto hará que el equipo no aparezca en las búsquedas hachas por usuarios Navegantes, también bloquea la posibilidad de hacer alguna reserva y bloquea los campos que definen la disponibilidad.
+  La plataforma permite crear equipos que no se pueden manipular directamente por el usuario, pero a cambio tienen servicios asociados prestados por el personal de las instalaciones en donde se encuentra el equipo.
+  Existen varias razones para limitar el acceso directo al equipo, tales como el nivel de complejidad de uso, el tipo de reactivos utilizados (por ejemplo, reactivos controlados) y el nivel de seguridad de las instalaciones en donde se encuentra el equipo (por ejemplo, zonas hospitalarias), entre otras.
+  \textbf{NOTA}: el acceso y el uso del equipo están condicionados al cumplimiento de todos los términos y condiciones impuestos.
+
 \item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
   Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposequipos}.
   En caso de que el equipo esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
@@ -426,32 +431,40 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Este código sirve para identificar cada uno de sus equipos.
   Si su institución no dispone de un sistema de clasificación de activos, utilice un código alfanumérico diferente para para cada equipo.
 \item \textbf{Nombre}: El nombre con el que se refiere al equipo, este nombre se utilizará en las búsquedas de equipos disponibles dentro de la plataforma.
+  Es conveniente que utilice la designación establecida por el fabricante.
+  Por ejemplo, un equipo puede ser un ``Sistema de secuenciación de nueva generación'' y otro equipo un ``Microscopio de fluorescencia automatizado''.
 \item \textbf{Marca}: La marca del equipo.
-\item \textbf{Modelo}: El modelo específico del equipo.
-\item \textbf{Categoría}: Corresponde a una clasificación lógica del aparato.
-  Por ejemplo, para un microscopio de fuerza atómica, la categoría es microscopía.
-\item \textbf{Tipo}: La plataforma utiliza un modelo de datos y una semántica controlada sugerida por euroCRIS en su modelo CERIF (the Common European Research Information Format, versión 1.6).
-  Tipo es uno de los términos derivados del modelo (Class).
-  Esta corresponde a una clasificación física de una entidad del modelo (equipo, servicio, persona, etc).
-  Esta clasificación física depende de la entidad a la que afecte, por ejemplo, para un equipo, el tipo podría definirse como el nombre que se le da al grupo general de aparatos que presentan características similares y cumplen una función determinada (por ejemplo, ``microscopio'' es el nombre genérico que se le da a varios equipos cuya finalidad es magnificar imágenes).
-  Es una clasificación física del aparato.
-  Siguiendo con el ejemplo, para un microscopio de fuerza atómica, el tipo es microscopio.
+    Por ejemplo, para un Sistema de secuenciación de nueva generación, la marca es ``ThermoFisher scientific''; mientras que para un Microscopio de fluorescencia automatizado, la marca puede ser ``Olympus''.
+\item \textbf{Modelo}: El modelo específico, la serie o la familia de productos asociados al equipo.
+  Es conveniente que utilice la designación establecida por el fabricante.
+  Por ejemplo, para el Sistema de secuenciación de nueva generación ThermoFisher Scientific, el modelo es ``Ion Proton'''; mientras que para el Microscopio de fluorescencia automatizado Olympus, el modelo es ``BX63''.
+  
+\item \textbf{Categoría}: 
+\item \textbf{Tipo}:
+
+  
 \item \textbf{Unidad de uso}: Es la unidad de tiempo o muestral por la que se cobra el uso del equipo.
   Las reservas y las cotizaciones se hacen en múltiplos enteros de esta unidad.
   Por ejemplo, la unidad de cobro de un microscopio de fluorescencia es la hora, ya que este equipo se alquila por horas; el equipo no se puede reservar por media hora.
 \item \textbf{Precio}: Defina el costo por unidad de uso que se cobrará con relación a este equipo. Por ejemplo, una hora en un microscopio de fluorescencia podría costar \$ 50000.
   Ingrese solamente el número, sin puntos, comas, ni signos.
-\item \textbf{Periodo de antelación}: Es el tiempo mínimo, en horas que se reqiere antes de la reserva. Ejemplo, si el tiempo de antelación en 24 horas, la plataforma no permitirá reservar el equipo en las siguientes 24 horas al momento en que se hace la reserva.
+\item \textbf{Periodo de antelación}: Es el tiempo mínimo, en horas que se reqiere antes de la reserva.
+  Por ejemplo, si el tiempo de antelación en 24 horas, la plataforma no permitirá reservar el equipo en las siguientes 24 horas al momento en que se inicia un proceso de reserva.
 \item \textbf{Uso potencial}: Se refiere a técnicas o protocolos en los que sea útil este equipo y para los cuales se utilice más frecuentemente.
+  Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, un uso potencial sería ``Microscopía confocal''.
 \item URL de información: Se refiere a una dirección web en la cual se describa en detalle el equipo.
   Se recomienda agregar un vínculo a la página institucional de las instalaciones en donde se encuentra el equipo.
   De lo contrario, se sugiere ingresar un vínculo al sitio web del fabricante.
 \item \textbf{Descripción}: Espacio para describir las principales características técnicas del equipo, sus funcionalidades, funciones especiales y/o usos más comunes; introduzca esta información en forma de párrafo.
-  Esta información es la primere que encontrará el usuario Navegante, por lo tanto debe ser relevante. 
+  Esta información es la primere que encontrará el usuario Navegante, por lo tanto debe ser relevante.
+  Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, su descripción podría ser ``El microscopio de fluorescencia BX63 es un microscopio motorizado de controles táctiles o por computadora, de fácil operación, gracias a su software de control y análisis cellSens imaging. Posee una capacidad de detección de fluorescencia mejorada y una reducción de la autoflorescencia y la reflexión de retorno. Sus detectores permiten llevar a cabo técnicas basadas en fluorescencia para obtener imágenes en 2 y 3 dimensiones''.
 \item Información de adquisición: Espacio para incluir información del equipo en caso de que haya sido adquirido con un proyecto de Colciencias, Ministerio de Ambiente, Regalías u otra fuente de financiación que requiera ser identificada, incluir el nombre del proyecto, el año de inicio y las condiciones de uso impuestas por la institución financiadora.
 \item Observaciones: Registre cualquier información extra que se encuentre fuera de los campos anteriormente diligenciados. 
 \item Palabras claves: Palabras claves relacionadas con el equipo.
-  Utilice el botón ``ADREGAR'' para incluir las palabras clave.  
+  Utilice el botón ``ADREGAR'' para incluir las palabras clave.
+  Estos términos se utilizarán para aumentar las posibilidades de que un usuario encuentre el equipo mediante el uso de términos de asociación relevante.
+  Es conveniente agregar al menos tres palabras claves al equipo.
+  Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, sus palabras claves podrían ser ``Imagen 3D'', ``Fluoróforo'', ``Histología''.
 \item Disponibilidad: Este aparte permite definir los horarios en los que los usuarios Navegantes podrán hacer uso del equipo.
   La disponibilidad es semanal y se discrimina en días y horas (bloques contínuos).
   En la figura \ref{fig:disponibilidadequipo} puede ver un ejemplo de un equipo configurado como disponible el lunes todo el día y jueves en horas de la tarde
@@ -482,35 +495,41 @@ Los campos que están \textbf{resaltados} son obligatorios.
   \centering
   \begin{tabular}{|p{.4 \textwidth}|p{.05 \textwidth}||p{.4 \textwidth}|p{.05 \textwidth}|}
     \hline
-    \textbf{Institución}         & & \textbf{Instalación} & \\
+    \textbf{Institución}            & $\Box$ & \textbf{Instalación} & $\Box$ \\
     \hline
-    \textbf{Código de inventario} & & \textbf{Nombre}      & \\ 
+    \textbf{Código de inventario}   & $\Box$ & \textbf{Nombre}      & $\Box$ \\ 
     \hline
-    \textbf{Marca}              & & \textbf{Modelo}      & \\
+    \textbf{Marca}                  & $\Box$ & \textbf{Modelo}      & $\Box$ \\
     \hline
-    \textbf{Categoría}           & & \textbf{Tipo}       & \\
+    \textbf{Categoría}              & $\Box$ & \textbf{Tipo}       & $\Box$ \\
     \hline
-    \textbf{Unidad de uso}       & & \textbf{Precio}     & \\
+    \textbf{Unidad de uso}*         & $\Box$ & \textbf{Precio}*    & $\Box$ \\
     \hline
-    \textbf{Periodo de antelación}& & \textbf{Uso potencial 1} & \\
+    \textbf{Periodo de antelación}* & $\Box$ & \textbf{Uso potencial 1} & $\Box$ \\
     \hline
-    \textbf{Uso potencial 2}     & & \textbf{Uso potencial 3} & \\
+    \textbf{Uso potencial 2}        & $\Box$ & \textbf{Uso potencial 3} & $\Box$ \\
     \hline
-    URL de información         & & \textbf{Descripción} & \\
+    URL de información              & $\Box$ & \textbf{Descripción técnica} & $\Box$ \\
     \hline
-    Información de adquisición & & Observaciones       & \\
+    Información de adquisición      & $\Box$ & Observaciones       & $\Box$ \\
     \hline
-    Palabras claves            & & Disponibilidad     & \\
+    Palabras claves                 & $\Box$ & \textbf{Disponibilidad}*     & $\Box$ \\
     \hline
-    Unidades de medida         & & Términos y condiciones & \\
+    Unidades de medida              & $\Box$ & Términos y condiciones & $\Box$ \\
     \hline
-    Configuraciones            & & Documentos de calidad & \\
+    Configuraciones                 & $\Box$ & \textbf{Documentos de calidad}* & $\Box$ \\
     \hline
   \end{tabular}
-  \caption{Listado de campos utilizados en la creación de equipos. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionequipos}.}
+  \caption{Listado de campos utilizados en la creación de equipos. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionequipos}.\newline
+  {\footnotesize * Obligatorio únicamente si el equipo está disponible para reserva.}}
   \label{tab:camposequipos}
 \end{table}
 \clearpage
+
+\subsubsection{Configuraciones extra de equipos}
+\label{subsubsec:configuracionextra}
+
+Adicionalmente, cada equipo puede contener diferentes configuraciones, las cuales se logran mediante el uso de accesorios, otros equipos o protocolos diferentes.
 
 \subsection{Carga equipos}
 \label{subsec:cargaequipos}

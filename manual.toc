@@ -10,30 +10,31 @@
 \contentsline {section}{\numberline {3.2}Ingreso}{10}{section.3.2}
 \contentsline {section}{\numberline {3.3}Recuperar Contrase\~na}{12}{section.3.3}
 \contentsline {section}{\numberline {3.4}Notificaciones}{12}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Buscador}{15}{section.4.1}
-\contentsline {subsection}{Buscador simple}{15}{section*.3}
-\contentsline {subsection}{Buscador avanzado}{18}{section*.4}
-\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{19}{section*.5}
-\contentsline {section}{\numberline {4.2}Mis reservas}{21}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Infraestructura}{25}{section.5.1}
-\contentsline {subsection}{Equipos}{26}{section*.6}
-\contentsline {subsubsection}{Transferencia de equipos}{28}{section*.7}
-\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{29}{section*.8}
-\contentsline {subsubsection}{Configuraciones extra de equipos}{40}{section*.9}
-\contentsline {subsection}{Carga equipos}{40}{section*.10}
-\contentsline {subsection}{Servicios}{40}{section*.11}
-\contentsline {subsection}{Carga servicios}{40}{section*.12}
-\contentsline {subsection}{Reservas y solicitudes}{40}{section*.13}
-\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{40}{section.5.2}
-\contentsline {subsection}{Solicitudes}{40}{section*.14}
-\contentsline {subsection}{Usuarios}{40}{section*.15}
-\contentsline {subsection}{Instalaciones}{40}{section*.16}
-\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{42}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equipos}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servicios}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Generales}{43}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{45}{chapter.7}
-\contentsline {section}{\numberline {7.1}Correo}{46}{section.7.1}
-\contentsline {section}{\numberline {7.2}Exportar}{46}{section.7.2}
+\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Buscador}{16}{section.4.1}
+\contentsline {subsection}{Buscador simple}{16}{section*.3}
+\contentsline {subsection}{Buscador avanzado}{19}{section*.4}
+\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{20}{section*.5}
+\contentsline {section}{\numberline {4.2}Mis reservas}{22}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Infraestructura}{26}{section.5.1}
+\contentsline {subsection}{Equipos}{27}{section*.6}
+\contentsline {subsubsection}{Transferencia de equipos}{29}{section*.7}
+\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{30}{section*.8}
+\contentsline {subsubsection}{Configuraciones extra de equipos}{41}{section*.9}
+\contentsline {subsection}{Carga equipos}{41}{section*.10}
+\contentsline {subsection}{Servicios}{41}{section*.11}
+\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{42}{section*.12}
+\contentsline {subsection}{Carga servicios}{45}{section*.13}
+\contentsline {subsection}{Reservas y solicitudes}{45}{section*.14}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{45}{section.5.2}
+\contentsline {subsection}{Solicitudes}{45}{section*.15}
+\contentsline {subsection}{Usuarios}{45}{section*.16}
+\contentsline {subsection}{Instalaciones}{45}{section*.17}
+\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equipos}{48}{section.6.1}
+\contentsline {section}{\numberline {6.2}Servicios}{48}{section.6.2}
+\contentsline {section}{\numberline {6.3}Generales}{48}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{50}{chapter.7}
+\contentsline {section}{\numberline {7.1}Correo}{51}{section.7.1}
+\contentsline {section}{\numberline {7.2}Exportar}{51}{section.7.2}
