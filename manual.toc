@@ -1,5 +1,6 @@
-\contentsline {chapter}{Contents}{i}{section*.1}
+\contentsline {chapter}{Contenido}{i}{section*.1}
 \contentsline {chapter}{List of Figures}{ii}{section*.2}
+\contentsline {chapter}{List of Tables}{vii}{section*.3}
 \contentsline {chapter}{\chapternumberline {1}Objetivos}{2}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Usuarios}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Usuario Navegante}{5}{section.2.1}
@@ -12,29 +13,31 @@
 \contentsline {section}{\numberline {3.4}Notificaciones}{12}{section.3.4}
 \contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Buscador}{16}{section.4.1}
-\contentsline {subsection}{Buscador simple}{16}{section*.3}
-\contentsline {subsection}{Buscador avanzado}{19}{section*.4}
-\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{20}{section*.5}
-\contentsline {section}{\numberline {4.2}Mis reservas}{22}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Infraestructura}{26}{section.5.1}
-\contentsline {subsection}{Equipos}{27}{section*.6}
-\contentsline {subsubsection}{Transferencia de equipos}{29}{section*.7}
-\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{30}{section*.8}
-\contentsline {subsubsection}{Configuraciones extra de equipos}{42}{section*.9}
-\contentsline {subsection}{Carga equipos}{42}{section*.10}
-\contentsline {subsection}{Servicios}{42}{section*.11}
-\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{43}{section*.12}
-\contentsline {subsection}{Carga servicios}{55}{section*.13}
-\contentsline {subsection}{Reservas y solicitudes}{55}{section*.14}
-\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{57}{section.5.2}
-\contentsline {subsection}{Solicitudes}{58}{section*.15}
-\contentsline {subsection}{Usuarios}{58}{section*.16}
-\contentsline {subsection}{Instalaciones}{58}{section*.17}
-\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equipos}{62}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servicios}{62}{section.6.2}
-\contentsline {section}{\numberline {6.3}Generales}{62}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{64}{chapter.7}
-\contentsline {section}{\numberline {7.1}Correo}{65}{section.7.1}
-\contentsline {section}{\numberline {7.2}Exportar}{65}{section.7.2}
+\contentsline {subsection}{Buscador simple}{16}{section*.4}
+\contentsline {subsection}{Buscador avanzado}{19}{section*.5}
+\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{20}{section*.6}
+\contentsline {section}{\numberline {4.2}Mis reservas}{23}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Infraestructura}{27}{section.5.1}
+\contentsline {subsection}{Equipos}{29}{section*.7}
+\contentsline {subsubsection}{Transferencia de equipos}{30}{section*.8}
+\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{31}{section*.9}
+\contentsline {subsubsection}{Configuraciones extra de equipos}{44}{section*.10}
+\contentsline {subsection}{Carga equipos}{44}{section*.11}
+\contentsline {subsection}{Servicios}{44}{section*.12}
+\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{45}{section*.13}
+\contentsline {subsection}{Carga servicios}{57}{section*.14}
+\contentsline {subsection}{Reservas y solicitudes}{57}{section*.15}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{59}{section.5.2}
+\contentsline {subsection}{Solicitudes}{60}{section*.16}
+\contentsline {subsection}{Usuarios}{61}{section*.17}
+\contentsline {subsubsection}{Transferencia de equipos desde el administrador de usuarios}{63}{section*.18}
+\contentsline {subsection}{Instalaciones}{64}{section*.19}
+\contentsline {subsubsection}{C\'omo sugerir instalaciones}{71}{section*.20}
+\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{74}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equipos}{75}{section.6.1}
+\contentsline {section}{\numberline {6.2}Servicios}{75}{section.6.2}
+\contentsline {section}{\numberline {6.3}Generales}{75}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{77}{chapter.7}
+\contentsline {section}{\numberline {7.1}Correo}{78}{section.7.1}
+\contentsline {section}{\numberline {7.2}Exportar}{78}{section.7.2}
