@@ -66,7 +66,6 @@ Este rol tiene permisos de acceso al sitio web por medio de su usuario y contras
 
 Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{chap:acceso} y \ref{chap:navegacion}.
 
-
 \section{Encargado de Equipo}
 
 Es un usuario con conocimiento técnico de los equipos y servicios.
@@ -77,7 +76,7 @@ Su papel en la plataforma es cargar y mantener actualizada la información de sus
 Este rol tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos.
 
 Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{sec:infraestructura} y \ref{chap:reportes}.
-Adicionalmente se cuenta con las mismas posibilidades de los usuarios navegantes.
+Adicionalmente se cuenta con las mismas funcionalidades de los usuarios navegantes.
 
 
 \section{Administrador de Universidad}
@@ -88,6 +87,7 @@ Su papel en la plataforma es la gestión de usuarios y elementos de infraestructu
 
 Este rol tiene los permisos suficientes para llevar a cabo, desde su tablero de control, cualquier tarea que se realice desde los perfiles de usuario navegante y encargado de equipo dentro de su organización.
 
+Adicionalmente, cuenta con las funcionalidades descritas a lo largo de este manual que no corresponden a ninguna de los roles anteriores.
 
 
 %----------------------------------------------------
@@ -476,7 +476,7 @@ Los campos que están \textbf{resaltados} son obligatorios.
 \item Información de adquisición: Espacio para incluir información del equipo en caso de que haya sido adquirido con un proyecto de Colciencias, Ministerio de Ambiente, Regalías u otra fuente de financiación que requiera ser identificada, incluir el nombre del proyecto, el año de inicio y las condiciones de uso impuestas por la institución financiadora.
 \item Observaciones: Registre cualquier información extra que se encuentre fuera de los campos anteriormente diligenciados. 
 \item Palabras claves: Palabras claves relacionadas con el equipo.
-  Utilice el botón ``ADREGAR'' para incluir las palabras clave.
+  Utilice el botón ``AGREGAR'' para incluir las palabras clave.
   Estos términos se utilizarán para aumentar las posibilidades de que un usuario encuentre el equipo mediante el uso de términos de asociación relevante.
   Es conveniente agregar al menos tres palabras claves al equipo.
   Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, sus palabras claves podrían ser ``Imagen 3D'', ``Fluoróforo'', ``Histología''.
@@ -584,7 +584,7 @@ Los pasos a seguir para crear un servicio son los siguientes:
   \textbf{NOTA}: el acceso y el uso del servicio están condicionados al cumplimiento de todos los términos y condiciones impuestos.
 
 \item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
-  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposservicios}.
+  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposervicios}.
   En caso de que el servicio esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
 \item Incluir el o los equipos con los que está relacionado el servicio.
 \item Definir los Términos y Condiciones, cada térmono debe definirse por separado (se añaden nuevos términos haciendo click sobre el botón ``AFREGAR NUEVO TÉRMINO/CONDICIÓN'').
@@ -601,7 +601,87 @@ Los pasos a seguir para crear un servicio son los siguientes:
 \end{figure}
 \end{centering}
 
+A continuación están las definiciones de cada campo, algunos campos continene un símbolo de interrogación (?) en la plataforma, al pasar el puntero del ratón sobre estos se obtiene mayor información.
+Los campos que están \textbf{resaltados} son obligatorios.
+\begin{itemize}
+\item \textbf{Institución}: Se refiere a la universidad asociada a la plataforma.
+  Todo equipo o servicio debe estar asociado a una institución.
+  Es una de las siete universidades asociadas a la Fundación Ceiba.
+\item \textbf{Instalación}: Espacio físico que contiene la infraestructura de investigación dentro de una institución.
+  Generalmente, se trata de un laboratorio, centro o taller.
+  Son creadas dentro de la plataforma por los usuarios Administradores, todo equipo o servicio debe estar asociado a una instalación.
+\item \textbf{Nombre}: El nombre con el que se refiere al servicio, este nombre se utilizará en las búsquedas de servicios disponibles dentro de la plataforma.
+  Es conveniente utilizar una designación fácil de entender y con términos que sean comunes en el campo en el que se enmarque el servicio.
+  Por ejemplo, un servicio puede ser una ``Secuenciación de nueva generación de única molécula para ácidos nucléicos''; otro servicio puede ser ``Microscopía confocal''.
+\item \textbf{Categoría}:La categoría de servicio corresponde a una clasificación física del servicio con base en el área que lo enmarca.
+  La plataforma proporciona algunas opciones en las que puede estar la categoría que cobija al servicio, por favor revise las opciones.
+  Si dentro de las opciones no se encuentra el clasificador deseado, ingrese la categoría de servicio más apropiada.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, la categoría puede ser ``Análisis de ácidos nucléicos''.
+  Para el servicio de microscopía confocal, la categoría puede ser ``Microscopía.'' 
+\item \textbf{Tipo}: El tipo de servicio corresponde a una clasificación lógica de este con base en su finalidad. 
+  La plataforma proporciona algunas opciones en las que puede estar el tipo que cobija a su servicio.
+  Si dentro de las opciones no se encuentra el clasificador deseado, ingrese el tipo de servicio más apropiado para su caso.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para Ã¡cidos nucléicos, el tipo puede ser ``Servicio para el sector salud''.
+  Para el servicio Microscopía confocal, el tipo puede ser ``Servicio de investigación.''  
+  Dado el alcance de la plataforma, generalmente, el tipo de los servicios de la plataforma podrá definirse como ``Servicios de investigación.''
+\item URL de información: Se refiere a una dirección web en la cual se describa en detalle el servicio.
+  Se recomienda agregar un vínculo a la página institucional de las instalaciones en donde se encuentra el servicio.
+  De lo contrario, se sugiere ingresar un vínculo al sitio web del fabricante.
+\item \textbf{Unidad de uso}: Es la unidad de tiempo, de servicio o muestral por la que se cobra el servicio.
+  Las cotizaciones se hacen en múltiplos enteros de esta unidad.
+  Por ejemplo, la unidad de servicio de Secuenciación de nueva generación de única molécula para ácidos nucleicos es ``Chip'', ya que cada corrida de secuenciación necesita un chip, dentro del cual se pueden secuenciar una o varias muestras.
+\item \textbf{Precio}: Defina el costo por unidad de uso que se cobrará por prestar este servicio.
+  Ingrese solamente el número, sin puntos, comas, ni signos.
+  Por ejemplo, el costo de la corrida utilizando un Chip para el servicio de Secuenciación de nueva generación de única molécula para ácidos nucléicos es 500000 (quinientos mil pesos colombianos).
+\item \textbf{Descripción}: Espacio para describir las principales características técnicas del servicio, sus funcionalidades, funciones especiales y/o usos más comunes; introduzca esta información en forma de párrafo.
+  Esta información es la primere que encontrará el usuario Navegante, por lo tanto debe ser relevante.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucléicos, la descripción puede ser:
+  ``La secuenciación de nueva generación de tipo única molécula permite conocer la secuencia de ácidos nucléicos (ADN or ARN) mediante la evaluación directa de cada una de las bases nitrogenadas dentro de una molécula, sin necesidad de realizar amplificaciones por PCR.
+  La secuenciación se realiza en el sistema Sequel de PacBio versión 6.0.
+  El sistema genera lecturas de tamaño promedio entre 30.000 y 100.000 pares de bases, obteniendo hasta un total de 50.000 millones de pares de bases secuenciadas.
+  El servicio de secuenciación básico incluye la creación de la librería para una única muestra de ADN o ARN.
+  Es posible multiplexar, pero esto genera un costo adicional (ver variaciones).
+  Los resultados se entregan 30 días hábiles después de la recepción de la muestra, a través de correo electrónico (acceso temporal a cloud).
+  Los resultados se entregan en forma de archivos bam listos para su ensamblaje.
+  La muestra debe cumplir con los parámetros especificados en los términos y condiciones del servicio.''
+\item Observaciones: Registre cualquier información extra que se encuentre fuera de los campos anteriormente diligenciados.
+  Incluya aquí información específica del desempeño del equipo en el que se lleva a cabo el servicio, alertas acerca de los límites de operación, las limitaciones del mismo, etc.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucléicos, las observaciones pueden incluir ``Advertencia: debido al nivel de seguridad del entorno en donde se encuentra el equipo, no se realiza la secuenciación de ácidos nucléicos derivados de virus humanos.''
+\item \textbf{Directrices o regulaciones}: Enumere las normas o directrices que se siguen para llevar a cabo el servicio.
+  Incluya información de si la prueba está acreditada y los números de las regulaciones para las cuales funciona como requisito.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucléicos, las normas o directrices pueden incluir ``Rutina de corrido estándar sugerida por el fabricante''.
+  De otro lado, para un servicio de Detección de cromo en aguas potables, las normas o directrices pueden incluir ``Prueba acreditada para cumplir con reglamentación colombiana establecida en el Decreto 1575 del 2007.''
+\item Palabras claves: Palabras claves relacionadas con el servicio.
+  Utilice el botón ``AGREGAR'' para incluir las palabras clave.
+  Estos términos se utilizarán para aumentar las posibilidades de que un usuario encuentre el servicio mediante el uso de términos de asociación relevante.
+  Es conveniente agregar al menos tres palabras claves al servicio.
+  Por ejemplo, para el servicio Microscopía confocal, sus palabras claves pueden ser ``Imagen 3D'', ``Fluoróforo'' e ``Histología.''
+\item \textbf{Equipos relacionados}: Seleccione el o los equipos relacionados con este servicio.
+  La plataforma proporciona las opciones de los equipos que actualmente se encuentran asignados a la cuenta de Encargado de equipo a la que se vincula el servicio.
+  Si el equipo que usted busca no se encuentra dentro de las opciones, esto quiere decir que el equipo no está creado o no está asignado a la cuenta.
+  Para crear un servicio es obligatorio que exista ya el equipo sobre la plataforma y que este esté asignado al mismo Encargado de equipo al que se quiere vincular el servicio.
+\item Unidades de medida: Son los tipos de resultados o medidas resultantes de la prestación del servicio.
+  Esto dará claridad acerca de si un servicio provée los tipos de resultados esperados por el usuario.
+  Por ejemplo, para un servicio de Detección de cromo en aguas potables, las unidades de medida pueden incluir ``mg/L de Cromo Total'', ``partes por millón de Cromo Total'', ``partes por millón de Cromo Hexavalente.''
 
+\item \textbf{Términos y condiciones}: Deben contener todas las condiciones necesarias para la prestación adecuada del servicio.
+  Este conjunto de condiciones es crucial para evitar contratiempos y daños en los equipos que prestan el servicio.
+  El usuario que realiza una solicitud de servicio debe conocer y aceptar los términos y condiciones impuestos al servicio y la variación seleccionada.
+  Incluya siempre las restricciones a la muestra, los tiempos de procesamiento, las instrucciones de preparación de la muestra, los límites y condiciones del estado de la muestra a analizar, las restricciones procedimentales, la información de entrega de las muestras, la forma en que se entregarán los resultados y cualquier otra condición que sea relevante para poder prestar el servicio en la variación deseada.
+  Por ejemplo, algunas de las condiciones para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos pueden ser: 
+  \begin{itemize}
+  \item Las muestras de ADN/ARN deben venir acompañadas de un análisis de concentración y calidad estimada mediante métodos de fluorescencia, tales como BioAnalyzer o Qubit.
+    El laboratorio realizará un chequeo sobre la concentración y calidad de algunas muestras.
+  \item La cantidad total de ADN para cada muestra debe ser de 6 microgramos.
+  \item Los resultados se entregan 30 dís hábiles, a través de correo electrónico (acceso temporal a cloud), después de la recepción de la muestra.
+    Los resultados se entregan en forma de archivos bam listos para su ensamblaje.
+  \item Las muestras deben ser enviadas en tubos Eppendorf de 2 mL, sellados con película plástica e identificados claramente.
+\end{itemize}
+\item Varianciones: corresponde al conjunto de cambios que se realizan sobre un servicio y que redundan en la obtención de resultados de naturaleza diferente a los obtenidos con el servicio base.
+  Estos cambios corresponden al uso de accesorios, otros equipos o técnicas diferentes a los que se utilizan con el servicio base.
+  Pueden incluirse tantas variaciones como se desee.
+  Cada variación presenta unidades de uso, precio y disponibilidades diferentes a las del servicio base.
+\end{itemize}
 
 \clearpage
 \begin{table}[h!]
@@ -612,7 +692,7 @@ Los pasos a seguir para crear un servicio son los siguientes:
     \hline
     \textbf{Nombre}                & $\Box$  & \textbf{Categoría} & $\Box$ \\
     \hline
-    \textbf{Tipo}                  & $\Box$ URL de información  & $\Box$ \\
+    \textbf{Tipo}                  & $\Box$  & URL de información  & $\Box$ \\
     \hline
     \textbf{Unidad de uso}          & $\Box$ & \textbf{Precio}    & $\Box$ \\
     \hline
@@ -620,13 +700,12 @@ Los pasos a seguir para crear un servicio son los siguientes:
     \hline
     \textbf{Directrices o regulaciones} & $\Box$ & Palabras claves & $\Box$ \\
     \hline
-    Equipos relacionados            & $\Box$ & Unidades de medida & $\Box$ \\ 
+    \textbf{Equipos relacionados}     & $\Box$ & Unidades de medida & $\Box$ \\ 
     \hline
-    Términos y condiciones         & $\Box$ Variaciones           & $\Box$ \\
+    \textbf{Términos y condiciones}   & $\Box$  & Variaciones        & $\Box$ \\
     \hline
   \end{tabular}
-  \caption{Listado de campos utilizados en la creación de servicios. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionservicios}.}
-  \label{tab:camposservicios}
+  \caption{\label{tab:camposervicios} Listado de campos utilizados en la creación de servicios. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionservicios}.}
 \end{table}
 \clearpage
 
@@ -638,11 +717,70 @@ Los pasos a seguir para crear un servicio son los siguientes:
 \subsection{Reservas y solicitudes}
 \label{subsec:reservasysolicitudes}
 
+El administrador de reservas y solicitudes permite al Encargado de Equipo gestionar las reservas de los equipos o servicios que tiene a su cargo.
+Al hacer click sobre este ítem en el menú que se despliega bajo la categoría de administración, la plataforma muestra una página con el listado histórico de reservas que se han hecho a equipos que están bajo responsabilidad del Encargado.
+Este página presenta botones para consultar las reservas de equipos o de servicios (se presentan por separado) y un listado, de la categoría seleccionada, que presenta el nombre del equipo (o servicio), su estado (``Pendiente'', ``Cancelada'' o ``Finalizada''), la fecha de inicio y la hora de inicio.
+En la figura \ref{fig:reservasequipos} se muestra una vista de dicha página.
+
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/reservasequipos.png} 
+  \caption{\label{fig:reservasequipos} Vista de la página de administración de reservas de equipos, para acceder a la lista de servicios requeridos hacer click sobre el botón ``SOLICITUDES DE SERVICIO''.
+    La plataforma presenta un listado histórico de reservas junto con un filtro para búsquedas.
+  Al hacer click sobre una de las reservas o solicitudes se habre un diálogo de administración.}
+\end{figure}
+\end{centering}
+
+Al hacer click sobre una de las reservas o solicitudes, la plataforma habre el detalle de este, como se muestra en la figura \ref{fig:detallereserva}.
+Desde este despliegue de detalle es posible revisar a fondo la información relacionada con la reserva o solicitud.
+Como se ve en la figura, es posible contactar a la persona que hizo la reserva (haciendo click sobre el botón ``CONTACTAR SOLICITANTE''.
+Adicionalmente, es posible cambiar el estado de la reserva a ``Cancelada'' o ``Finalizada''.
+Se entiende por ``Finalizada'' una reserva o solicitud a la que se le dió cumplimiento.
+Una reserva debe pasar a estado ``Cancelada'' cuando por algún motivo no se ejecutará en las condiciones presentadas en la plataforma.
+Al pasar una reserva a estado ``Cancelada'', la plataforma pide confirmación de la acción y una descripción de la razón por la que se pasó el estado a cancelación. Esta razón se utiliza para discriminar cuando la plataforma presenta estadísticos de uso.
+Por último se presenta el listado de los términos y condiciones a los que accedió la persona que hizo la reserva.
+
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/detallereserva.png} 
+  \caption{\label{fig:detallereserva} Detalle de reserva de un equipo.
+  Desde esta vista es posible tener comunicación con el usuario que hizo la reserva, así como cambiar su estado.}
+\end{figure}
+\end{centering}
+
 \section{Usuarios/Entidades}
 \label{sec:usuariosentidades}
 
+El usuario Administrador de Universidad tiene la responsbilidad, dentro de la plataforma, de autorizar a usuarios de su institución para utilizarla.
+Una vez que un usuario potencial se registra en la platoforma (como se describe en la sección \ref{sec:registro}) el Administrador de Universidad debe aprobar o rechazar la solicitud.
+Otro de los roles del Administrador de Universidad es la creación de Instalaciones dentro de la plataforma.
+Cada equipo o servicio que esté dentro de la plataforma debe estar asociado a una instalación.
+
+El Administrador de Universidad puede realizar varias funciones desde el menú de administración.
+Al hacer click sobre ``Solicitudes'' podrá revisar y aprobar o rechazar las solicitudes de ususarios nuevos.
+La página de administración de usuarios entrega un listado con los usuarios de la Universidad que están registrados en la plataforma.
+Finalmente, la página de instalaciones permite revisar y modificar instalaciones existentes o crear nuevas.
+
+
+
 \subsection{Solicitudes}
 \label{subsec:solicitudes}
+
+En este página, la plataforma presenta un listado de las solicitudes que han hecho personas de la Universidad para convertirse en usuario de la plataforma (ver sección \ref{chap:acceso}).
+La plataforma presenta la dirección de correo electrónico que está pidiendo acceso, junto con la institución a la que pertenece y el perfíl que desea tener.
+Al hacer click sobre la solicitud la plataforma presenta un detalle de la solicitud en donde se podrá ``RECHAZAR'' o ``APROBAR'' tal solicitud, como se muestra en la figura \ref{fig:solicitud}.
+
+Una vez se apruebe una solicitud de un usuario, esté deberá confirmar la cuenta siguiendo instrucciones que le llegarán por correo electrónici.
+Cuando el usuario confirme la cuenta podrá utilizar la plataforma.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/solicitud.png} 
+  \caption{\label{fig:solicitud} Vista del menú de administración de solicitudes de usuarios nuevos para la plataforma.}
+\end{figure}
+\end{centering}
 
 \subsection{Usuarios}
 \label{subsec:usuarios}

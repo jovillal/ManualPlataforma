@@ -21,20 +21,20 @@
 \contentsline {subsection}{Equipos}{27}{section*.6}
 \contentsline {subsubsection}{Transferencia de equipos}{29}{section*.7}
 \contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{30}{section*.8}
-\contentsline {subsubsection}{Configuraciones extra de equipos}{41}{section*.9}
-\contentsline {subsection}{Carga equipos}{41}{section*.10}
-\contentsline {subsection}{Servicios}{41}{section*.11}
-\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{42}{section*.12}
-\contentsline {subsection}{Carga servicios}{45}{section*.13}
-\contentsline {subsection}{Reservas y solicitudes}{45}{section*.14}
-\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{45}{section.5.2}
-\contentsline {subsection}{Solicitudes}{45}{section*.15}
-\contentsline {subsection}{Usuarios}{45}{section*.16}
-\contentsline {subsection}{Instalaciones}{45}{section*.17}
-\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{47}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equipos}{48}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servicios}{48}{section.6.2}
-\contentsline {section}{\numberline {6.3}Generales}{48}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{50}{chapter.7}
-\contentsline {section}{\numberline {7.1}Correo}{51}{section.7.1}
-\contentsline {section}{\numberline {7.2}Exportar}{51}{section.7.2}
+\contentsline {subsubsection}{Configuraciones extra de equipos}{42}{section*.9}
+\contentsline {subsection}{Carga equipos}{42}{section*.10}
+\contentsline {subsection}{Servicios}{42}{section*.11}
+\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{43}{section*.12}
+\contentsline {subsection}{Carga servicios}{55}{section*.13}
+\contentsline {subsection}{Reservas y solicitudes}{55}{section*.14}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{57}{section.5.2}
+\contentsline {subsection}{Solicitudes}{58}{section*.15}
+\contentsline {subsection}{Usuarios}{58}{section*.16}
+\contentsline {subsection}{Instalaciones}{58}{section*.17}
+\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Equipos}{62}{section.6.1}
+\contentsline {section}{\numberline {6.2}Servicios}{62}{section.6.2}
+\contentsline {section}{\numberline {6.3}Generales}{62}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{64}{chapter.7}
+\contentsline {section}{\numberline {7.1}Correo}{65}{section.7.1}
+\contentsline {section}{\numberline {7.2}Exportar}{65}{section.7.2}

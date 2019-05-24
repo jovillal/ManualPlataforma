@@ -167,7 +167,15 @@ Una vez hecho este proceso, llegará al correo electrónico un vínculo que le perm
 \section{Notificaciones}
 \label{sec:notificaciones}
 
+En la parte superior derecha de la pantalla se encuentra la campana de notificaciones (ver figura \ref{fig:notificaciones}), esta campana se activa, con un número encerrado en un circulo rojo, cuando existe algún evento (como una nueva reserva, o un cambio a una reserva existente).
+Al hacer click sobre la campana se despliega la lista de notificaciones existentes, en orden descendente según antiguedad (las más nuevas se presentan en la parte superior).
 
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/notificaciones.png} 
+  \caption{\label{fig:notificaciones} Ejemplo de posibles notificaciones. Para tener acceso a un listado de las notificaciones disponibles hag click sobre la campana (esquina superior derecha).}
+\end{figure}
+\end{centering}
 %----------------------------------------------------
 
 \chapter{Navegación} % chapter title
@@ -439,10 +447,17 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Es conveniente que utilice la designación establecida por el fabricante.
   Por ejemplo, para el Sistema de secuenciación de nueva generación ThermoFisher Scientific, el modelo es ``Ion Proton'''; mientras que para el Microscopio de fluorescencia automatizado Olympus, el modelo es ``BX63''.
   
-\item \textbf{Categoría}: 
-\item \textbf{Tipo}:
-
-  
+\item \textbf{Categoría}: La categoría de equipo corresponde a una clasificación física del aparato con base en su función.
+  La plataforma proporciona algunas opciones en las que puede estar la categoría que cobija a su equipo.
+  Si dentro de las opciones no se encuentra el clasificador deseado, ingrese la categoría de equipo más apropiada para su caso. 
+  Por ejemplo, para el equipo Sistema de secuenciación de nueva generación de marca ThermoFisher Scientific y modelo Ion Proton, la categoría podría ser ``Análisis de ácidos nucleicos''. 
+  Para el equipo Microscopio de fluorescencia automatizado de marca Olympus y modelo es BX63, la categoría podría ser ``Microscopía''.
+\item \textbf{Tipo}: El tipo de equipo corresponde a una clasificación lógica del aparato con base en su finalidad. 
+  La plataforma proporciona algunas opciones en las que puede estar el tipo que cobija a su equipo.
+  Si dentro de las opciones no se encuentra el clasificador deseado, ingrese el tipo de equipo más apropiado para su caso.
+  Por ejemplo, para el equipo Sistema de secuenciación de nueva generación de marca ThermoFisher Scientific y modelo Ion Proton, el tipo podría ser ``Infraestructura para servicios a la industria''.
+  Para el equipo Microscopio de fluorescencia automatizado de marca Olympus y modelo es BX63, el tipo podría ser ``Infraestructura de investigación''. 
+  Dado el alcance de la plataforma, generalmente, el tipo de los equipos de la plataforma podráa definirse como ``Infraestructura de investigación'' o ``Infraestructura para docencia''.  
 \item \textbf{Unidad de uso}: Es la unidad de tiempo o muestral por la que se cobra el uso del equipo.
   Las reservas y las cotizaciones se hacen en múltiplos enteros de esta unidad.
   Por ejemplo, la unidad de cobro de un microscopio de fluorescencia es la hora, ya que este equipo se alquila por horas; el equipo no se puede reservar por media hora.
@@ -541,17 +556,151 @@ Esta opción se debe utilizar para hacer carga masiva de equipos.
 \subsection{Servicios}
 \label{subsec:servicios}
 
+Al hacer click sobre este ítem se despliega una lista con los servicios, la lista se presenta de acuerdo con el perfil de la cuenta: para Encargado de Equipo se presentan los servicios que están asignados al usuario; para Administrador, se presentan todos los servicios que están asociados a la Universidad del Administrador.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/adminservicios.png} 
+  \caption{\label{fig:adminservicios} Vista de la página de administración para servicios. La parte superior presenta la lista de servicios (según el tipo de usuario). La parte inferior presenta los detalles del servicio seleccionado, para seleccionar un servicio se debe dar click sobre su fila correspondiente en la tabla superior.}
+\end{figure}
+\end{centering}
+
+En la esquina superior derecha se encuentra un botónes para crear un ``NUEVO SERVICIO'' (ver sección \ref{subsec:creacionservicios}).
+
+La lista de servicios asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
+Al hacer click sobre uno de los servicios de la tabla, se habre el asistente que premite ver los detalles del servicio.
+En este asistente se presentan botones que permiten obtener las estadísticas de reservas del servicio (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{sec:reporteservicios}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
+
+\subsubsection{Creación de un nuevo servicio}
+\label{subsec:creacionservicios}
+
+Esta opción permite la creación de un servicio, para crear más de un servicio a la vez utilice la opción de carga masiva (sección \ref{subsec:cargaservicios}.
+Para crear un servicio haga click sobre el botón ``NUEVO SERVICIO'' (ver figura \ref{fig:adminservicios}).
+Esto despliega el asistente de creación de servicios, tal como lo muestra la figura \ref{fig:asistentecreacionservicios}.
+Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título; adicionalmente en la tabla \ref{tab:camposervicios} encontrará un listado de estos campos con los que son de caracter obligatorio resaltados.
+Los pasos a seguir para crear un servicio son los siguientes:
+\begin{enumerate}
+\item Hacer click sobre el botón ``NUEVO SERVICIO'' en la página de administración de servicios (ver figura \ref{fig:adminservicios}).
+  \textbf{NOTA}: el acceso y el uso del servicio están condicionados al cumplimiento de todos los términos y condiciones impuestos.
+
+\item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
+  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposervicios}.
+  En caso de que el servicio esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
+\item Incluir el o los equipos con los que está relacionado el servicio.
+\item Definir los Términos y Condiciones, cada térmono debe definirse por separado (se añaden nuevos términos haciendo click sobre el botón ``AFREGAR NUEVO TÉRMINO/CONDICIÓN'').
+\item Añadir las diferentes variaciones que presenta el servicio.
+\item Hacer click sobre el botón ``CREAR SERVICIO''.
+  Si los campos obligatorios están completos se registra un nuevo servicio asignado al ususario Encargado de Equipo que hizo el proceso de creación.
+  De no estar completos los campos obligatorios la plataforma informa al usuario y le indica qué campo falta por completar.
+\end{enumerate}
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/asistentecreacionservicios.png} 
+  \caption{\label{fig:asistentecreacionservicios} Asistente para la creación de servicios.}
+\end{figure}
+\end{centering}
+
+
+
+\clearpage
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|p{.4 \textwidth}|p{.05 \textwidth}||p{.4 \textwidth}|p{.05 \textwidth}|}
+    \hline
+    \textbf{Institución}            & $\Box$ & \textbf{Instalación} & $\Box$ \\
+    \hline
+    \textbf{Nombre}                & $\Box$  & \textbf{Categoría} & $\Box$ \\
+    \hline
+    \textbf{Tipo}                  & $\Box$ URL de información  & $\Box$ \\
+    \hline
+    \textbf{Unidad de uso}          & $\Box$ & \textbf{Precio}    & $\Box$ \\
+    \hline
+    \textbf{Descripción técnica}     & $\Box$ & Observaciones     & $\Box$ \\
+    \hline
+    \textbf{Directrices o regulaciones} & $\Box$ & Palabras claves & $\Box$ \\
+    \hline
+    Equipos relacionados            & $\Box$ & Unidades de medida & $\Box$ \\ 
+    \hline
+    Términos y condiciones         & $\Box$ Variaciones           & $\Box$ \\
+    \hline
+  \end{tabular}
+  \caption{\label{tab:camposervicios} Listado de campos utilizados en la creación de servicios. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionservicios}.}
+\end{table}
+\clearpage
+
+
+
 \subsection{Carga servicios}
 \label{subsec:cargaservicios}
 
 \subsection{Reservas y solicitudes}
 \label{subsec:reservasysolicitudes}
 
+El administrador de reservas y solicitudes permite al Encargado de Equipo gestionar las reservas de los equipos o servicios que tiene a su cargo.
+Al hacer click sobre este ítem en el menú que se despliega bajo la categoría de administración, la plataforma muestra una página con el listado histórico de reservas que se han hecho a equipos que están bajo responsabilidad del Encargado.
+Este página presenta botones para consultar las reservas de equipos o de servicios (se presentan por separado) y un listado, de la categoría seleccionada, que presenta el nombre del equipo (o servicio), su estado (``Pendiente'', ``Cancelada'' o ``Finalizada''), la fecha de inicio y la hora de inicio.
+En la figura \ref{fig:reservasequipos} se muestra una vista de dicha página.
+
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/reservasequipos.png} 
+  \caption{\label{fig:reservasequipos} Vista de la página de administración de reservas de equipos, para acceder a la lista de servicios requeridos hacer click sobre el botón ``SOLICITUDES DE SERVICIO''.
+    La plataforma presenta un listado histórico de reservas junto con un filtro para búsquedas.
+  Al hacer click sobre una de las reservas o solicitudes se habre un diálogo de administración.}
+\end{figure}
+\end{centering}
+
+Al hacer click sobre una de las reservas o solicitudes, la plataforma habre el detalle de este, como se muestra en la figura \ref{fig:detallereserva}.
+Desde este despliegue de detalle es posible revisar a fondo la información relacionada con la reserva o solicitud.
+Como se ve en la figura, es posible contactar a la persona que hizo la reserva (haciendo click sobre el botón ``CONTACTAR SOLICITANTE''.
+Adicionalmente, es posible cambiar el estado de la reserva a ``Cancelada'' o ``Finalizada''.
+Se entiende por ``Finalizada'' una reserva o solicitud a la que se le dió cumplimiento.
+Una reserva debe pasar a estado ``Cancelada'' cuando por algún motivo no se ejecutará en las condiciones presentadas en la plataforma.
+Al pasar una reserva a estado ``Cancelada'', la plataforma pide confirmación de la acción y una descripción de la razón por la que se pasó el estado a cancelación. Esta razón se utiliza para discriminar cuando la plataforma presenta estadísticos de uso.
+Por último se presenta el listado de los términos y condiciones a los que accedió la persona que hizo la reserva.
+
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/detallereserva.png} 
+  \caption{\label{fig:detallereserva} Detalle de reserva de un equipo.
+  Desde esta vista es posible tener comunicación con el usuario que hizo la reserva, así como cambiar su estado.}
+\end{figure}
+\end{centering}
+
 \section{Usuarios/Entidades}
 \label{sec:usuariosentidades}
 
+El usuario Administrador de Universidad tiene la responsbilidad, dentro de la plataforma, de autorizar a usuarios de su institución para utilizarla.
+Una vez que un usuario potencial se registra en la platoforma (como se describe en la sección \ref{sec:registro}) el Administrador de Universidad debe aprobar o rechazar la solicitud.
+Otro de los roles del Administrador de Universidad es la creación de Instalaciones dentro de la plataforma.
+Cada equipo o servicio que esté dentro de la plataforma debe estar asociado a una instalación.
+
+El Administrador de Universidad puede realizar varias funciones desde el menú de administración.
+Al hacer click sobre ``Solicitudes'' podrá revisar y aprobar o rechazar las solicitudes de ususarios nuevos.
+La página de administración de usuarios entrega un listado con los usuarios de la Universidad que están registrados en la plataforma.
+Finalmente, la página de instalaciones permite revisar y modificar instalaciones existentes o crear nuevas.
+
+
+
 \subsection{Solicitudes}
 \label{subsec:solicitudes}
+
+En este página, la plataforma presenta un listado de las solicitudes que han hecho personas de la Universidad para convertirse en usuario de la plataforma (ver sección \ref{chap:acceso}).
+La plataforma presenta la dirección de correo electrónico que está pidiendo acceso, junto con la institución a la que pertenece y el perfíl que desea tener.
+Al hacer click sobre la solicitud la plataforma presenta un detalle de la solicitud en donde se podrá ``RECHAZAR'' o ``APROBAR'' tal solicitud, como se muestra en la figura \ref{fig:solicitud}.
+
+Una vez se apruebe una solicitud de un usuario, esté deberá confirmar la cuenta siguiendo instrucciones que le llegarán por correo electrónici.
+Cuando el usuario confirme la cuenta podrá utilizar la plataforma.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=0.75\textwidth]{Imagenes/solicitud.png} 
+  \caption{\label{fig:solicitud} Vista del menú de administración de solicitudes de usuarios nuevos para la plataforma.}
+\end{figure}
+\end{centering}
 
 \subsection{Usuarios}
 \label{subsec:usuarios}
