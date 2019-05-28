@@ -7,7 +7,9 @@
 \usepackage{hyperref} %este de último
 
 \renewcommand{\figurename}{Figura}
+\renewcommand{\contentsname}{Contenido}
 \renewcommand{\chaptername}{Cap\'{\i}tulo}
+\renewcommand{\tablename}{Tabla}
 
 
 \title{Plataforma Interinstitucional para Compartir Infrasestructura de Investigación\\\bfseries{Manual de Usuarios}}
@@ -21,9 +23,8 @@ Bogotá}
 
 \frontmatter
 \tableofcontents
-\listoffigures
-%lista de tablas
-%lista de figuras
+\listoffigures %lista de tablas
+\listoftables %lista de figuras
 
 \mainmatter
 %el manual
@@ -51,7 +52,7 @@ La plataforma no pretende tener utilidad comercial, por lo tanto no está abierta
 \end{centering}
 \clearpage % go to recto page
 
-La plataforma maneja cuatro tipos de usuarios con diferentes posibilidades de acción dentro de esta.
+La plataforma maneja tres tipos de usuarios con diferentes posibilidades de acción dentro de esta.
 A continuación se presenta una breve descripción de cada uno de los perfiles de usuario junto con los capítulos de este manual a los que deben hacer referencia.
 
 \section{Usuario Navegante}
@@ -73,7 +74,7 @@ Es el usuario que tendrá a su cargo el manejo de los cronogramas de disponibilid
 Generalmente, corresponde a la persona que maneja o controla el acceso a un equipo o servicio determinado. 
 Su papel en la plataforma es cargar y mantener actualizada la información de sus equipos y/o servicios, así como gestionar y cumplir las reservas hechas por otros usuarios.
 
-Este rol tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos.
+Este rol tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos, adicionalmente puede sugerir nuevas instalaciones dentro de la plataforma.
 
 Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{sec:infraestructura} y \ref{chap:reportes}.
 Adicionalmente se cuenta con las mismas funcionalidades de los usuarios navegantes.
@@ -147,7 +148,7 @@ El panel de control se encuentra a la izquierda de la pantalla (ver Figura \ref{
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/paneldecontrol.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/paneldecontrol.png} 
   \caption{\label{fig:paneldecontrol} Detalle de la página de inicio para un usuario registrado. Información de usuario y del panel de control.}
 \end{figure}
 \end{centering}
@@ -172,7 +173,7 @@ Al hacer click sobre la campana se despliega la lista de notificaciones existent
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/notificaciones.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/notificaciones.png} 
   \caption{\label{fig:notificaciones} Ejemplo de posibles notificaciones. Para tener acceso a un listado de las notificaciones disponibles hag click sobre la campana (esquina superior derecha).}
 \end{figure}
 \end{centering}
@@ -200,7 +201,7 @@ El buscador simple es la vista por defecto que se obtiene al hacer click sobre e
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/buscadorsimple.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/buscadorsimple.png} 
   \caption{\label{fig:buscadorsimple} Buscador simple, se tiene acceso haciendo click en el item de ``Navegación'' en el panel de control. Es la vista que se obtiene por defecto. Se utiliza escribiendo unas pocas letras en el campo ``Palabra clave''. Despliega los equipos y servicios que contienen esta palabra en su nombre.}
 \end{figure}
 \end{centering}
@@ -233,7 +234,7 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/detalleequipo.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/detalleequipo.png} 
   \caption{\label{fig:detalleequipo} Vista inicial de la página de detalle de un equipo o servicio. Las reservas se hacen a través del calendario de reservas que se encuentra al final de estas.}
 \end{figure}
 \end{centering}
@@ -250,7 +251,7 @@ En la parte inferior derecha se ven dos botones llamados ``Limpiar Búsqueda'' y 
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/buscadoravanzado.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/buscadoravanzado.png} 
   \caption{\label{fig:buscadoravanzado} Buscador avanzado, se tiene acceso haciendo click en el item de ``Navegación'' en el panel de control y luego haciendo click sobre ``AVANZADO'' en la vista que se obtiene por defecto. Se utiliza llenando uno o más de los campos de búsqueda. Despliega los equipos y servicios que contienen estos criterios de búsqueda de manera exacta.}
 \end{figure}
 \end{centering}
@@ -266,7 +267,7 @@ Una vez en la página de información del equipo o servicio, se debe consultar la 
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/calendarioequipo.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/calendarioequipo.png} 
   \caption{\label{fig:calendarioequipo} Calendario de reservas.}
 \end{figure}
 \end{centering}
@@ -295,7 +296,7 @@ La aceptación de todos los términos y condiciones (marcando las casillas de cada
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/confirmacionreserva.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/confirmacionreserva.png} 
   \caption{\label{fig:confirmacionreserva} Diálogo de confirmación de reserva. Para completar el proceso el usuario debe (a) aceptar (haciendo click sobre) cada término y condición por aparte, (b) escribir su email a manera de firma de aceptación de los términos y condiciones y (c) hacer click sobre el botón ``RESERVAR'' (aparece cuando se cumplen las dos condiciones anteriores).}
 \end{figure}
 \end{centering}
@@ -310,7 +311,7 @@ Este ítem se encuentra en el panel de control de todos los usuarios de la plataf
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/misreservas.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/misreservas.png} 
   \caption{\label{fig:misreservas} Ejemplo de información desplegada en la opción ``Mis reservas''. En el detalle de la reserva se encuentra el botón ``CANCELAR RESERVA'' en la parte inferior derecha.}
 \end{figure}
 \end{centering}
@@ -337,7 +338,7 @@ Esta vista se obtiene al hacer click sobre el ítem ``Administración'' en el menú
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/vistaadministracion.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/vistaadministracion.png} 
   \caption{\label{fig:vistaadministracion} Vista de las opciones de administración para el usuario Encargado de Equipo (izquierda) y el usuario Administrador (derecha).}
 \end{figure}
 \end{centering}
@@ -357,7 +358,7 @@ Al hacer click sobre este ítem se despliega una lista con los equipos, la lista 
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/adminequipos.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/adminequipos.png} 
   \caption{\label{fig:adminequipos} Vista de la página de administración para equipos. La parte superior presenta la lista de equipos (según el tipo de usuario). La parte inferior presenta los detalles del equipo seleccionado, para seleccionar un equipo se debe dar click sobre su fila correspondiente en la tabla superior.}
 \end{figure}
 \end{centering}
@@ -387,6 +388,8 @@ El procedimiento debe ser llevado a cabo por el donante y es el siguiente:
 
 Es importante tener en cuenta que para hacer esta solicitud es necesario que el correo electrónico que se ingresa para la solicitud (el del receptor) debe tener ya equipos previamente creados; se hará la transferencia de todos los equipos y servicios relacionados del donante y pasarán a cargo del receptor. 
 Por último, se eliminarán todas las solicitudes relacionadas con los equipos y servicios.
+
+\textbf{Nota}: otra opción para la transferencia de equipos es por medio del administrador de universidad, este procedimiento se describe en la sección \ref{subsec:usuarios}.
 
 \subsubsection{Creación de un nuevo equipo}
 \label{subsec:creacionequipos}
@@ -421,7 +424,7 @@ Los pasos a seguir para crear un equipo son los siguientes:
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/asistentecreacionequipos.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/asistentecreacionequipos.png} 
   \caption{\label{fig:asistentecreacionequipos} Asistente para la creación de equipos.}
 \end{figure}
 \end{centering}
@@ -498,7 +501,7 @@ Los campos que están \textbf{resaltados} son obligatorios.
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/disponibilidadequipo.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/disponibilidadequipo.png} 
   \caption{\label{fig:disponibilidadequipo} Ejemplo del asistente para definir la disponibilidad de equipos para los usuarios Navegante. El equipo se presentará como disponible los dias marcados en la franja horaria señalada.
     La reserva se debe hacer con, al menos, las horas definidas en el campo ``periodo de antelación'' de anterioridad.}
 \end{figure}
@@ -560,7 +563,7 @@ Al hacer click sobre este ítem se despliega una lista con los servicios, la list
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/adminservicios.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/adminservicios.png} 
   \caption{\label{fig:adminservicios} Vista de la página de administración para servicios. La parte superior presenta la lista de servicios (según el tipo de usuario). La parte inferior presenta los detalles del servicio seleccionado, para seleccionar un servicio se debe dar click sobre su fila correspondiente en la tabla superior.}
 \end{figure}
 \end{centering}
@@ -596,7 +599,7 @@ Los pasos a seguir para crear un servicio son los siguientes:
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/asistentecreacionservicios.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/asistentecreacionservicios.png} 
   \caption{\label{fig:asistentecreacionservicios} Asistente para la creación de servicios.}
 \end{figure}
 \end{centering}
@@ -725,7 +728,7 @@ En la figura \ref{fig:reservasequipos} se muestra una vista de dicha página.
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/reservasequipos.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/reservasequipos.png} 
   \caption{\label{fig:reservasequipos} Vista de la página de administración de reservas de equipos, para acceder a la lista de servicios requeridos hacer click sobre el botón ``SOLICITUDES DE SERVICIO''.
     La plataforma presenta un listado histórico de reservas junto con un filtro para búsquedas.
   Al hacer click sobre una de las reservas o solicitudes se habre un diálogo de administración.}
@@ -744,7 +747,7 @@ Por último se presenta el listado de los términos y condiciones a los que accedi
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/detallereserva.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/detallereserva.png} 
   \caption{\label{fig:detallereserva} Detalle de reserva de un equipo.
   Desde esta vista es posible tener comunicación con el usuario que hizo la reserva, así como cambiar su estado.}
 \end{figure}
@@ -777,7 +780,7 @@ Cuando el usuario confirme la cuenta podrá utilizar la plataforma.
 
 \begin{centering}
 \begin{figure}
-  \includegraphics[width=0.75\textwidth]{Imagenes/solicitud.png} 
+  \includegraphics[width=1\textwidth]{Imagenes/solicitud.png} 
   \caption{\label{fig:solicitud} Vista del menú de administración de solicitudes de usuarios nuevos para la plataforma.}
 \end{figure}
 \end{centering}
@@ -785,8 +788,150 @@ Cuando el usuario confirme la cuenta podrá utilizar la plataforma.
 \subsection{Usuarios}
 \label{subsec:usuarios}
 
+La página de administración de usuarios permite al administrador de universidad realizar las siguientes acciones:
+\begin{itemize}
+\item Ver un listado de los usuarios cuyo correo electrónico de registro en la plataforma tiene el mismo dominio que el del administrador de universidad.
+\item Agregar usuarios nuevos a la plataforma (por medio del botón ``NUEVO USUARIO''.
+\item Modificar el estado de un usuario de activo a no activo, como se muestra en la figura \ref{fig:modificarusuario}.
+\item Modificar los datos de un usuario.
+\item Consultar los equipos y servicios que están a cargo de un usuario encargado de equipo.
+\item Transferir equipos y servicios a un usuario encargado de equipo
+\end{itemize}
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/modificarusuario.png} 
+  \caption{\label{fig:modificarusuario} Vista del menú de administración de usuarios, este menú permite la creación de usuarios nuevos, desactivar o activar usuarios o modificar los datos de registro.
+  Los campos de registro que se presentan en color gris no son modificables.}
+\end{figure}
+\end{centering}
+
+La modificación o consulta de los datos de un usuario se hace haciendo click sobre el correo electrónico de este en la lista que presenta la plataforma al entrar a la página de administración de usuarios (se puede ver un ejemplo en la figura \ref{fig:modificarusuario}).
+Para usuarios navegante solamente es posible pasarlo de estado activo a no activo (o viceversa) o eliminarlo de la plataforma.
+Los usuarios encargado de equipo permiten más modificaciones a sus datos de registro.
+
+\subsubsection{Transferencia de equipos desde el administrador de usuarios}
+
+Para transferir equipos a un encargado de equipo (receptor) desde el administrador de usuarios se debe hacer click en el botón ``TRANSFERIR EQUIPOS Y SERVICIOS A ESTE USUARIO'' y seguir los siguientes pasos:
+\begin{enumerate}
+\item Ingresar el correo electrónico del encargado de equipo del que se desea transferir los equipos (donante).
+\item Dar click sobre el botón ``TRANSFERIR''.
+\end{enumerate}
+La transferencia de equipos se hace de manera exhaustiva, es decir se transfieren todos los equipos y servicios del donante al receptor.
+
+Tenga en cuenta que el receptor y el donante deben cumplir con los siguientes criterios:
+\begin{itemize}
+\item Pertenecer a la misma institución (tener el mismo dominio de correo electrónico).
+\item Deben ser usuarios encargado de equipo.
+\end{itemize}
+También tenga en cuenta que la transferencia de equipos borra todas las reservas hechas sobre los equipos y servicios transferidos.
+
+La transferencia de equipos puede ser solicitada por un encargado de equipo, este procedimiento está descrito en la sección \ref{subsec:transferenciaequipos}.
+
 \subsection{Instalaciones}
 \label{subsec:instalaciones}
+
+Las instalaciones representan los espacios físicos en donde están los equipos o dónde se llevan a cabo los servicios.
+Todo equipo o servicio registrado en la plataforma debe estar asociado a una instalación.
+Dentro de la plataforma las instalaciones son creadas y administradas por el usuario administrador, un administrador de universidad tiene control sobre las instalaciones que pertenecen a su institución.
+Los usuarios encargado de equipo pueden sugerir instalaciones, estas deben ser aprobadas por el administrador para poder ser utilizadas en la plataforma.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/instalacion.png} 
+  \caption{\label{fig:instalacion} Vista del menú de administración de insalaciones, este menú permite la creación y modificación de instalaciones.
+  El botón ``SUGERENCIAS'' lleva a una página donde se puede revisar, aprobar o rechazar las instalaciones sugeridas por usuarios encargado de equipo.}
+\end{figure}
+\end{centering}
+
+La figura \ref{fig:instalacion} muestra un ejemplo de la página de administración de instalaciones.
+La plataforma despliega una lista, junto con un buscador, de las instalaciones de la universidad.
+Para ver y modificar las características de una instalación existente es necesario hacer click sobre esta en el listado de instituciones.
+Para crear una instalación nueva se debe hacer click sobre el botón ``AÑADIR INSTALACIÓN'', un ejemplo de la vista del asistente para creación de instalaciones se muestra en la figura \ref{fig:crearinstalacion}.
+Finalmente, para revisar, aprobar o rechazar una instalación sugerida por un encargado de equipo, se debe hacer click sobre el botón ``SUGERENCIAS''.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/crearinstalacion.png} 
+  \caption{\label{fig:crearinstalacion} Vista del asistente para crear insalaciones.}
+\end{figure}
+\end{centering}
+
+La tabla \ref{tab:instalaciones} muestra los campos requeridos por la plataforma para la creación de una instalación, los capos \textbf{obligatorios} se presentan en negrilla.
+A continuación se define cada uno de los campos.
+
+\begin{itemize}
+\item \textbf{Nombre}: Indique el nombre de la instalacion.
+  Es importante que el nombre de la instalación sea el oficial dentro de la institución.
+  Por ejemplo, el nombre de una instalación puede ser ``Laboratorio de genética''.
+\item URL de información: Agregue una dirección web en la cual se describa en detalle la instalación. 
+  Es conveniente agregar un vínculo a la página institucional de la instalación. 
+  Si no existe sito web institucional, se sugiere que no se utilice ninguna otra dirección web.
+\item \textbf{Dirección}: Ingrese la dirección física de la institución a la que pertenece la instalación.
+\item \textbf{Código postal}: Ingrese el código postal correspondiente a la dirección física utilizada.
+\item \textbf{Ciudad}: Ingrese el nombre de la ciudad correspondiente a la dirección física utilizada y en donde se encuentra la institución.
+\item \textbf{Edificio/Bloque/Laboratorio}: Ingrese la dirección interna (dentro de la institución) en donde se encuentre físicamente ubicada la instalación a crear. 
+  Por ejemplo, para la instalación Laboratorio de genética, esta indicación puede ser ``Edificio M, 2 piso''.
+\item \textbf{Actividad investigativa}: Describa la actividad investigativa principal de la instalación a crear, es decir, cuáles son los objetivos principales, las líneas de investigación y los intereses que atañen al grupo profesional que mantiene la instalación funcionando. 
+  Por ejemplo, para la instalación Laboratorio de genética, la actividad investigativa puede ser ``En el Laboratorio de Genética se llevan a cabo proyectos de investigación relacionados con la epidemiología molecular, la genética de enfermedades complejas, la genética de poblaciones humanas, el cultivo de tejidos enfocado en la búsqueda de sustancias antimicrobianas y el análisis de biomateriales, la genética toxicológica con énfasis en análisis de citotoxicidad y genotoxicidad, la mutagénesis ambiental y el estudio de restos biológicos de sociedades antiguas''.
+\item \textbf{Disponibilidad}: Indique los horarios de la semana en los que la instalación y la institución permiten el ingreso y permanencia. 
+  La plataforma proporciona un esquema de selección en el que se ingresa la hora de inicio y la hora de finalización para cada uno de los días de la semana. 
+  Por ejemplo, para la instalación Laboratorio de genética, la disponibilidad horaria puede ser ``Lunes a sábado de 8 am a 5 pm''.
+\item Palabras claves: Ingrese términos (una o más palabras) claves que sean complementarios a las palabras ya incluidas en los demás campos. 
+  Estos términos claves deben tener una asociación relevante con la actividad investigativa de la instalación. 
+  Estos términos se utilizarán para aumentar las posibilidades de que un usuario encuentre un equipo o servicio asociado a esta instalación, mediante el uso de términos de asociación relevante. 
+  Es conveniente agregar al menos tres palabras claves. 
+  Por ejemplo, para la instalación Laboratorio de genética, las palabras claves pueden ser ``Genotipificación'', ``Footprinting'', ``Producción de anticuerpos''.
+\item \textbf{Condiciones de acceso}: Incluya los requisitos impuestos al personal interno y externo de estas instalaciones, los cuales condicionen la entrada a la misma. 
+  Por ejemplo, para la instalación Laboratorio de genética, las condiciones de acceso pueden ser:
+  \begin{itemize}
+  \item Concertar una cita previa, tener una reserva de equipo vigente o haber realizado una solicitud de servicio.
+  \item Presentar el certificado o el carnet de ARL vigente.
+  \item Presentarse en los horarios especificados en la sección de disponibilidad horaria y anunciarse en la portería principal con la extensión 3435.
+  \end{itemize}
+
+\end{itemize}
+
+
+\clearpage
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|p{.4 \textwidth}|p{.05 \textwidth}||p{.4 \textwidth}|p{.05 \textwidth}|}
+    \hline
+    \textbf{Nombre}                & $\Box$  & URL de información  & $\Box$ \\
+    \hline
+    \textbf{Dirección}              & $\Box$ & \textbf{Código postal}    & $\Box$ \\
+    \hline
+    \textbf{Ciudad}                & $\Box$ & \textbf{Edificio, bloque, laboratorio}     & $\Box$ \\
+    \hline
+    \textbf{Actividad investigativa} & $\Box$ & \textbf{Disponibilidad} & $\Box$ \\
+    \hline
+    Palabras clave                & $\Box$ & \textbf{Condiciones de acceso} & $\Box$ \\
+    \hline
+  \end{tabular}
+  \caption{\label{tab:instalaciones} Listado de campos utilizados en la creación de instalaciones. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:instalaciones}.}
+\end{table}
+\clearpage
+
+\subsubsection{Cómo sugerir instalaciones}
+
+La sugerencia de instalaciones es una posibilidad que tienen los usuarios encargado de equipo.
+Para realizarla se debe ir a la página de información del perfil de la cuenta, haciendo click sobre el ícono que contiene la cuenta de correo del encargado, esto displiega un menú en el que se deba hacer click sobre ``Mi perfil''.
+En la página que se despliega se encuentar el botón ``SUGERIR INSTALACIÓN'', como se muestra en la figura \ref{fig:sugerir}.
+Al hacer click sobre este, se despliega un asistente donde se deben completar los campos para crear una nueva instalación, cuando los campos estén completos, se debe hacer click sobre el botón ``SUGERIR INSTALACIÓN''.
+
+Una vez sugerida la instalación, el usuario administrador de universidad debe ``APROBAR'' o ``RECHAZAR'' la instalación porpuesta, esto se hace haciendo click sobre el botón de ``SUGERENCIAS'' en la página de administración de instalaciones (ver figura \ref{fig:instalacion}).
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/sugerir.png} 
+  \caption{\label{fig:sugerir} Vista del perfil de encargado de equipo.
+  En esta página se puede actualizar la información del encargado e iniciar el proceso para sugerir instalaciones nuevas.
+  Las instalaciones sugeridas deben ser aprobadas por un administrador de la misma universidad antes de poder ser utilizadas para registrar equipos o servicios.}
+\end{figure}
+\end{centering}
+
+
 
 %\subsection{Roles}
 %\label{subsec:roles}

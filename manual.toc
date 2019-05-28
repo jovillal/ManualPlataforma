@@ -33,11 +33,8 @@
 \contentsline {subsection}{Usuarios}{61}{section*.17}
 \contentsline {subsubsection}{Transferencia de equipos desde el administrador de usuarios}{63}{section*.18}
 \contentsline {subsection}{Instalaciones}{64}{section*.19}
-\contentsline {subsubsection}{C\'omo sugerir instalaciones}{71}{section*.20}
-\contentsline {chapter}{\chapternumberline {6}Reportes (Estad\IeC {\'\i }sticas)}{74}{chapter.6}
-\contentsline {section}{\numberline {6.1}Equipos}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servicios}{75}{section.6.2}
-\contentsline {section}{\numberline {6.3}Generales}{75}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Comunicaci\'on (Correo)}{77}{chapter.7}
-\contentsline {section}{\numberline {7.1}Correo}{78}{section.7.1}
-\contentsline {section}{\numberline {7.2}Exportar}{78}{section.7.2}
+\contentsline {subsubsection}{Como sugerir instalaciones}{71}{section*.20}
+\contentsline {chapter}{\chapternumberline {6}Comunicaciones}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Correo}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}Exportar}{74}{section.6.2}
+\contentsline {chapter}{\chapternumberline {7}Reportes (Estad\IeC {\'\i }sticas)}{76}{chapter.7}

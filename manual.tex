@@ -572,7 +572,7 @@ En la esquina superior derecha se encuentra un botónes para crear un ``NUEVO SER
 
 La lista de servicios asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
 Al hacer click sobre uno de los servicios de la tabla, se habre el asistente que premite ver los detalles del servicio.
-En este asistente se presentan botones que permiten obtener las estadísticas de reservas del servicio (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{sec:reporteservicios}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
+En este asistente se presentan botones que permiten obtener las estadísticas de reservas del servicio (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{chap:reportes}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
 
 \subsubsection{Creación de un nuevo servicio}
 \label{subsec:creacionservicios}
@@ -913,7 +913,7 @@ A continuación se define cada uno de los campos.
 \end{table}
 \clearpage
 
-\subsubsection{Cómo sugerir instalaciones}
+\subsubsection{Como sugerir instalaciones}
 
 La sugerencia de instalaciones es una posibilidad que tienen los usuarios encargado de equipo.
 Para realizarla se debe ir a la página de información del perfil de la cuenta, haciendo click sobre el ícono que contiene la cuenta de correo del encargado, esto displiega un menú en el que se deba hacer click sobre ``Mi perfil''.
@@ -931,15 +931,27 @@ Una vez sugerida la instalación, el usuario administrador de universidad debe ``
 \end{figure}
 \end{centering}
 
+%----------------------------------------------------
 
+\chapter{Comunicaciones} % chapter title
+\label{chap:comunicaciones}
 
-%\subsection{Roles}
-%\label{subsec:roles}
+La plataforma utiliza la cuenta de correo del usuario para enviar mensajes a otros usuarios de la plataforma, la plataforma no maneja un servicio de correo electrónico propio y por lo tanto tiene capacidades limitadas en este ámbito.
+Los usuarios navegante no pueden comunicarse a través de la plataforma con otros usuarios, sin embargo pueden utilizar las direcciones de correo de los encargados de equipo o de los administradores para comunicarse a través de su cuenta de correo.
 
-%\subsection{Instituciones}
-%\label{subsec:instituciones}
+\section{Correo}
+\label{sec:correo}
 
+Los usuarios encargado de equipo y administradores pueden enviar correos a uno o varios de los usuario de la plataforma utilizando la opción de ``Correo'' (se encuentra dentre del menú despegable de ``Comunicaciones'' para los usuarios administrador).
+La plataforma permite enviar correos a grupos de usuarios definidos por el tipo de usuarios, o de manera individual, la forma de utilización es similar a la de la mayoría de clientes de correo electrónico disponibles.
 
+Para enviar correos se deben agregar las direcciones o los grupos y, una vez completado el mensaje, hacer click sobre el botón ``ENVIAR'' que aparece bajo el campo de composición del cuerpo del correo.
+
+\section{Exportar}
+\label{sec:exportar}
+
+Los usuarios administrador tienen la opción de exportar la información de los equipos y servicios a un formato XML compatible con el estándar CERIF (Common European Research Information Format)\footnote{https://www.eurocris.org/cerif/main-features-cerif}.
+Este proceso es demorado.
 
 %----------------------------------------------------
 
@@ -950,46 +962,36 @@ Una vez sugerida la instalación, el usuario administrador de universidad debe ``
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
 \clearpage % go to recto page
-Start of the text % chapter body
 
-\section{Equipos}
-\label{sec:reporteequipos}
+La plataforma tiene la capacidad de entregar reportes de uso a los usuarios encargado de equipo y administrador.
+En el caso de los primeros, las estadísticas se entregan sobre los equipos y servicios asignados al usuario.
+En el caso de los segundos el reporte se entrega sobre todos los equipos y servicios de la institución.
+Los reportes generados se generan de idéntica manera para los dos tipos de usuario.
+Para generar el reporte el usuario debe ir al menú correspondiente (para ``Equipos'', ``Servicios'' o ``Generales'' ---este último presenta la información acumulada de equipos y servicios), y dar el rango de fechas para las que requiere el reporte.
+Por defecto, la plataforma genera un reporte de los últimos 6 meses de actividad.
+Si se desea descargar el reporte en un archivo pdf se debe hacer click sobre el botón ``DESCARGAR PDF''.
+La figura \ref{fig:reportes} muestra un ejemplo de vista desde un perfil de administrador de universidad.
 
-\section{Servicios}
-\label{sec:reporteservicios}
-
-\section{Generales}
-\label{sec:reportegenerales}
-
-%----------------------------------------------------
-
-\chapter{Comunicación (Correo)} % chapter title
-\begin{centering} % include a centered illustration
-\includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/reportes.png} 
+  \caption{\label{fig:reportes} Vista de la página de reportes generales desde el perfil de administrador de universidad.
+  En esta página se puede consultar o descargar estadísticas relacionadas con el uso de los equipos o servicios de una istitución.}
+\end{figure}
 \end{centering}
-\clearpage % go to recto page
-Start of the text % chapter body
 
-\section{Correo}
-\label{sec:correo}
-
-\section{Exportar}
-\label{sec:exportar}
-
-%----------------------------------------------------
-
-%\chapter{Gestor de Contenido} % chapter title
-%\begin{centering} % include a centered illustration
-%\includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
-%\end{centering}
-%\clearpage % go to recto page
-%Start of the text % chapter body
-
-
-
-
-
-
+Los reportes generados contienen la siguiente información:
+\begin{itemize}
+\item Reservas y solicitudes terminadas.
+\item Usuarios principales.
+\item Recaudación.
+\item Frecuencia de solicitud y uso.
+\item Número total de reservas y solicitudes.
+\item Principales motivos de cancelación de reservas y solicitudes.
+\item Rachas de cancelación.
+\item Listado de equipos o servicios.
+\end{itemize}
+La descripción de cada ítem se encuentra en la plataforma.
 
 \backmatter
 %Meter el modelo CERIF?
