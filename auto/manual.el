@@ -44,23 +44,29 @@
      "subsec:solicitudes"
      "fig:solicitud"
      "subsec:usuarios"
+     "fig:modificarusuario"
      "subsec:instalaciones"
-     "chap:reportes"
-     "sec:reporteequipos"
-     "sec:reporteservicios"
-     "sec:reportegenerales"
+     "fig:instalacion"
+     "fig:crearinstalacion"
+     "tab:instalaciones"
+     "fig:sugerir"
+     "chap:comunicaciones"
      "sec:correo"
-     "sec:exportar")
+     "sec:exportar"
+     "chap:reportes"
+     "fig:reportes")
     (TeX-run-style-hooks
      "hyperref"
      "graphicx"
+     "babel"
+     "spanish"
      "inputenc"
      "latin1"
      "latexsym"
      "latex2e"
-     "memoir12"
+     "memoir10"
      "memoir"
-     "ebook"
-     "12pt"
-     "oneside")))
+     "letterpaper"
+     "10pt"
+     "extrafontsizes")))
 

@@ -1,10 +1,11 @@
+\select@language {spanish}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Listado de campos utilizados en la creaci\'on de equipos. Los \IeC {\'\i }tems \textbf {resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la secci\'on \ref {subsec:creacionequipos}.\newline {\relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip * Obligatorio \'unicamente si el equipo est\'a disponible para reserva.}}}{43}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Listado de campos utilizados en la creaci\'on de servicios. Los \IeC {\'\i }tems \textbf {resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la secci\'on \ref {subsec:creacionservicios}.}}{56}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Listado de campos utilizados en la creaci\'on de instalaciones. Los \IeC {\'\i }tems \textbf {resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la secci\'on \ref {subsec:instalaciones}.}}{70}{table.5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Listado de campos utilizados en la creaci\'on de equipos. Los \IeC {\'\i }tems \textbf {resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la secci\'on \ref {subsec:creacionequipos}.\newline {\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip * Obligatorio \'unicamente si el equipo est\'a disponible para reserva.}}}{29}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Listado de campos utilizados en la creaci\'on de servicios. Los \IeC {\'\i }tems \textbf {resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la secci\'on \ref {subsec:creacionservicios}.}}{36}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Listado de campos utilizados en la creaci\'on de instalaciones. Los \IeC {\'\i }tems \textbf {resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la secci\'on \ref {subsec:instalaciones}.}}{44}{table.5.3}
 \addvspace {10pt}
 \addvspace {10pt}

@@ -1,8 +1,10 @@
-\documentclass[ebook, 12pt, oneside]{memoir}
+\documentclass[letterpaper,10pt,extrafontsizes]{memoir}
+%\documentclass[ebook, 12pt, oneside]{memoir}
 %change to 10pt, twoside for printing
 
 \usepackage{latexsym}
-\usepackage[latin1]{inputenc} 
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{hyperref} %este de último
 
@@ -11,6 +13,10 @@
 \renewcommand{\chaptername}{Cap\'{\i}tulo}
 \renewcommand{\tablename}{Tabla}
 
+\babelhyphenation[spanish]{en-viar u-sua-rios}
+
+\tolerance=100
+\setheadfoot{16pt}{14pt}
 
 \title{Plataforma Interinstitucional para Compartir Infrasestructura de Investigación\\\bfseries{Manual de Usuarios}}
 \author{Fundación Ceiba\thanks{Desarrollado por Geoprocess}\\
@@ -367,7 +373,7 @@ En la esquina superior derecha se encuentran botones para ``SOLICITAR TRANSFEREN
 
 La lista de equipos asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
 Al hacer click sobre uno de los equipos de la tabla, se habre el asistente que premite ver los detalles del equipo.
-En este asistente se presentan botones que permiten obtener las estadísticas de reservas del equipo (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{sec:reporteequipos}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
+En este asistente se presentan botones que permiten obtener las estadísticas de reservas del equipo (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{chap:reportes}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
 Se puede ver un ejemplo en la figura \ref{fig:adminequipos}.
 
 
