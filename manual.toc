@@ -1,41 +1,43 @@
 \select@language {spanish}
 \contentsline {chapter}{\'{I}ndice general}{\es@scroman {i}}{section*.1}
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {ii}}{section*.2}
-\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {iv}}{section*.3}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iii}}{section*.2}
+\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {ix}}{section*.3}
 \contentsline {chapter}{\chapternumberline {1}Objetivos}{2}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Usuarios}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Usuario Navegante}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Encargado de Equipo}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Administrador de Universidad}{5}{section.2.3}
+\contentsline {section}{\numberline {2.1}Usuario navegante}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Encargado de equipo}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Administrador de universidad}{6}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}Acceso}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}Registro}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Ingreso}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Recuperar Contrase\~na}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}Notificaciones}{10}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Buscador}{13}{section.4.1}
-\contentsline {subsection}{Buscador simple}{13}{section*.4}
-\contentsline {subsection}{Buscador avanzado}{15}{section*.5}
-\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{15}{section*.6}
-\contentsline {section}{\numberline {4.2}Mis reservas}{17}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}Infraestructura}{22}{section.5.1}
-\contentsline {subsection}{Equipos}{22}{section*.7}
-\contentsline {subsubsection}{Transferencia de equipos}{23}{section*.8}
-\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{23}{section*.9}
-\contentsline {subsubsection}{Configuraciones extra de equipos}{30}{section*.10}
-\contentsline {subsection}{Carga equipos}{30}{section*.11}
-\contentsline {subsection}{Servicios}{30}{section*.12}
-\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{31}{section*.13}
-\contentsline {subsection}{Carga servicios}{37}{section*.14}
-\contentsline {subsection}{Reservas y solicitudes}{37}{section*.15}
-\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{38}{section.5.2}
-\contentsline {subsection}{Solicitudes}{38}{section*.16}
-\contentsline {subsection}{Usuarios}{39}{section*.17}
-\contentsline {subsubsection}{Transferencia de equipos desde el administrador de usuarios}{40}{section*.18}
-\contentsline {subsection}{Instalaciones}{40}{section*.19}
-\contentsline {subsubsection}{Como sugerir instalaciones}{45}{section*.20}
-\contentsline {chapter}{\chapternumberline {6}Comunicaciones}{46}{chapter.6}
-\contentsline {section}{\numberline {6.1}Correo}{46}{section.6.1}
-\contentsline {section}{\numberline {6.2}Exportar}{46}{section.6.2}
-\contentsline {chapter}{\chapternumberline {7}Reportes (Estad\IeC {\'\i }sticas)}{48}{chapter.7}
+\contentsline {section}{\numberline {3.2}Ingreso}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Recuperar contrase\~na}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}Notificaciones}{13}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}Navegaci\'on}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Buscador}{17}{section.4.1}
+\contentsline {subsection}{Buscador simple}{17}{section*.4}
+\contentsline {subsection}{Buscador avanzado}{20}{section*.5}
+\contentsline {subsection}{\IeC {\textquestiondown }C\'omo hacer una reserva?}{21}{section*.6}
+\contentsline {section}{\numberline {4.2}Mis reservas}{25}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Administraci\'on}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Infraestructura}{28}{section.5.1}
+\contentsline {subsection}{Equipos}{30}{section*.7}
+\contentsline {subsubsection}{Transferencia de equipos ES NECESARIO REESCRIBIR, NO ES ACORDE AL PROCEDIMIENTO}{31}{section*.8}
+\contentsline {subsubsection}{Creaci\'on de un nuevo equipo}{32}{section*.9}
+\contentsline {subsubsection}{Configuraciones de equipos}{45}{section*.10}
+\contentsline {subsection}{Servicios}{45}{section*.11}
+\contentsline {subsubsection}{Creaci\'on de un nuevo servicio}{46}{section*.12}
+\contentsline {subsection}{Reservas y solicitudes}{58}{section*.13}
+\contentsline {section}{\numberline {5.2}Usuarios/Entidades}{60}{section.5.2}
+\contentsline {subsection}{Solicitudes}{61}{section*.14}
+\contentsline {subsection}{Usuarios}{62}{section*.15}
+\contentsline {subsubsection}{Transferencia de equipos por parte del administrador de usuarios}{64}{section*.16}
+\contentsline {subsection}{Instalaciones}{65}{section*.17}
+\contentsline {subsubsection}{C\'omo sugerir instalaciones}{72}{section*.18}
+\contentsline {chapter}{\chapternumberline {6}Comunicaciones}{74}{chapter.6}
+\contentsline {section}{\numberline {6.1}Correo}{74}{section.6.1}
+\contentsline {section}{\numberline {6.2}Exportar}{75}{section.6.2}
+\contentsline {chapter}{\chapternumberline {7}Reportes (Estad\IeC {\'\i }sticas)}{77}{chapter.7}
+\contentsline {chapter}{\chapternumberline {8}Carga masiva de equipos y servicios}{80}{chapter.8}
+\contentsline {section}{\numberline {8.1}Carga masiva para encargado de equipo ---equipos}{82}{section.8.1}
+\contentsline {section}{\numberline {8.2}Carga masiva para encargado de equipo ---servicios}{91}{section.8.2}
+\contentsline {section}{\numberline {8.3}Carga masiva para administrador de universidad}{100}{section.8.3}

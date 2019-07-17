@@ -1,21 +1,22 @@
+%\documentclass[letterpaper,10pt,extrafontsizes]{memoir}
 \documentclass[ebook, 12pt, oneside]{memoir}
 %change to 10pt, twoside for printing
 
 \usepackage{latexsym}
-\usepackage[latin1]{inputenc} 
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{hyperref} %este de último
 
-\renewcommand{\figurename}{Figura}
-\renewcommand{\contentsname}{Contenido}
-\renewcommand{\chaptername}{Cap\'{\i}tulo}
-\renewcommand{\tablename}{Tabla}
+\babelhyphenation[spanish]{en-viar u-sua-rios}
 
+\tolerance=100
+\setheadfoot{16pt}{14pt}
 
-\title{Plataforma Interinstitucional para Compartir Infrasestructura de Investigación\\\bfseries{Manual de Usuarios}}
+\title{Plataforma interinstitucional para compartir infraestructura de investigación\\\bfseries{Manual de la plataforma}}
 \author{Fundación Ceiba\thanks{Desarrollado por Geoprocess}\\
 Bogotá}
-\date{\today\thanks{Primer borrador 20 Abril  2019}}
+\date{\today\thanks{Segundo borrador 8 de julio,  2019}}
 
 \begin{document}
 
@@ -36,11 +37,11 @@ Bogotá}
 \end{centering}
 \clearpage % go to recto page
 
-La plataforma de infraestructura compartida de la Fundación Ceiba tiene como objetivo principal facilitar la colaboración de los investigadores de las Universidades aliadas a la Fundación a través de centralizar la oferta de equipos o servicios relacionados con actividades de investigación.
+La plataforma de infraestructura compartida de la Fundación Ceiba tiene como objetivo principal facilitar la colaboración de los investigadores de las Universidades aliadas a la Fundación a partir de centralizar la oferta de equipos o servicios relacionados con actividades de investigación.
 
-La plataforma web le permite a los investigadores y a las Universidades ofrecer equipos (con diferentes configuraciones o variaciones) y servicios para que estos puedan ser reservados por investigadores de otras Universidades que sean miembros de la Fundación Ceiba.
+La plataforma Web le permite a los investigadores y a las universidades ofrecer equipos (con diferentes configuraciones) y servicios (con diferentes variaciones) para que estos puedan ser reservados por investigadores de otras universidades que sean miembros de la Fundación Ceiba.
 
-La plataforma no pretende tener utilidad comercial, por lo tanto no está abierta a personas que no sean investigadoras de las Universidades socios de la Fundación.
+La plataforma no pretende tener utilidad comercial, por lo tanto no está abierta a personas que no sean investigadores de las universidades socias de la Fundación.
 
 
 
@@ -52,43 +53,43 @@ La plataforma no pretende tener utilidad comercial, por lo tanto no está abierta
 \end{centering}
 \clearpage % go to recto page
 
-La plataforma maneja tres tipos de usuarios con diferentes posibilidades de acción dentro de esta.
-A continuación se presenta una breve descripción de cada uno de los perfiles de usuario junto con los capítulos de este manual a los que deben hacer referencia.
+La plataforma maneja tres tipos de usuarios con diferentes posibilidades de acción.
+A continuación se presenta una breve descripción de cada uno de los perfiles de usuario, junto con los capítulos de este manual a los que deben hacer referencia.
 
-\section{Usuario Navegante}
+\section{Usuario navegante}
 
 Es el usuario principal de la plataforma. 
-Es un investigador de una de las Universidades socias de la Fundación Ceiba.
+Es un investigador de una de las universidades socias de la Fundación Ceiba.
 Tiene permisos para buscar, ver el detalle de la información de equipos y servicios, y realizar cotizaciones y reservas. 
 
-El Usuario Navegante Debe ser una persona adscrita (y con cuenta y rol activo) a una Universidad socia de la Fundación, con interés en buscar y encontrar infraestructura asociada a la investigación. 
+El usuario navegante debe ser una persona adscrita (con cuenta y rol activo) a una universidad socia de la Fundación, con interés en buscar y encontrar infraestructura asociada a la investigación. 
 
-Este rol tiene permisos de acceso al sitio web por medio de su usuario y contraseña previamente asignados.
+Este rol tiene permisos de acceso al sitio Web por medio de su usuario y contraseña antes asignados.
 
 Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{chap:acceso} y \ref{chap:navegacion}.
 
-\section{Encargado de Equipo}
+\section{Encargado de equipo}
 
 Es un usuario con conocimiento técnico de los equipos y servicios.
 Es el usuario que tendrá a su cargo el manejo de los cronogramas de disponibilidad y de las actualizaciones de datos pertinentes. 
 Generalmente, corresponde a la persona que maneja o controla el acceso a un equipo o servicio determinado. 
 Su papel en la plataforma es cargar y mantener actualizada la información de sus equipos y/o servicios, así como gestionar y cumplir las reservas hechas por otros usuarios.
 
-Este rol tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos, adicionalmente puede sugerir nuevas instalaciones dentro de la plataforma.
+El rol de encargado tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos; adicionalmente puede sugerir nuevas instalaciones dentro de la plataforma.
 
-Las funciones y procedimientos permitidos para este rol están descritos en los capítulos \ref{sec:infraestructura} y \ref{chap:reportes}.
-Adicionalmente se cuenta con las mismas funcionalidades de los usuarios navegantes.
+Las funciones y procedimientos permitidos para este rol están descritos en las secciones \ref{subsec:equipos}, \ref{subsec:servicios}, \ref{subsec:cargaservicios}, \ref{subsec:reservasysolicitudes} y los capítulos \ref{chap:comunicaciones} y \ref{chap:reportes}.
+Adicionalmente, este rol cuenta con las mismas funcionalidades de los usuarios navegantes.
 
 
-\section{Administrador de Universidad}
+\section{Administrador de universidad}
 
-Es un usuario centralizado para cada universidad. 
+El administrador es un usuario centralizado para cada universidad. 
 Debe tener conocimiento de la gestión general de infraestructura en la universidad y debe poder verificar el estado de las cuentas de usuario en la universidad correspondiente. 
 Su papel en la plataforma es la gestión de usuarios y elementos de infraestructura, el apoyo técnico a los usuarios de los dos niveles anteriores y el manejo de los estadísticos entregados por la plataforma.
 
 Este rol tiene los permisos suficientes para llevar a cabo, desde su tablero de control, cualquier tarea que se realice desde los perfiles de usuario navegante y encargado de equipo dentro de su organización.
 
-Adicionalmente, cuenta con las funcionalidades descritas a lo largo de este manual que no corresponden a ninguna de los roles anteriores.
+Además, cuenta con todas las funcionalidades descritas a lo largo de este manual.
 
 
 %----------------------------------------------------
@@ -101,39 +102,40 @@ Adicionalmente, cuenta con las funcionalidades descritas a lo largo de este manu
 \end{centering}
 \clearpage % go to recto page
 
-Para tener acceso a la plataforma debe ir al sitio web de la \href{https://ceiba-develop.firebaseapp.com}{plataforma} (\href{https://ceiba-develop.firebaseapp.com}{https://ceiba-develop.firebaseapp.com}).
+Para tener acceso a la plataforma debe ir al sitio web de la \href{https://plataforma.ceiba.org.co}{plataforma} (\href{https://plataforma.ceiba.org.co}{https://plataforma.ceiba.org.co}).
 
 En esta página podrá registrarse, ingresar a la plataforma o recuperar su contraseña.
 
 \section{Registro}
 \label{sec:registro}
 
-Los usuarios Navegante o Encargado de Equipo pueden hacer su registro en la plataforma haciendo click en el botón ``SOLICITAR REGISTRO DE CUENTA''. 
-Al hacer click sobre ese botón se habre una forma donde deberá ingresar los siguientes datos:
+Los usuarios navegante o encargado de equipo pueden hacer su registro en la plataforma haciendo clic en el botón ``SOLICITAR REGISTRO DE CUENTA''. 
+Al hacer clic sobre ese botón se abre una forma donde deberá ingresar los siguientes datos:
 \begin{itemize}
-\item Correo electrónio. Únicamente se procesarán correos electrónicos que concuerden con el dominio de las Universidades socias de Ceiba.
+\item Correo electrónico. Sólo se procesarán correos electrónicos que concuerden con el dominio de las universidades socias de Ceiba.
 
-\item Una contraseña, debe hacer una confirmación de la misma.
+\item Una contraseña.
+  Se debe hacer una confirmación de la misma.
 
-\item El perfil con el cual desea registrarse (Navegante o Encargado de Equipo).
+\item El perfil con el cual desea registrarse (navegante o encargado de equipo).
 \end{itemize}
 
 Una vez ingresados los datos anteriores deberá realizar estas acciones:
 \begin{itemize}
 \item Aceptar los términos y condiciones de uso de la plataforma. 
 
-\item Dar click en el botón ``ENVIAR SOLICITUD''.
+\item Dar clic en el botón ``ENVIAR SOLICITUD''.
 \end{itemize}
 
-Aparece un aviso indicando que se ha enviado correctamente un link de verificación a su correo.
+Aparece un aviso indicando que se ha enviado correctamente un vínculo de verificación a su correo.
 Debe verificar su correo entrando a su cuenta y siguiendo las instrucciones que recibirá en unos pocos minutos.
-Una vez haya verificado su correo, y un administrador verifique que puede utilizar la plataforma, podrá tener acceso a esta.
+Una vez haya verificado su correo, y un administrador verifique que puede utilizar la plataforma, podrá tener acceso.
 
 
 \section{Ingreso}
 \label{sec:ingreso}
 
-El ingreso se hace a través del botón de ``INICIO'' (lleva a la página inicial).
+El ingreso se hace en la \href{https://plataforma.ceiba.org.co}{página principal} (\href{https://plataforma.ceiba.org.co}{https://plataforma.ceiba.org.co}) (ver figura \ref{fig:principal}).
 Para completar el ingreso debe seguir los siguientes pasos: 
 \begin{enumerate}
 \item Ingresar un correo electrónico ya registrado y verificado en el campo que dice Correo
@@ -143,8 +145,17 @@ Para completar el ingreso debe seguir los siguientes pasos:
 \item Presionar el botón ``INGRESAR''.
 \end{enumerate}
 
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/principal.png} 
+  \caption{\label{fig:principal} Página inicial de la plataforma web (\href{https://plataforma.ceiba.org.co}{https://plataforma.ceiba.org.co}).}
+\end{figure}
+\end{centering}
+
+
+
 Una vez dentro de la plataforma encontrará una página de inicio con noticias y contenido relacionado con la plataforma.
-El panel de control se encuentra a la izquierda de la pantalla (ver Figura \ref{fig:paneldecontrol}), en este se muestra la cuenta de correo con la que se ingresó a la plataforma, el tipo de usuario (Usuario navegante, Encargado de equipo, Administrador o Superadministrador) asignado a la cuenta y las funciones a las que se tiene acceso.
+El panel de control se encuentra a la izquierda de la pantalla (ver Figura \ref{fig:paneldecontrol}), en este se muestra la cuenta de correo con la que se ingresó a la plataforma, el tipo de usuario (usuario navegante, encargado de equipo o administrador) asignado a la cuenta y las funciones a las que se tiene acceso.
 
 \begin{centering}
 \begin{figure}
@@ -153,13 +164,14 @@ El panel de control se encuentra a la izquierda de la pantalla (ver Figura \ref{
 \end{figure}
 \end{centering}
 
-Para salir de la plataforma, haga click sobre su identificación, ahí se despliega la opción de ``Cerrar Sesión''.
+Para salir de la plataforma, haga clic sobre su identificación, ahí se despliega la opción de ``Cerrar Sesión''.
 
 
-\section{Recuperar Contraseña}
+\section{Recuperar contraseña}
 \label{sec:recuperarcontrasena}
 
-En caso de que el usuario pierda u olvide su contraseña, puede crear una nueva ingresando al sitio web de la \href{https://ceiba-develop.firebaseapp.com}{plataforma}, haciendo click sobre el botón ``RECUPERAR CONTRASEÑA'' e ingresando el correo electrónico con el que está registrado en la plataforma (finalize el proceso haciendo click sobre ``ENVIAR'').
+En caso de que el usuario pierda u olvide su contraseña, puede crear una nueva.
+Ingrese al sitio web de la \href{https://plataforma.ceiba.org.co}{plataforma}, haciendo clic sobre el botón ``RECUPERAR CONTRASEÑA'' e ingrese el correo electrónico con el que está registrado en la plataforma (finalice el proceso haciendo clic sobre ``ENVIAR'').
 Una vez hecho este proceso, llegará al correo electrónico un vínculo que le permitirá generar una nueva contraseña de acceso.
 
 
@@ -169,12 +181,15 @@ Una vez hecho este proceso, llegará al correo electrónico un vínculo que le perm
 \label{sec:notificaciones}
 
 En la parte superior derecha de la pantalla se encuentra la campana de notificaciones (ver figura \ref{fig:notificaciones}), esta campana se activa, con un número encerrado en un circulo rojo, cuando existe algún evento (como una nueva reserva, o un cambio a una reserva existente).
-Al hacer click sobre la campana se despliega la lista de notificaciones existentes, en orden descendente según antiguedad (las más nuevas se presentan en la parte superior).
+Al hacer clic sobre la campana se despliega la lista de notificaciones existentes, en orden descendente según antigüedad (las más nuevas se presentan en la parte superior).
+El botón ``VER'', ubicado sobre cada notificación, permite ampliar el mensaje de la notificación y borrarla o cambiar su estado a ``visto''.
+Si se oprime el botón ``BORRAR'', entonces la notificación desaparecerá del listado.
+Si se cierra la notificación, entonces su estado cambiará a ``visto'' y el color de la notificación en el listado pasará de violeta a blanco. 
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/notificaciones.png} 
-  \caption{\label{fig:notificaciones} Ejemplo de posibles notificaciones. Para tener acceso a un listado de las notificaciones disponibles hag click sobre la campana (esquina superior derecha).}
+  \caption{\label{fig:notificaciones} Ejemplo de posibles notificaciones. Para tener acceso a un listado de las notificaciones disponibles haga clic sobre la campana (esquina superior derecha).}
 \end{figure}
 \end{centering}
 %----------------------------------------------------
@@ -185,40 +200,41 @@ Al hacer click sobre la campana se despliega la lista de notificaciones existent
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
 \clearpage % go to recto page
-Start of the text % chapter body
+
 
 \section{Buscador}
 \label{sec:buscador}
 
-Este ítem se encuentra en el panel de control de todos los usuarios de la plataforma, provee la funcionalidad principal de la plataforma.
+Este ítem se encuentra en el panel de control de todos los usuarios de la plataforma y provee la funcionalidad principal de la plataforma.
 Sirve para hacer búsquedas de equipos o servicios que estén registrados en la plataforma.
-Una vez se identifique el equipo o servicio es posible consultar la información de este o continuar con la reserva del mismo.
+Una vez se identifique el equipo o servicio de interés, es posible consultar la información de este o continuar con la reserva del mismo.
 
 \subsection{Buscador simple}
 \label{subsec:buscadorsimple}
 
-El buscador simple es la vista por defecto que se obtiene al hacer click sobre el ítem ``Buscador'' del menú que se despliega bajo ``Navegación'' (ver figura \ref{fig:buscadorsimple}).
+El buscador simple es la vista por defecto que se obtiene al hacer clic sobre el ítem ``Buscador'' del menú que se despliega bajo ``Navegación'' (ver figura \ref{fig:buscadorsimple}).
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/buscadorsimple.png} 
-  \caption{\label{fig:buscadorsimple} Buscador simple, se tiene acceso haciendo click en el item de ``Navegación'' en el panel de control. Es la vista que se obtiene por defecto. Se utiliza escribiendo unas pocas letras en el campo ``Palabra clave''. Despliega los equipos y servicios que contienen esta palabra en su nombre.}
+  \caption{\label{fig:buscadorsimple} Buscador simple, se tiene acceso haciendo clic en el ítem de ``Navegación'' en el panel de control. Es la vista que se obtiene por defecto. Se utiliza escribiendo unas pocas letras en el campo ``Palabra clave''. Despliega los equipos y servicios que contienen esta palabra en su nombre o palabraas clave.}
 \end{figure}
 \end{centering}
 
-El usuario debe ingresar una palabra clave en el campo de búsqueda para visualizar todos los servicios y equipos que contengan esa palabra.
-Los equipos y servicios se encuentran separados en dos tablas distintas, el campo de palabra clave hace la búsqueda sobre estas dos categorías de manera simultanea. 
+El usuario debe ingresar una palabra clave en el campo de búsqueda para visualizar todos los servicios y equipos que contengan esa palabra en su título o en sus palabras clave.
+Los equipos y servicios se encuentran separados en dos tablas distintas, el campo de palabra clave hace la búsqueda sobre estas dos clasificaciones de manera simultánea. 
 
-Una vez el Usuario ingrese unos pocos caracteres en el campo de búsqueda podrá ocurrir:
+Una vez el usuario ingrese unos pocos caracteres en el campo de búsqueda podrá ocurrir:
 \begin{enumerate}
 \item[a.] Si se encuentran datos (de los equipos o servicios) que coinciden con lo escrito en el campo de búsqueda, estos se muestran en la tabla de resultados.
 \item[b.] Si no se encuentran datos que coincidan con lo escrito en el campo de búsqueda, la tabla se mostrará vacía.
 \end{enumerate}
 
-Una vez se muestran los equipos o servicios en la tabla de resultados, puede proceder a dar clic sobre el equipo o servicio del que desee ver a más detalle, esto le arroja una alerta que le pide confirmación, de no darla se quedará en la vista actual.
+Una vez se muestran los equipos o servicios en la tabla de resultados, puede hecer clic sobre el equipo o servicio del que desee ver a más detalle, esta acción abrirá los detalles del equipo o servicio seleccionado en un nuevo panel.
 
-Cada equipo o servicio cuenta con su págnina de detalle, un ejemplo parcial se puede observar en la figura \ref{fig:detalleequipo}.
-En esta página se encentra información detallada del equipo o servicio de acuerdo con la información que demanda la plataforma, se despliega información de tipo:
+Cada equipo o servicio cuenta con su página de detalle, un ejemplo parcial se puede observar en la figura \ref{fig:detalleequipo}.
+En esta página se encuentra información detallada del equipo o servicio de acuerdo con la información que demanda la plataforma.
+Allí se despliega información de tipo:
 \begin{itemize}
 \item Información básica del equipo (nombre, marca, modelo, ubicación física, unidad de uso, precio base y usos potenciales).
 \item Mediciones y servicios relacionados.
@@ -227,7 +243,7 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 \item Información de mantenimiento y calibraciones.
 \item Información del encargado de equipo.
 \item Configuraciones.
-\item Información sobre horarios displonibles (ver sección \ref{subsec:comohacerreserva}).
+\item Información sobre horarios disponibles (ver sección \ref{subsec:comohacerreserva}).
 \item Equipos y servicios relacionados.
 
 \end{itemize}
@@ -235,7 +251,7 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/detalleequipo.png} 
-  \caption{\label{fig:detalleequipo} Vista inicial de la página de detalle de un equipo o servicio. Las reservas se hacen a través del calendario de reservas que se encuentra al final de estas.}
+  \caption{\label{fig:detalleequipo} Vista inicial de la página de detalle de un equipo o servicio. Las reservas se hacen por medio del calendario de reservas que se encuentra al final de esta página.}
 \end{figure}
 \end{centering}
 
@@ -244,26 +260,28 @@ En esta página se encentra información detallada del equipo o servicio de acuerd
 \label{subsec:buscadoravanzado}
 
 
-El buscador avanzado (ver figura \ref{fig:buscadoravanzado}) permite seleccionar: la institución, entidad, tipo y categoría del equipo o servicio.
-Para tener acceso a esta funcionalidad haga click sobre el botón ``AVANZADO'' que se encuetra a la derecha del botón ``SIMPLE''.
+El buscador avanzado (ver figura \ref{fig:buscadoravanzado}) permite seleccionar la institución, entidad, tipo y categoría del equipo o servicio.
+Para tener acceso a esta funcionalidad haga clic sobre el botón ``AVANZADO'' que se encuentra a la derecha del botón ``SIMPLE''.
 El buscador contiene varios campos para restringir la búsqueda de equipos y servicios.
-En la parte inferior derecha se ven dos botones llamados ``Limpiar Búsqueda'' y ``Aplicar filtro'', al hacer click sobre el último se  desplegará la información exacta de la búsqueda aplicada.
+En la parte inferior derecha se ven dos botones llamados ``Limpiar Búsqueda'' y ``Aplicar filtro''; al hacer clic sobre el último se  desplegará la información exacta de la búsqueda aplicada.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/buscadoravanzado.png} 
-  \caption{\label{fig:buscadoravanzado} Buscador avanzado, se tiene acceso haciendo click en el item de ``Navegación'' en el panel de control y luego haciendo click sobre ``AVANZADO'' en la vista que se obtiene por defecto. Se utiliza llenando uno o más de los campos de búsqueda. Despliega los equipos y servicios que contienen estos criterios de búsqueda de manera exacta.}
+  \caption{\label{fig:buscadoravanzado} Buscador avanzado, se tiene acceso haciendo clic en el ítem de ``Navegación'' en el panel de control y luego haciendo clic sobre ``AVANZADO''.
+    Se utiliza llenando uno o más de los campos de búsqueda. Despliega los equipos y servicios que contienen estos criterios de búsqueda de manera exacta.}
 \end{figure}
 \end{centering}
 
-Al hacer click sobre los resultados del buscador avanzado se obtiene el mismo comportamiento que el del buscador simple.
+Al hacer clic sobre los resultados del buscador avanzado se obtiene la información detallada del equipo o servicio seleccionado.
 
 \subsection{¿Cómo hacer una reserva?}
 \label{subsec:comohacerreserva}
 
 Todos los usuarios de la plataforma pueden hacer una reserva de un equipo o servicio.
 El usuario debe haber seleccionado un equipo o servicio desde alguno de los buscadores (ver sección \ref{sec:buscador}).
-Una vez en la página de información del equipo o servicio, se debe consultar la disponibilidad del equipo en el calendario de reservas que aparece al final. Un ejemplo de calendario se puede observar en la figura \ref{fig:calendarioequipo}.
+Una vez en la página de detalles del equipo o servicio, se debe consultar la disponibilidad de este en el calendario de reservas que aparece al final.
+Un ejemplo de calendario se puede observar en la figura \ref{fig:calendarioequipo}.
 
 \begin{centering}
 \begin{figure}
@@ -272,42 +290,48 @@ Una vez en la página de información del equipo o servicio, se debe consultar la 
 \end{figure}
 \end{centering}
 
-En el calendario de reservas se puede observar la disponibilidad del equipo o servicio, esta se evidencia a través de un código de colores:
+En el calendario de reservas se puede observar la disponibilidad del equipo, la cual se evidencia por medio de un código de colores:
 \begin{itemize}
 \item \textbf{Blanco}: Equipo disponible. 
 \item \textbf{Amarillo claro}: Equipo no disponible.
-\item \textbf{Otro color}: Equipo reservado. 
+\item \textbf{Rojo}: Equipo reservado.
+\item \textbf{Azul}: Equipo en mantenimiento.
 \end{itemize}
 
-Al hacer click sobre uno de los días en que el equipo o servicio esté disponible, se abre una página nueva donde se informa al usuario sobre algunas restricciones de reserva y se puede ver el detalle de la disponibilidad del día seleccionado.
-Para realizar una reserva se debe hacer click y arrastrar (manteniendo el botón presionado) sobre la hora de inicio deseada hasta la hora final. 
+Al hacer clic sobre uno de los días en que el equipo o servicio esté disponible, se abre una página nueva donde se informa al usuario sobre algunas restricciones de reserva y se puede ver el detalle de la disponibilidad del día seleccionado.
+Para realizar una reserva se debe hacer clic y arrastrar (mantener el botón presionado) sobre la hora de inicio deseada hasta la hora final. 
 
-Una vez suelte el botón, se despliega un diálogo nuevo de confirmación de reserve (se muestra un ejemplo en la figura \ref{fig:confirmacionreserva}). 
-En la convirmación de reserva se muestra:
+Una vez suelte el botón, se despliega un diálogo nuevo de confirmación de reserva (se muestra un ejemplo en la figura \ref{fig:confirmacionreserva}). 
+En la confirmación de reserva se muestra:
 \begin{itemize}
-\item Una opción para escojer la configuración del equipo o la variación del servicio.
+\item Una opción para escoger la configuración del equipo o la variación del servicio.
 \item Fecha y hora de inicio y finalización de reserva.
 \item Costo del uso del equipo o servicio.
-\item Los términos y condiciones de uso, para confirmar la reserva debe hacer click sobre cada término o condición para aceptarlo.
-\item Un campo de firma digital, debe escribir el correo electrónico con el que está registrado en la plataforma.
+\item \textbf{Los términos y condiciones de uso}.
+  Para confirmar la reserva, debe hacer clic sobre cada término o condición para aceptarlo.
+\item Un campo de firma digital.
+  En este campo de texto se debe escribir el correo electrónico con el que está registrado en la plataforma.
+  Esta firma digital implica que el usuario solicitante está de acuerdo con todos los términos y condiciones impuestos al uso del equipo o realización de un servicio.
 \end{itemize}
 
-La aceptación de todos los términos y condiciones (marcando las casillas de cada uno) y la firma digital (escribiendo el correo electrónico con el que está registrado en la plataforma), habilitan el botón ``RESERVAR'', al hacer click sobre este botón se enviará un correo a su cuenta con la cotización. Adicionalmente, se enviará una notificación al encargado de equipo quien debe aprobar la reserva. 
+La aceptación de todos los términos y condiciones (marque las casillas de cada uno) y la firma digital (escriba el correo electrónico con el que está registrado en la plataforma), habilita el botón ``RESERVAR''.
+Al hacer clic sobre este botón, se enviará un correo electrónico a su cuenta con un documento que indica la fecha y hora de la reserva, el costo de la misma y las condiciones que rigen el uso del equipo o la realización del servicio.
+Además, se enviará una notificación al encargado de equipo quien debe aprobar la reserva. 
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/confirmacionreserva.png} 
-  \caption{\label{fig:confirmacionreserva} Diálogo de confirmación de reserva. Para completar el proceso el usuario debe (a) aceptar (haciendo click sobre) cada término y condición por aparte, (b) escribir su email a manera de firma de aceptación de los términos y condiciones y (c) hacer click sobre el botón ``RESERVAR'' (aparece cuando se cumplen las dos condiciones anteriores).}
+  \caption{\label{fig:confirmacionreserva} Diálogo de confirmación de reserva. Para completar el proceso el usuario debe (a) aceptar (haciendo clic sobre) cada término y condición por aparte, (b) escribir su correo electrónico a manera de aceptación de los términos y condiciones y (c) hacer clic sobre el botón ``RESERVAR'' (aparece cuando se cumplen las dos condiciones anteriores).}
 \end{figure}
 \end{centering}
 
-{\Large \textbf{IMPORTANTE:}} Se recomienda que el usuario que hace la reserva se comunique con el encargado de equipo para discutir detalles particulares de sus necesidades de uso del equipo o servicio.
+{\Large \textbf{Importnte:}} Se recomienda que el usuario que hace la reserva se comunique con el encargado de equipo para discutir detalles particulares de sus necesidades de uso del equipo o servicio.
 
 
 \section{Mis reservas}
 \label{sec:reservas}
 
-Este ítem se encuentra en el panel de control de todos los usuarios de la plataforma, es el lugar donde los usuarios pueden consultar el estado de sus reservas y consultar su historia de las mismas.
+Este ítem se encuentra en el panel de control de todos los usuarios de la plataforma, es el lugar donde los usuarios pueden consultar el estado de sus reservas y consultar el historial de las mismas.
 
 \begin{centering}
 \begin{figure}
@@ -316,9 +340,12 @@ Este ítem se encuentra en el panel de control de todos los usuarios de la plataf
 \end{figure}
 \end{centering}
 
-Para acceder a esta funcionalidad, primero se debe hacer click sobre el ítem de ``Navegación'' en el menú principal, seguido de ``Mis reservas'' en las opciones que se despliegan. La página que se muestra es similar a la de la figura \ref{fig:misreservas}; se encuentran dos botones en la parte superior izquierda (``RESERVAS DE EQUIPO'' y ``SOLICITUDES DE SERVICIO'') que despliegan un listado del todas las reservas de estos tipos hechas por el usuario. 
+Para acceder a esta funcionalidad, primero se debe hacer clic sobre el ítem de ``Navegación'' en el menú principal, seguido de ``Mis reservas'' en las opciones que se despliegan.
+La página que se muestra es similar a la de la figura \ref{fig:misreservas}.
+En esta vista se encuentran dos botones en la parte superior izquierda (``RESERVAS DE EQUIPO'' y ``SOLICITUDES DE SERVICIO'') que despliegan un listado del todas las reservas de estos tipos hechas por el usuario con su cuenta. 
 
-El listado de reservas se puede reducir a través de un filtro de búsqueda u ordenar según las categorías que se despliegan (haciendo click sobre uno de los encabezados de la tabla desplegada). Hacer click sobre una de las reservas abre información detallada de esta. Si la reserva se encuentra en un estado diferente de ``Cancelada'' es posible cancelarla haciendo click sobre el botón ``CANCELAR RESERVA''.
+El listado de reservas se puede reducir con un filtro de búsqueda u ordenar según las categorías que se despliegan (haga clic sobre uno de los encabezados de la tabla desplegada).
+Hacer clic sobre una de las reservas abre información detallada de esta. Si la reserva se encuentra en un estado diferente de ``Cancelada'' es posible cancelarla haciendo clic sobre el botón ``CANCELAR RESERVA''.
 
 
 
@@ -330,60 +357,64 @@ El listado de reservas se puede reducir a través de un filtro de búsqueda u orde
 \includegraphics[width=0.75\textwidth]{Imagenes/logo.png} %logo de Ceiba
 \end{centering}
 \clearpage % go to recto page
-La opción de Administración está disponible para usuarios Encargados de Equipo y Administradores.
-En esta se encuentran las opciones para cargar equipos o servicios, modificar su información, estado de disponibilidad, hacer la gestión de reservas y solicitudes entre otros.
-Adicionalmente, los usuarios Administradores pueden hacer la gestión relacionada con los usuarios de sus instituciones y con la creación o actualización de infraestructura. 
-La figura \ref{fig:vistaadministracion} muestra, en la parte izquierda las opciones del menú de administración de un usuario Encargado de Equipo y en la derecha las de un usuario Administrador. 
-Esta vista se obtiene al hacer click sobre el ítem ``Administración'' en el menú de la izquierda. 
+
+La opción de administración está disponible para usuarios con el rol de encargados de equipo y administradores.
+En esta se encuentran las opciones para cargar equipos o servicios, modificar su información y su estado de disponibilidad, hacer la gestión de reservas y solicitudes entre otros.
+Adicional, los usuarios administradores pueden controlar el acceso de los usuarios que pertenecen a la misma institución y gestionar la creación, eliminación o actualización de infraestructura.
+La figura \ref{fig:vistaadministracion} muestra, en la parte izquierda las opciones del menú de administración de un usuario encargado de equipo y en la derecha las de un usuario administrador. 
+Esta vista se obtiene al hacer clic sobre el ítem ``Administración'' en el menú de la izquierda. 
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/vistaadministracion.png} 
-  \caption{\label{fig:vistaadministracion} Vista de las opciones de administración para el usuario Encargado de Equipo (izquierda) y el usuario Administrador (derecha).}
+  \caption{\label{fig:vistaadministracion} Vista de las opciones de administración para el usuario encargado de equipo (izquierda) y el usuario administrador (derecha).}
 \end{figure}
 \end{centering}
 
 \section{Infraestructura}
 \label{sec:infraestructura}
 
-El submenú de ``Infraestructura'' aparece únicamente para el usuario Administrador, los ítems que se despliegan al hacer click sobre este son los mismos que se despliegan cuando el ususario Encargado de Equipo habre el menú de Administración.
+El menú de ``Infraestructura'' aparece solo para el usuario administrador, los ítem que se despliegan al hacer clic sobre este son los mismos que se despliegan cuando el encargado de equipo abre el menú de Administración.
 
-Este submenú agrupa las funcionalidades de la plataforma en cuanto a equipos y servicios (permite la creación y modificación de estos).
-Adicionalmente, permite el manejo de las reservas hechos por otros usuarios de la plataforma.
+Este menú agrupa las funcionalidades de la plataforma en cuanto a equipos y servicios (permite la creación, eliminación, modificación y gestión de los mismos).
+Además, permite el manejo de las reservas hechas por otros usuarios de la plataforma.
 
 \subsection{Equipos}
 \label{subsec:equipos}
 
-Al hacer click sobre este ítem se despliega una lista con los equipos, la lista se presenta de acuerdo con el perfil de la cuenta: para Encargado de Equipo se presentan los equipos que están asignados al usuario; para Administrador, se presentan todos los equipos que están asociados a la Universidad del Administrador.
+Al hacer clic sobre este ítem se despliega una lista con los equipos.
+La lista que se presenta varía según el rol asociado a la cuenta: para un encargado de equipo, se presentan los equipos asociados a su cuenta; para un administrador, se presentan todos los equipos asociados a la institución a la que pertenece el administrador.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/adminequipos.png} 
-  \caption{\label{fig:adminequipos} Vista de la página de administración para equipos. La parte superior presenta la lista de equipos (según el tipo de usuario). La parte inferior presenta los detalles del equipo seleccionado, para seleccionar un equipo se debe dar click sobre su fila correspondiente en la tabla superior.}
+  \caption{\label{fig:adminequipos} Vista de la página de administración para equipos. La parte superior presenta la lista de equipos (según el tipo de usuario).
+    La parte inferior presenta los detalles del equipo seleccionado.
+    Para seleccionar un equipo se debe dar clic sobre su fila correspondiente en la tabla superior.}
 \end{figure}
 \end{centering}
 
-En la esquina superior derecha se encuentran botones para ``SOLICITAR TRANSFERENCIA'' (únicamente el usuario Encargado de Equipos, ver sección \ref{subsec:transferenciaequipos}) o para crear un ``NUEVO EQUIPO'' (ver sección \ref{subsec:creacionequipos}).
+En la esquina superior derecha se encuentran botones para ``SOLICITAR TRANSFERENCIA'' (únicamente el usuario encargado de equipos, ver sección \ref{subsec:transferenciaequipos}) o para crear un ``NUEVO EQUIPO'' (ver sección \ref{subsec:creacionequipos}).
 
-La lista de equipos asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
-Al hacer click sobre uno de los equipos de la tabla, se habre el asistente que premite ver los detalles del equipo.
-En este asistente se presentan botones que permiten obtener las estadísticas de reservas del equipo (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{sec:reporteequipos}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
+La lista de equipos asignados se puede filtrar utilizando el filtro ubicado en la parte superior del panel u ordenando por alguno de los encabezados de la tabla.
+Al hacer clic sobre uno de los equipos de la tabla, se abre la página que permite ver los detalles del equipo.
+En este asistente se presentan botones que permiten obtener las estadísticas de reservas del equipo (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{chap:reportes}) o administrar las reservas hechas por otros usuarios sobre el equipo seleccionado (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
 Se puede ver un ejemplo en la figura \ref{fig:adminequipos}.
 
 
-\subsubsection{Transferencia de equipos}
+\subsubsection{Transferencia de equipos ES NECESARIO REESCRIBIR, NO ES ACORDE AL PROCEDIMIENTO}
 \label{subsec:transferenciaequipos}
 
-La transferencia de equipos permite asignarle a un Encargado de Equipo (el receptor) los equipos y servicios asignados a otro usuario Encargado de Equipo (el donante).
+La transferencia de equipos permite asignarle a un encargado de equipo (el receptor) los equipos y servicios asignados a otro usuario encargado de equipo (el donante).
 El procedimiento debe ser llevado a cabo por el donante y es el siguiente:
 \begin{enumerate}
 \item En el menú de  Administración, dar clic en ``Equipos'' y en las opciones que se despliegan dar clic en el botón ``SOLICITAR TRANSFERENCIA''.
-\item Se desplegará una ventana modal con un campo de tipo texto, donde deberá ingresar el email de la persona a la cual se le transferirán los equipos (el receptor) el email ingresado deberá cumplir con los siguientes criterios:
+\item Se desplegará una ventana modal con un campo de tipo texto, donde deberá ingresar el correo electrónico de la persona a la cual se le transferirán los equipos (el receptor) el correo electrónico ingresado deberá cumplir con los siguientes criterios:
   \begin{itemize}
   \item Pertenecer a la misma institución (tener el mismo dominio del donante).
-  \item El receptor debe ser Encargado de Equipo.
+  \item El receptor debe ser encargado de equipo.
   \end{itemize}
-\item Una vez se acepte la identificación del receptor, dar click en el botón de ``ACEPTAR'' en la ventana que se despliega.
+\item Una vez se acepte la identificación del receptor, dar clic en el botón de ``ACEPTAR'' en la ventana que se despliega.
 \end{enumerate}
 
 Es importante tener en cuenta que para hacer esta solicitud es necesario que el correo electrónico que se ingresa para la solicitud (el del receptor) debe tener ya equipos previamente creados; se hará la transferencia de todos los equipos y servicios relacionados del donante y pasarán a cargo del receptor. 
@@ -394,32 +425,34 @@ Por último, se eliminarán todas las solicitudes relacionadas con los equipos y s
 \subsubsection{Creación de un nuevo equipo}
 \label{subsec:creacionequipos}
 
-Esta opción permite la creación de un equipo, para crear más de un equipo a la vez utilice la opción de carga masiva (sección \ref{subsec:cargaequipos}.
-Para crear un equipo haga click sobre el botón ``NUEVO EQUIPO'' (ver figura \ref{fig:adminequipos}).
+Esta opción permite la creación de un equipo mediante un asistente de configuración.
+Crear más de un equipo a la vez es posible mediante el uso de la opción de carga de equipos, pero el uso de la misma solo se aconseja si se van a crear más de cinco equipos a la vez (sección \ref{sec:cargaequipos}).
+Para crear un equipo haga clic sobre el botón ``NUEVO EQUIPO'' (ver figura \ref{fig:adminequipos}).
 Esto despliega el asistente de creación de equipos, tal como lo muestra la figura \ref{fig:asistentecreacionequipos}.
-Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título; adicionalmente en la tabla \ref{tab:camposequipos} encontrará un listado de estos campos con los que son de caracter obligatorio resaltados.
+Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título; adicionalmente en el cuadro \ref{tab:camposequipos} encontrará un listado de estos campos, resaltando los que son de carácter obligatorio.
 Los pasos a seguir para crear un equipo son los siguientes:
 \begin{enumerate}
-\item Hacer click sobre el botón ``NUEVO EQUIPO'' en la página de administración de equipos (ver figura \ref{fig:adminequipos}).
-\item En caso de querer que el equipo no esté disponible para reservar hacer click sobre el botón ``PONER EQUIPO COMO NO DISPONIBLE'' (ver figura \ref{fig:asistentecreacionequipos}).
-  Esto hará que el equipo no aparezca en las búsquedas hachas por usuarios Navegantes, también bloquea la posibilidad de hacer alguna reserva y bloquea los campos que definen la disponibilidad.
-  La plataforma permite crear equipos que no se pueden manipular directamente por el usuario, pero a cambio tienen servicios asociados prestados por el personal de las instalaciones en donde se encuentra el equipo.
+\item En caso de querer que el equipo no esté disponible para reservar hacer clic sobre el botón ``PONER EQUIPO COMO NO DISPONIBLE'' (ver figura \ref{fig:asistentecreacionequipos}).
+  Esto hará que el equipo aparezca en las búsquedas hechas por usuarios navegantes pero no sea posible hacer reservas sobre este.
+  También bloquea la posibilidad de hacer alguna reserva y bloquea los campos que definen la disponibilidad.
+  La plataforma permite crear equipos que no se pueden reservar por usuarios navegante pero que tienen servicios asociados prestados por el personal de las instalaciones en donde se encuentra el equipo.
   Existen varias razones para limitar el acceso directo al equipo, tales como el nivel de complejidad de uso, el tipo de reactivos utilizados (por ejemplo, reactivos controlados) y el nivel de seguridad de las instalaciones en donde se encuentra el equipo (por ejemplo, zonas hospitalarias), entre otras.
-  \textbf{NOTA}: el acceso y el uso del equipo están condicionados al cumplimiento de todos los términos y condiciones impuestos.
+  \textbf{Nota}: el acceso y el uso del equipo están condicionados al cumplimiento de todos los términos y condiciones impuestos.
 
 \item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
-  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposequipos}.
-  En caso de que el equipo esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
+  En la tabla \ref{tab:camposequipos} se pueden ver los campos necesarios para el registro y su caracter de obligatoriedad.
+  En caso de que el equipo esté siendo creado desde una cuenta de administrador, es obligatorio ingresar el correo electrónico del encargado de equipo que quedará a cargo.
+  El encargado debe ser de la misma institución a la que pertenece el administrador.
 \item Configurar la disponibilidad del equipo, la disponibilidad es semanal y cada día de la semana puede tener una configuración diferente.
-\item Definir los Términos y Condiciones, cada térmono debe definirse por separado (se añaden nuevos términos haciendo click sobre el botón ``AFREGAR NUEVO TÉRMINO/CONDICIÓN'').
+\item Definir los Términos y Condiciones, cada término debe definirse por separado (se añaden nuevos términos haciendo clic sobre el botón ``AGREGAR NUEVO TÉRMINO/CONDICIÓN'').
 \item Añadir las diferentes configuraciones disponibles para el equipo.
-\item Cargar la documentación de calidad.
+\item Cargar la documentación de aseguramiento de calidad.
   Se debe cargar al menos un archivo.
-  Los archivos deben estar en formato pdf y tienen un límite de tamaño de 600KB).
-  De no cargar un archivo de calidad el equipo quedará como \textbf{no disponible}.
-\item Hacer click sobre el botón ``CREAR EQUIPO''.
-  Si los campos obligatorios están completos se registra un nuevo equipo asignado al ususario Encargado de Equipo que hizo el proceso de creación.
-  De no estar completos los campos obligatorios la plataforma informa al usuario y le indica qué campo falta por completar.
+  Los archivos deben estar en formato pdf y tienen un límite de tamaño de 600KB.
+  De no cargar un archivo de calidad el equipo quedará como \textbf{inactivo}.
+\item Hacer clic sobre el botón ``CREAR EQUIPO''.
+  Si los campos obligatorios están completos, se registra un nuevo equipo asignado a la cuenta del usuario encargado de equipo que hizo el proceso de creación.
+  De no estar completos los campos obligatorios, la plataforma informa al usuario y el proceso no tiene efecto dentro de la plataforma.
 \end{enumerate}
 
 \begin{centering}
@@ -429,7 +462,7 @@ Los pasos a seguir para crear un equipo son los siguientes:
 \end{figure}
 \end{centering}
 
-A continuación están las definiciones de cada campo, algunos campos continene un símbolo de interrogación (?) en la plataforma, al pasar el puntero del ratón sobre estos se obtiene mayor información.
+A continuación están las definiciones de cada campo, algunos campos contienen un símbolo de interrogación (?) en la plataforma, al pasar el puntero del ratón sobre estos se obtiene mayor información.
 Los campos que están \textbf{resaltados} son obligatorios.
 \begin{itemize}
 \item \textbf{Institución}: Se refiere a la universidad asociada a la plataforma.
@@ -437,8 +470,8 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Es una de las siete universidades asociadas a la Fundación Ceiba.
 \item \textbf{Instalación}: Espacio físico que contiene la infraestructura de investigación dentro de una institución.
   Generalmente, se trata de un laboratorio, centro o taller.
-  Son creadas dentro de la plataforma por los usuarios Administradores, todo equipo o servicio debe estar asociado a una instalación.
-\item \textbf{Código de inventario}: Es el código de inventario del equipo que se utiliza dentro del sistema de clasificación de activos de su institución.
+  Son creadas dentro de la plataforma por los usuarios administradores, todo equipo o servicio debe estar asociado a una instalación.
+\item \textbf{Código de inventario}: Es el código del equipo que se utiliza dentro del sistema de clasificación de activos de su institución.
   Este código sirve para identificar cada uno de sus equipos.
   Si su institución no dispone de un sistema de clasificación de activos, utilice un código alfanumérico diferente para para cada equipo.
 \item \textbf{Nombre}: El nombre con el que se refiere al equipo, este nombre se utilizará en las búsquedas de equipos disponibles dentro de la plataforma.
@@ -448,7 +481,8 @@ Los campos que están \textbf{resaltados} son obligatorios.
     Por ejemplo, para un Sistema de secuenciación de nueva generación, la marca es ``ThermoFisher scientific''; mientras que para un Microscopio de fluorescencia automatizado, la marca puede ser ``Olympus''.
 \item \textbf{Modelo}: El modelo específico, la serie o la familia de productos asociados al equipo.
   Es conveniente que utilice la designación establecida por el fabricante.
-  Por ejemplo, para el Sistema de secuenciación de nueva generación ThermoFisher Scientific, el modelo es ``Ion Proton'''; mientras que para el Microscopio de fluorescencia automatizado Olympus, el modelo es ``BX63''.
+  Por ejemplo, para el Sistema de secuenciación de nueva generación ThermoFisher Scientific, el modelo es ``Ion Proton''.
+  Mientras que para el Microscopio de fluorescencia automatizado Olympus, el modelo es ``BX63''.
   
 \item \textbf{Categoría}: La categoría de equipo corresponde a una clasificación física del aparato con base en su función.
   La plataforma proporciona algunas opciones en las que puede estar la categoría que cobija a su equipo.
@@ -460,13 +494,13 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Si dentro de las opciones no se encuentra el clasificador deseado, ingrese el tipo de equipo más apropiado para su caso.
   Por ejemplo, para el equipo Sistema de secuenciación de nueva generación de marca ThermoFisher Scientific y modelo Ion Proton, el tipo podría ser ``Infraestructura para servicios a la industria''.
   Para el equipo Microscopio de fluorescencia automatizado de marca Olympus y modelo es BX63, el tipo podría ser ``Infraestructura de investigación''. 
-  Dado el alcance de la plataforma, generalmente, el tipo de los equipos de la plataforma podráa definirse como ``Infraestructura de investigación'' o ``Infraestructura para docencia''.  
+  Dado el alcance de la plataforma, generalmente, el tipo de los equipos de la plataforma podrá definirse como ``Infraestructura de investigación'' o ``Infraestructura para docencia''.  
 \item \textbf{Unidad de uso}: Es la unidad de tiempo o muestral por la que se cobra el uso del equipo.
   Las reservas y las cotizaciones se hacen en múltiplos enteros de esta unidad.
   Por ejemplo, la unidad de cobro de un microscopio de fluorescencia es la hora, ya que este equipo se alquila por horas; el equipo no se puede reservar por media hora.
 \item \textbf{Precio}: Defina el costo por unidad de uso que se cobrará con relación a este equipo. Por ejemplo, una hora en un microscopio de fluorescencia podría costar \$ 50000.
   Ingrese solamente el número, sin puntos, comas, ni signos.
-\item \textbf{Periodo de antelación}: Es el tiempo mínimo, en horas que se reqiere antes de la reserva.
+\item \textbf{Periodo de antelación}: Es el tiempo mínimo, en horas que se requiere antes de la reserva.
   Por ejemplo, si el tiempo de antelación en 24 horas, la plataforma no permitirá reservar el equipo en las siguientes 24 horas al momento en que se inicia un proceso de reserva.
 \item \textbf{Uso potencial}: Se refiere a técnicas o protocolos en los que sea útil este equipo y para los cuales se utilice más frecuentemente.
   Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, un uso potencial sería ``Microscopía confocal''.
@@ -474,7 +508,7 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Se recomienda agregar un vínculo a la página institucional de las instalaciones en donde se encuentra el equipo.
   De lo contrario, se sugiere ingresar un vínculo al sitio web del fabricante.
 \item \textbf{Descripción}: Espacio para describir las principales características técnicas del equipo, sus funcionalidades, funciones especiales y/o usos más comunes; introduzca esta información en forma de párrafo.
-  Esta información es la primere que encontrará el usuario Navegante, por lo tanto debe ser relevante.
+  Esta información es la primera que encontrará el usuario navegante, por lo tanto debe ser relevante.
   Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, su descripción podría ser ``El microscopio de fluorescencia BX63 es un microscopio motorizado de controles táctiles o por computadora, de fácil operación, gracias a su software de control y análisis cellSens imaging. Posee una capacidad de detección de fluorescencia mejorada y una reducción de la autoflorescencia y la reflexión de retorno. Sus detectores permiten llevar a cabo técnicas basadas en fluorescencia para obtener imágenes en 2 y 3 dimensiones''.
 \item Información de adquisición: Espacio para incluir información del equipo en caso de que haya sido adquirido con un proyecto de Colciencias, Ministerio de Ambiente, Regalías u otra fuente de financiación que requiera ser identificada, incluir el nombre del proyecto, el año de inicio y las condiciones de uso impuestas por la institución financiadora.
 \item Observaciones: Registre cualquier información extra que se encuentre fuera de los campos anteriormente diligenciados. 
@@ -483,27 +517,27 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Estos términos se utilizarán para aumentar las posibilidades de que un usuario encuentre el equipo mediante el uso de términos de asociación relevante.
   Es conveniente agregar al menos tres palabras claves al equipo.
   Por ejemplo, para el equipo Microscopio de fluorescencia automatizado, de marca Olympus y modelo BX63, sus palabras claves podrían ser ``Imagen 3D'', ``Fluoróforo'', ``Histología''.
-\item Disponibilidad: Este aparte permite definir los horarios en los que los usuarios Navegantes podrán hacer uso del equipo.
-  La disponibilidad es semanal y se discrimina en días y horas (bloques contínuos).
+\item Disponibilidad: Este aparte permite definir los horarios en los que los usuarios navegantes podrán hacer uso del equipo.
+  La disponibilidad es semanal y se discrimina en días y horas (bloques contiguos).
   En la figura \ref{fig:disponibilidadequipo} puede ver un ejemplo de un equipo configurado como disponible el lunes todo el día y jueves en horas de la tarde
 \item Unidades de medida: Corresponde al tipo de medida (unidades, resolución, etc) que resulta del  del uso de una técnica sobre el equipo. 
 \item Términos y condiciones: Es el conjunto de todas las condiciones necesarias para que el solicitante pueda acceder al equipo.
-  Es un conjunto de reglas impuestas por el Encargado de Equipo, la instalación o la institución que determinan y condicionan la utilización de un equipo.
-  Dentro de estas se incluyen aspectos como las condiciones al ingreso a las instalaciones, la seguridad de la muestra y el personal, los límites físicos del equipo o el anílisis, la propiedad de los resultados, los tiempos de análisis, entre otros.
+  Es un conjunto de reglas impuestas por el encargado de equipo, la instalación o la institución que determinan y condicionan la utilización de un equipo.
+  Dentro de estas se incluyen aspectos como las condiciones al ingreso a las instalaciones, la seguridad de la muestra y el personal, los límites físicos del equipo o el análisis, la propiedad de los resultados, los tiempos de análisis, entre otros.
 \item Configuraciones: corresponde al conjunto de cambios que se realizan sobre el uso de un equipo y que redundan en la obtención de resultados de naturaleza diferente a los obtenidos con el equipo base.
   Estos cambios corresponden al uso de accesorios, otros equipos o técnicas diferentes a los que se utilizan con el equipo base.
   Pueden incluirse tantas variaciones como se desee.
   Cada variación presenta unidades de uso, precio y disponibilidades diferentes a las del equipo base.
 \item Documentos de calidad: son documentos relevantes para mostrar el estado y las capacidades del equipo.
   Ejemplos son certificados de calibración o de mantenimiento.
-  La plataforma exije al menos un certificado de calidad (en la forma de un documento pdf de no más de 600KB) para poder poner el equipo en estado disponible.
+  La plataforma exige al menos un certificado de calidad (en la forma de un documento pdf de no más de 600KB) para poder poner el equipo en estado disponible.
 \end{itemize}
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/disponibilidadequipo.png} 
-  \caption{\label{fig:disponibilidadequipo} Ejemplo del asistente para definir la disponibilidad de equipos para los usuarios Navegante. El equipo se presentará como disponible los dias marcados en la franja horaria señalada.
-    La reserva se debe hacer con, al menos, las horas definidas en el campo ``periodo de antelación'' de anterioridad.}
+  \caption{\label{fig:disponibilidadequipo} Ejemplo del asistente para definir la disponibilidad de equipos.
+    El equipo se presentará como disponible los días marcados en la franja horaria señalada.}
 \end{figure}
 \end{centering}
 
@@ -538,63 +572,62 @@ Los campos que están \textbf{resaltados} son obligatorios.
     Configuraciones                 & $\Box$ & \textbf{Documentos de calidad}* & $\Box$ \\
     \hline
   \end{tabular}
-  \caption{Listado de campos utilizados en la creación de equipos. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionequipos}.\newline
+  \caption{Listado de campos utilizados en la creación de equipos. Los ítem \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionequipos}.\newline
   {\footnotesize * Obligatorio únicamente si el equipo está disponible para reserva.}}
   \label{tab:camposequipos}
 \end{table}
 \clearpage
 
-\subsubsection{Configuraciones extra de equipos}
+\subsubsection{Configuraciones de equipos}
 \label{subsubsec:configuracionextra}
 
 Adicionalmente, cada equipo puede contener diferentes configuraciones, las cuales se logran mediante el uso de accesorios, otros equipos o protocolos diferentes.
-
-\subsection{Carga equipos}
-\label{subsec:cargaequipos}
-
-Esta opción se debe utilizar para hacer carga masiva de equipos.
-
 
 
 \subsection{Servicios}
 \label{subsec:servicios}
 
-Al hacer click sobre este ítem se despliega una lista con los servicios, la lista se presenta de acuerdo con el perfil de la cuenta: para Encargado de Equipo se presentan los servicios que están asignados al usuario; para Administrador, se presentan todos los servicios que están asociados a la Universidad del Administrador.
+Al hacer clic sobre este ítem se despliega una lista con los servicios, la lista se presenta de acuerdo con el perfil de la cuenta: para encargado de equipo se presentan los servicios que están asignados al usuario.
+Para administrador, se presentan todos los servicios que están asociados a la universidad del administrador.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/adminservicios.png} 
-  \caption{\label{fig:adminservicios} Vista de la página de administración para servicios. La parte superior presenta la lista de servicios (según el tipo de usuario). La parte inferior presenta los detalles del servicio seleccionado, para seleccionar un servicio se debe dar click sobre su fila correspondiente en la tabla superior.}
+  \caption{\label{fig:adminservicios} Vista de la página de administración de servicios. La parte superior presenta la lista de servicios (según el tipo de usuario).
+    La parte inferior presenta los detalles del servicio seleccionado.
+    Para seleccionar un servicio se debe dar clic sobre su fila correspondiente en la tabla superior.}
 \end{figure}
 \end{centering}
 
-En la esquina superior derecha se encuentra un botónes para crear un ``NUEVO SERVICIO'' (ver sección \ref{subsec:creacionservicios}).
+En la esquina superior derecha se encuentra un botones para crear un ``NUEVO SERVICIO'' (ver sección \ref{subsec:creacionservicios}).
 
 La lista de servicios asignados se puede filtrar utilizando un buscador u ordenando por alguno de los encabezados de la tabla.
-Al hacer click sobre uno de los servicios de la tabla, se habre el asistente que premite ver los detalles del servicio.
+Al hacer clic sobre uno de los servicios de la tabla, se abre el asistente que permite ver los detalles del servicio.
 En este asistente se presentan botones que permiten obtener las estadísticas de reservas del servicio (botón ``VER ESTADÍSTICAS'' ---ver sección \ref{chap:reportes}) o administrar las reservas hechas por otros usuarios (botón ``ADMINISTRAR RESERVAS'' ---ver sección \ref{subsec:reservasysolicitudes}).
 
 \subsubsection{Creación de un nuevo servicio}
 \label{subsec:creacionservicios}
 
-Esta opción permite la creación de un servicio, para crear más de un servicio a la vez utilice la opción de carga masiva (sección \ref{subsec:cargaservicios}.
-Para crear un servicio haga click sobre el botón ``NUEVO SERVICIO'' (ver figura \ref{fig:adminservicios}).
+Esta opción permite la creación de un servicio mediante un asistente de configuración.
+Crear más de un servicio a la vez es posible mediante el uso de la opción de carga de servicios, pero el uso de la misma solo se aconseja si se van a crear más de cinco servicios a la vez (ver sección \ref{subsec:cargaservicios}).
+Para crear un nuevo servicio, haga clic sobre el botón ``NUEVO SERVICIO'' (ver figura \ref{fig:adminservicios}).
 Esto despliega el asistente de creación de servicios, tal como lo muestra la figura \ref{fig:asistentecreacionservicios}.
-Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título; adicionalmente en la tabla \ref{tab:camposervicios} encontrará un listado de estos campos con los que son de caracter obligatorio resaltados.
+Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título.
+Adicional, en el cuadro \ref{tab:camposervicios} encontrará un listado de estos campos resaltando aquellos que son de caracter obligatorio.
 Los pasos a seguir para crear un servicio son los siguientes:
 \begin{enumerate}
-\item Hacer click sobre el botón ``NUEVO SERVICIO'' en la página de administración de servicios (ver figura \ref{fig:adminservicios}).
-  \textbf{NOTA}: el acceso y el uso del servicio están condicionados al cumplimiento de todos los términos y condiciones impuestos.
-
-\item Llenar los campos que requiere el asistente. La definición de cada campo se encuentra al final de esta sección.
-  Se pueden ver los campos y cuales son obligatorios para terminar el registro de forma exitosa en la tabla \ref{tab:camposervicios}.
-  En caso de que el servicio esté siendo creado desde una cuanta de Administrador es obligatorio dar el correo electrónico del Encargado de Equipo que quedará a cargo; el Encargado debe ser de la misma institución a la que pertenece el Administrador.
+\item Hacer clic sobre el botón ``NUEVO SERVICIO'' en la página de administración de servicios (ver figura \ref{fig:adminservicios}).
+  
+\item Llenar los campos que requiere el asistente.
+  La definición de cada campo se encuentra al final de esta sección.
+  Se pueden ver los campos y cuáles son obligatorios para terminar el registro de forma exitosa en el cuadro \ref{tab:camposervicios}.
+  En caso de que el servicio esté siendo creado desde una cuenta de administrador es obligatorio dar el correo electrónico del encargado de equipo que quedará a cargo; el encargado debe ser de la misma institución a la que pertenece el administrador.
 \item Incluir el o los equipos con los que está relacionado el servicio.
-\item Definir los Términos y Condiciones, cada térmono debe definirse por separado (se añaden nuevos términos haciendo click sobre el botón ``AFREGAR NUEVO TÉRMINO/CONDICIÓN'').
-\item Añadir las diferentes variaciones que presenta el servicio.
-\item Hacer click sobre el botón ``CREAR SERVICIO''.
-  Si los campos obligatorios están completos se registra un nuevo servicio asignado al ususario Encargado de Equipo que hizo el proceso de creación.
-  De no estar completos los campos obligatorios la plataforma informa al usuario y le indica qué campo falta por completar.
+\item Definir los Términos y Condiciones, cada término debe definirse por separado (se añaden nuevos términos haciendo clic sobre el botón ``AGREGAR NUEVO TÉRMINO/CONDICIÓN'').
+\item Configurar las diferentes variaciones que presenta el servicio.
+\item Hacer clic sobre el botón ``CREAR SERVICIO''.
+  Si los campos obligatorios están completos, se registra un nuevo servicio asignado al usuario encargado de equipo que hizo el proceso de creación.
+  De no estar completos los campos obligatorios, la plataforma informa al usuario y el proceso no tiene efecto sobre la plataforma.
 \end{enumerate}
 
 \begin{centering}
@@ -604,27 +637,27 @@ Los pasos a seguir para crear un servicio son los siguientes:
 \end{figure}
 \end{centering}
 
-A continuación están las definiciones de cada campo, algunos campos continene un símbolo de interrogación (?) en la plataforma, al pasar el puntero del ratón sobre estos se obtiene mayor información.
+A continuación se presentan las definiciones de cada campo, algunos campos contienen un símbolo de interrogación (?) en la plataforma, al hacer clic sobre estos se obtiene mayor información.
 Los campos que están \textbf{resaltados} son obligatorios.
 \begin{itemize}
 \item \textbf{Institución}: Se refiere a la universidad asociada a la plataforma.
   Todo equipo o servicio debe estar asociado a una institución.
   Es una de las siete universidades asociadas a la Fundación Ceiba.
 \item \textbf{Instalación}: Espacio físico que contiene la infraestructura de investigación dentro de una institución.
-  Generalmente, se trata de un laboratorio, centro o taller.
-  Son creadas dentro de la plataforma por los usuarios Administradores, todo equipo o servicio debe estar asociado a una instalación.
+  Casi siempre se trata de un laboratorio, centro o taller.
+  Son creadas dentro de la plataforma por los usuarios administradores, todo equipo o servicio debe estar asociado a una instalación.
 \item \textbf{Nombre}: El nombre con el que se refiere al servicio, este nombre se utilizará en las búsquedas de servicios disponibles dentro de la plataforma.
   Es conveniente utilizar una designación fácil de entender y con términos que sean comunes en el campo en el que se enmarque el servicio.
-  Por ejemplo, un servicio puede ser una ``Secuenciación de nueva generación de única molécula para ácidos nucléicos''; otro servicio puede ser ``Microscopía confocal''.
+  Por ejemplo, un servicio puede ser una ``Secuenciación de nueva generación de única molécula para ácidos nucleicos''; otro servicio puede ser ``Microscopía confocal''.
 \item \textbf{Categoría}:La categoría de servicio corresponde a una clasificación física del servicio con base en el área que lo enmarca.
   La plataforma proporciona algunas opciones en las que puede estar la categoría que cobija al servicio, por favor revise las opciones.
   Si dentro de las opciones no se encuentra el clasificador deseado, ingrese la categoría de servicio más apropiada.
-  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, la categoría puede ser ``Análisis de ácidos nucléicos''.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, la categoría puede ser ``Análisis de ácidos nucleicos''.
   Para el servicio de microscopía confocal, la categoría puede ser ``Microscopía.'' 
 \item \textbf{Tipo}: El tipo de servicio corresponde a una clasificación lógica de este con base en su finalidad. 
   La plataforma proporciona algunas opciones en las que puede estar el tipo que cobija a su servicio.
   Si dentro de las opciones no se encuentra el clasificador deseado, ingrese el tipo de servicio más apropiado para su caso.
-  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para Ã¡cidos nucléicos, el tipo puede ser ``Servicio para el sector salud''.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, el tipo puede ser ``Servicio para el sector salud''.
   Para el servicio Microscopía confocal, el tipo puede ser ``Servicio de investigación.''  
   Dado el alcance de la plataforma, generalmente, el tipo de los servicios de la plataforma podrá definirse como ``Servicios de investigación.''
 \item URL de información: Se refiere a una dirección web en la cual se describa en detalle el servicio.
@@ -635,24 +668,24 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Por ejemplo, la unidad de servicio de Secuenciación de nueva generación de única molécula para ácidos nucleicos es ``Chip'', ya que cada corrida de secuenciación necesita un chip, dentro del cual se pueden secuenciar una o varias muestras.
 \item \textbf{Precio}: Defina el costo por unidad de uso que se cobrará por prestar este servicio.
   Ingrese solamente el número, sin puntos, comas, ni signos.
-  Por ejemplo, el costo de la corrida utilizando un Chip para el servicio de Secuenciación de nueva generación de única molécula para ácidos nucléicos es 500000 (quinientos mil pesos colombianos).
+  Por ejemplo, el costo de la corrida utilizando un Chip para el servicio de Secuenciación de nueva generación de única molécula para ácidos nucleicos es 500000 (quinientos mil pesos colombianos).
 \item \textbf{Descripción}: Espacio para describir las principales características técnicas del servicio, sus funcionalidades, funciones especiales y/o usos más comunes; introduzca esta información en forma de párrafo.
-  Esta información es la primere que encontrará el usuario Navegante, por lo tanto debe ser relevante.
-  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucléicos, la descripción puede ser:
-  ``La secuenciación de nueva generación de tipo única molécula permite conocer la secuencia de ácidos nucléicos (ADN or ARN) mediante la evaluación directa de cada una de las bases nitrogenadas dentro de una molécula, sin necesidad de realizar amplificaciones por PCR.
+  Esta información es la primera que encontrará el usuario navegante, por lo tanto debe ser relevante.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, la descripción puede ser:
+  ``La secuenciación de nueva generación de tipo única molécula permite conocer la secuencia de ácidos nucleicos (ADN o ARN) mediante la evaluación directa de cada una de las bases nitrogenadas dentro de una molécula, sin necesidad de realizar amplificaciones por PCR.
   La secuenciación se realiza en el sistema Sequel de PacBio versión 6.0.
   El sistema genera lecturas de tamaño promedio entre 30.000 y 100.000 pares de bases, obteniendo hasta un total de 50.000 millones de pares de bases secuenciadas.
   El servicio de secuenciación básico incluye la creación de la librería para una única muestra de ADN o ARN.
   Es posible multiplexar, pero esto genera un costo adicional (ver variaciones).
-  Los resultados se entregan 30 días hábiles después de la recepción de la muestra, a través de correo electrónico (acceso temporal a cloud).
+  Los resultados se entregan 30 días hábiles después de la recepción de la muestra, por correo electrónico (acceso temporal a cloud).
   Los resultados se entregan en forma de archivos bam listos para su ensamblaje.
   La muestra debe cumplir con los parámetros especificados en los términos y condiciones del servicio.''
 \item Observaciones: Registre cualquier información extra que se encuentre fuera de los campos anteriormente diligenciados.
   Incluya aquí información específica del desempeño del equipo en el que se lleva a cabo el servicio, alertas acerca de los límites de operación, las limitaciones del mismo, etc.
-  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucléicos, las observaciones pueden incluir ``Advertencia: debido al nivel de seguridad del entorno en donde se encuentra el equipo, no se realiza la secuenciación de ácidos nucléicos derivados de virus humanos.''
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, las observaciones pueden incluir ``Advertencia: debido al nivel de seguridad del entorno en donde se encuentra el equipo, no se realiza la secuenciación de ácidos nucleicos derivados de virus humanos.''
 \item \textbf{Directrices o regulaciones}: Enumere las normas o directrices que se siguen para llevar a cabo el servicio.
   Incluya información de si la prueba está acreditada y los números de las regulaciones para las cuales funciona como requisito.
-  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucléicos, las normas o directrices pueden incluir ``Rutina de corrido estándar sugerida por el fabricante''.
+  Por ejemplo, para el servicio Secuenciación de nueva generación de única molécula para ácidos nucleicos, las normas o directrices pueden incluir ``Rutina de corrido estándar sugerida por el fabricante''.
   De otro lado, para un servicio de Detección de cromo en aguas potables, las normas o directrices pueden incluir ``Prueba acreditada para cumplir con reglamentación colombiana establecida en el Decreto 1575 del 2007.''
 \item Palabras claves: Palabras claves relacionadas con el servicio.
   Utilice el botón ``AGREGAR'' para incluir las palabras clave.
@@ -660,11 +693,11 @@ Los campos que están \textbf{resaltados} son obligatorios.
   Es conveniente agregar al menos tres palabras claves al servicio.
   Por ejemplo, para el servicio Microscopía confocal, sus palabras claves pueden ser ``Imagen 3D'', ``Fluoróforo'' e ``Histología.''
 \item \textbf{Equipos relacionados}: Seleccione el o los equipos relacionados con este servicio.
-  La plataforma proporciona las opciones de los equipos que actualmente se encuentran asignados a la cuenta de Encargado de equipo a la que se vincula el servicio.
+  La plataforma proporciona las opciones de los equipos que actualmente se encuentran asignados a la cuenta de encargado de equipo a la que se vincula el servicio.
   Si el equipo que usted busca no se encuentra dentro de las opciones, esto quiere decir que el equipo no está creado o no está asignado a la cuenta.
-  Para crear un servicio es obligatorio que exista ya el equipo sobre la plataforma y que este esté asignado al mismo Encargado de equipo al que se quiere vincular el servicio.
+  Para crear un servicio es obligatorio que exista ya el equipo sobre la plataforma y que este esté asignado al mismo encargado de equipo al que se quiere vincular el servicio.
 \item Unidades de medida: Son los tipos de resultados o medidas resultantes de la prestación del servicio.
-  Esto dará claridad acerca de si un servicio provée los tipos de resultados esperados por el usuario.
+  Esto dará claridad acerca de si un servicio provee los tipos de resultados esperados por el usuario.
   Por ejemplo, para un servicio de Detección de cromo en aguas potables, las unidades de medida pueden incluir ``mg/L de Cromo Total'', ``partes por millón de Cromo Total'', ``partes por millón de Cromo Hexavalente.''
 
 \item \textbf{Términos y condiciones}: Deben contener todas las condiciones necesarias para la prestación adecuada del servicio.
@@ -675,12 +708,12 @@ Los campos que están \textbf{resaltados} son obligatorios.
   \begin{itemize}
   \item Las muestras de ADN/ARN deben venir acompañadas de un análisis de concentración y calidad estimada mediante métodos de fluorescencia, tales como BioAnalyzer o Qubit.
     El laboratorio realizará un chequeo sobre la concentración y calidad de algunas muestras.
-  \item La cantidad total de ADN para cada muestra debe ser de 6 microgramos.
-  \item Los resultados se entregan 30 dís hábiles, a través de correo electrónico (acceso temporal a cloud), después de la recepción de la muestra.
+  \item La cantidad total de ADN para cada muestra debe ser de 6 micro-gramos.
+  \item Los resultados se entregan 30 días hábiles, a través de correo electrónico (acceso temporal a cloud), después de la recepción de la muestra.
     Los resultados se entregan en forma de archivos bam listos para su ensamblaje.
   \item Las muestras deben ser enviadas en tubos Eppendorf de 2 mL, sellados con película plástica e identificados claramente.
 \end{itemize}
-\item Varianciones: corresponde al conjunto de cambios que se realizan sobre un servicio y que redundan en la obtención de resultados de naturaleza diferente a los obtenidos con el servicio base.
+\item Variaciones: corresponde al conjunto de cambios que se realizan sobre un servicio y que redundan en la obtención de resultados de naturaleza diferente a los obtenidos con el servicio base.
   Estos cambios corresponden al uso de accesorios, otros equipos o técnicas diferentes a los que se utilizan con el servicio base.
   Pueden incluirse tantas variaciones como se desee.
   Cada variación presenta unidades de uso, precio y disponibilidades diferentes a las del servicio base.
@@ -708,41 +741,36 @@ Los campos que están \textbf{resaltados} son obligatorios.
     \textbf{Términos y condiciones}   & $\Box$  & Variaciones        & $\Box$ \\
     \hline
   \end{tabular}
-  \caption{\label{tab:camposervicios} Listado de campos utilizados en la creación de servicios. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionservicios}.}
+  \caption{\label{tab:camposervicios} Listado de campos utilizados en la creación de servicios. Los ítem \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:creacionservicios}.}
 \end{table}
 \clearpage
-
-
-
-\subsection{Carga servicios}
-\label{subsec:cargaservicios}
 
 \subsection{Reservas y solicitudes}
 \label{subsec:reservasysolicitudes}
 
-El administrador de reservas y solicitudes permite al Encargado de Equipo gestionar las reservas de los equipos o servicios que tiene a su cargo.
-Al hacer click sobre este ítem en el menú que se despliega bajo la categoría de administración, la plataforma muestra una página con el listado histórico de reservas que se han hecho a equipos que están bajo responsabilidad del Encargado.
-Este página presenta botones para consultar las reservas de equipos o de servicios (se presentan por separado) y un listado, de la categoría seleccionada, que presenta el nombre del equipo (o servicio), su estado (``Pendiente'', ``Cancelada'' o ``Finalizada''), la fecha de inicio y la hora de inicio.
+El administrador de reservas y solicitudes permite al encargado de equipo gestionar las reservas de los equipos o servicios que tiene a su cargo.
+Al hacer clic sobre este ítem, en el menú que se despliega bajo la categoría de administración, la plataforma muestra una página con el listado histórico de reservas que se han hecho a equipos que están bajo responsabilidad de la cuenta del encargado.
+Esta página presenta los botones para consultar las reservas de equipos o de servicios (se presentan por separado) y un listado de la clasificación seleccionada, que presenta el nombre del equipo (o servicio), su estado (``Pendiente'', ``Cancelada'' o ``Finalizada''), la fecha de inicio y la hora de inicio.
 En la figura \ref{fig:reservasequipos} se muestra una vista de dicha página.
 
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/reservasequipos.png} 
-  \caption{\label{fig:reservasequipos} Vista de la página de administración de reservas de equipos, para acceder a la lista de servicios requeridos hacer click sobre el botón ``SOLICITUDES DE SERVICIO''.
+  \caption{\label{fig:reservasequipos} Vista de la página de administración de reservas de equipos, para acceder a la lista de servicios requeridos hacer clic sobre el botón ``SOLICITUDES DE SERVICIO''.
     La plataforma presenta un listado histórico de reservas junto con un filtro para búsquedas.
-  Al hacer click sobre una de las reservas o solicitudes se habre un diálogo de administración.}
+  Al hacer clic sobre una de las reservas o solicitudes se abre un diálogo de administración.}
 \end{figure}
 \end{centering}
 
-Al hacer click sobre una de las reservas o solicitudes, la plataforma habre el detalle de este, como se muestra en la figura \ref{fig:detallereserva}.
-Desde este despliegue de detalle es posible revisar a fondo la información relacionada con la reserva o solicitud.
-Como se ve en la figura, es posible contactar a la persona que hizo la reserva (haciendo click sobre el botón ``CONTACTAR SOLICITANTE''.
-Adicionalmente, es posible cambiar el estado de la reserva a ``Cancelada'' o ``Finalizada''.
-Se entiende por ``Finalizada'' una reserva o solicitud a la que se le dió cumplimiento.
+Al hacer clic sobre una de las reservas o solicitudes, la plataforma abre el detalle de estas, como se muestra en la figura \ref{fig:detallereserva}.
+Desde este despliegue de detalle, es posible revisar a fondo la información relacionada con la reserva o solicitud.
+Como se ve en la figura, es posible contactar a la persona que hizo la reserva (haciendo clic sobre el botón ``CONTACTAR SOLICITANTE'').
+Además, es posible cambiar el estado de la reserva a ``Cancelada'' o ``Finalizada''.
+Se entiende por ``Finalizada'' una reserva o solicitud a la que se le dio cumplimiento.
 Una reserva debe pasar a estado ``Cancelada'' cuando por algún motivo no se ejecutará en las condiciones presentadas en la plataforma.
-Al pasar una reserva a estado ``Cancelada'', la plataforma pide confirmación de la acción y una descripción de la razón por la que se pasó el estado a cancelación. Esta razón se utiliza para discriminar cuando la plataforma presenta estadísticos de uso.
-Por último se presenta el listado de los términos y condiciones a los que accedió la persona que hizo la reserva.
+Al pasar una reserva a estado ``Cancelada'', la plataforma pide confirmación de la acción y una descripción de la razón por la que se pasó el estado a cancelación. Esta razón se utiliza para discriminar los diferentes motivos de cancelación cuando la plataforma presenta estadísticos de uso.
+Por último se presenta el listado de los términos y condiciones con los que se comprometió la persona que hizo la reserva.
 
 
 \begin{centering}
@@ -756,27 +784,28 @@ Por último se presenta el listado de los términos y condiciones a los que accedi
 \section{Usuarios/Entidades}
 \label{sec:usuariosentidades}
 
-El usuario Administrador de Universidad tiene la responsbilidad, dentro de la plataforma, de autorizar a usuarios de su institución para utilizarla.
-Una vez que un usuario potencial se registra en la platoforma (como se describe en la sección \ref{sec:registro}) el Administrador de Universidad debe aprobar o rechazar la solicitud.
-Otro de los roles del Administrador de Universidad es la creación de Instalaciones dentro de la plataforma.
-Cada equipo o servicio que esté dentro de la plataforma debe estar asociado a una instalación.
+Esta funcionalidad es exclusiva del usuario administrador de universidad.
+El usuario administrador de universidad tiene la responsabilidad de autorizar a usuarios de su institución para utilizarla.
+Una vez que un usuario potencial se registra en la plataforma (como se describe en la sección \ref{sec:registro}) el administrador de universidad debe aprobar o rechazar la solicitud.
+Otro de los roles del administrador de universidad es la creación de Instalaciones dentro de la plataforma.
+Cada equipo o servicio que esté dentro de la plataforma debe estar asociado con un encargado de equipo, el cual a su vez está asociado a una instalación.
 
-El Administrador de Universidad puede realizar varias funciones desde el menú de administración.
-Al hacer click sobre ``Solicitudes'' podrá revisar y aprobar o rechazar las solicitudes de ususarios nuevos.
-La página de administración de usuarios entrega un listado con los usuarios de la Universidad que están registrados en la plataforma.
-Finalmente, la página de instalaciones permite revisar y modificar instalaciones existentes o crear nuevas.
+El administrador de universidad puede realizar varias funciones desde el menú de administración.
+Al hacer clic sobre ``Solicitudes'' podrá revisar y aprobar o rechazar las solicitudes de usuarios nuevos.
+La página de administración de usuarios entrega un listado con los usuarios de la universidad que están registrados en la plataforma.
+Al final, la página de instalaciones permite revisar y modificar instalaciones existentes o crear nuevas.
 
 
 
 \subsection{Solicitudes}
 \label{subsec:solicitudes}
 
-En este página, la plataforma presenta un listado de las solicitudes que han hecho personas de la Universidad para convertirse en usuario de la plataforma (ver sección \ref{chap:acceso}).
-La plataforma presenta la dirección de correo electrónico que está pidiendo acceso, junto con la institución a la que pertenece y el perfíl que desea tener.
-Al hacer click sobre la solicitud la plataforma presenta un detalle de la solicitud en donde se podrá ``RECHAZAR'' o ``APROBAR'' tal solicitud, como se muestra en la figura \ref{fig:solicitud}.
+En esta página, la plataforma presenta un listado de las solicitudes que han hecho personas de la universidad para convertirse en usuario de la plataforma (ver sección \ref{chap:acceso}).
+La plataforma presenta la dirección de correo electrónico que está pidiendo acceso, junto con la institución a la que pertenece y el perfil que desea tener.
+Al hacer clic sobre la solicitud, la plataforma presenta un detalle de la solicitud en donde se podrá ``RECHAZAR'' o ``APROBAR'' la creación de la cuenta, como se muestra en la figura \ref{fig:solicitud}.
 
-Una vez se apruebe una solicitud de un usuario, esté deberá confirmar la cuenta siguiendo instrucciones que le llegarán por correo electrónici.
-Cuando el usuario confirme la cuenta podrá utilizar la plataforma.
+Una vez se apruebe una solicitud de un usuario, este deberá confirmar la cuenta siguiendo instrucciones que le llegarán por correo electrónico.
+Cuando el usuario confirme la cuenta, podrá empezar a utilizar la plataforma.
 
 \begin{centering}
 \begin{figure}
@@ -806,25 +835,24 @@ La página de administración de usuarios permite al administrador de universidad 
 \end{figure}
 \end{centering}
 
-La modificación o consulta de los datos de un usuario se hace haciendo click sobre el correo electrónico de este en la lista que presenta la plataforma al entrar a la página de administración de usuarios (se puede ver un ejemplo en la figura \ref{fig:modificarusuario}).
-Para usuarios navegante solamente es posible pasarlo de estado activo a no activo (o viceversa) o eliminarlo de la plataforma.
-Los usuarios encargado de equipo permiten más modificaciones a sus datos de registro.
+La modificación o consulta de los datos de un usuario se hace dando clic sobre el correo electrónico de este en la lista que presenta la plataforma al entrar a la página de administración de usuarios (se puede ver un ejemplo en la figura \ref{fig:modificarusuario}).
+Para usuarios navegantes solamente es posible pasarlo de estado activo a no activo (o viceversa) o eliminarlo de la plataforma.
+Los usuarios encargados de equipo permiten más modificaciones a sus datos de registro.
 
-\subsubsection{Transferencia de equipos desde el administrador de usuarios}
+\subsubsection{Transferencia de equipos por parte del administrador de usuarios}
 
-Para transferir equipos a un encargado de equipo (receptor) desde el administrador de usuarios se debe hacer click en el botón ``TRANSFERIR EQUIPOS Y SERVICIOS A ESTE USUARIO'' y seguir los siguientes pasos:
+Para transferir equipos a un encargado de equipo (receptor) desde el panel del administrador de universidad, se debe hacer clic sobre el botón ``TRANSFERIR EQUIPOS Y SERVICIOS A ESTE USUARIO'' y seguir los siguientes pasos:
 \begin{enumerate}
 \item Ingresar el correo electrónico del encargado de equipo del que se desea transferir los equipos (donante).
-\item Dar click sobre el botón ``TRANSFERIR''.
+\item Dar clic sobre el botón ``TRANSFERIR''.
 \end{enumerate}
 La transferencia de equipos se hace de manera exhaustiva, es decir se transfieren todos los equipos y servicios del donante al receptor.
 
 Tenga en cuenta que el receptor y el donante deben cumplir con los siguientes criterios:
 \begin{itemize}
 \item Pertenecer a la misma institución (tener el mismo dominio de correo electrónico).
-\item Deben ser usuarios encargado de equipo.
+\item Deben ser usuarios encargados de equipo.
 \end{itemize}
-También tenga en cuenta que la transferencia de equipos borra todas las reservas hechas sobre los equipos y servicios transferidos.
 
 La transferencia de equipos puede ser solicitada por un encargado de equipo, este procedimiento está descrito en la sección \ref{subsec:transferenciaequipos}.
 
@@ -833,35 +861,37 @@ La transferencia de equipos puede ser solicitada por un encargado de equipo, est
 
 Las instalaciones representan los espacios físicos en donde están los equipos o dónde se llevan a cabo los servicios.
 Todo equipo o servicio registrado en la plataforma debe estar asociado a una instalación.
-Dentro de la plataforma las instalaciones son creadas y administradas por el usuario administrador, un administrador de universidad tiene control sobre las instalaciones que pertenecen a su institución.
-Los usuarios encargado de equipo pueden sugerir instalaciones, estas deben ser aprobadas por el administrador para poder ser utilizadas en la plataforma.
+Dentro de la plataforma, las instalaciones son creadas y administradas por el usuario administrador.
+El administrador de universidad tiene control sobre las instalaciones que pertenecen a su institución.
+Los usuarios encargado de equipo pueden sugerir instalaciones, pero estas deben ser aprobadas por el administrador para poder ser utilizadas en la plataforma.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/instalacion.png} 
-  \caption{\label{fig:instalacion} Vista del menú de administración de insalaciones, este menú permite la creación y modificación de instalaciones.
+  \caption{\label{fig:instalacion} Vista del menú de administración de instalaciones, este menú permite la creación y modificación de instalaciones.
   El botón ``SUGERENCIAS'' lleva a una página donde se puede revisar, aprobar o rechazar las instalaciones sugeridas por usuarios encargado de equipo.}
 \end{figure}
 \end{centering}
 
 La figura \ref{fig:instalacion} muestra un ejemplo de la página de administración de instalaciones.
 La plataforma despliega una lista, junto con un buscador, de las instalaciones de la universidad.
-Para ver y modificar las características de una instalación existente es necesario hacer click sobre esta en el listado de instituciones.
-Para crear una instalación nueva se debe hacer click sobre el botón ``AÑADIR INSTALACIÓN'', un ejemplo de la vista del asistente para creación de instalaciones se muestra en la figura \ref{fig:crearinstalacion}.
-Finalmente, para revisar, aprobar o rechazar una instalación sugerida por un encargado de equipo, se debe hacer click sobre el botón ``SUGERENCIAS''.
+Para ver y modificar las características de una instalación existente, es necesario hacer clic sobre esta en el listado de instituciones.
+Para crear una instalación nueva se debe hacer clic sobre el botón ``AÑADIR INSTALACIÓN''.
+Un ejemplo de la vista del asistente para creación de instalaciones se muestra en la figura \ref{fig:crearinstalacion}.
+Finalmente, para revisar, aprobar o rechazar una instalación sugerida por un encargado de equipo, se debe hacer clic sobre el botón ``SUGERENCIAS''.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/crearinstalacion.png} 
-  \caption{\label{fig:crearinstalacion} Vista del asistente para crear insalaciones.}
+  \caption{\label{fig:crearinstalacion} Vista del asistente para crear instalaciones.}
 \end{figure}
 \end{centering}
 
-La tabla \ref{tab:instalaciones} muestra los campos requeridos por la plataforma para la creación de una instalación, los capos \textbf{obligatorios} se presentan en negrilla.
+El cuadro \ref{tab:instalaciones} muestra los campos requeridos por la plataforma para la creación de una instalación; los campos \textbf{obligatorios} se presentan en negrilla.
 A continuación se define cada uno de los campos.
 
 \begin{itemize}
-\item \textbf{Nombre}: Indique el nombre de la instalacion.
+\item \textbf{Nombre}: Indique el nombre de la instalación.
   Es importante que el nombre de la instalación sea el oficial dentro de la institución.
   Por ejemplo, el nombre de una instalación puede ser ``Laboratorio de genética''.
 \item URL de información: Agregue una dirección web en la cual se describa en detalle la instalación. 
@@ -877,16 +907,15 @@ A continuación se define cada uno de los campos.
 \item \textbf{Disponibilidad}: Indique los horarios de la semana en los que la instalación y la institución permiten el ingreso y permanencia. 
   La plataforma proporciona un esquema de selección en el que se ingresa la hora de inicio y la hora de finalización para cada uno de los días de la semana. 
   Por ejemplo, para la instalación Laboratorio de genética, la disponibilidad horaria puede ser ``Lunes a sábado de 8 am a 5 pm''.
-\item Palabras claves: Ingrese términos (una o más palabras) claves que sean complementarios a las palabras ya incluidas en los demás campos. 
-  Estos términos claves deben tener una asociación relevante con la actividad investigativa de la instalación. 
-  Estos términos se utilizarán para aumentar las posibilidades de que un usuario encuentre un equipo o servicio asociado a esta instalación, mediante el uso de términos de asociación relevante. 
+\item \textbf{Palabras claves}: Ingrese términos (una o más palabras) claves que sean complementarios a las palabras ya incluidas en los demás campos. 
+  Estos términos claves deben tener una asociación relevante con la actividad investigativa de la instalación y se utilizarán para aumentar las posibilidades de que un usuario encuentre un equipo o servicio asociado a esta instalación, mediante el uso de términos de asociación relevante. 
   Es conveniente agregar al menos tres palabras claves. 
   Por ejemplo, para la instalación Laboratorio de genética, las palabras claves pueden ser ``Genotipificación'', ``Footprinting'', ``Producción de anticuerpos''.
 \item \textbf{Condiciones de acceso}: Incluya los requisitos impuestos al personal interno y externo de estas instalaciones, los cuales condicionen la entrada a la misma. 
   Por ejemplo, para la instalación Laboratorio de genética, las condiciones de acceso pueden ser:
   \begin{itemize}
   \item Concertar una cita previa, tener una reserva de equipo vigente o haber realizado una solicitud de servicio.
-  \item Presentar el certificado o el carnet de ARL vigente.
+  \item Presentar el certificado o el carné de ARL vigente.
   \item Presentarse en los horarios especificados en la sección de disponibilidad horaria y anunciarse en la portería principal con la extensión 3435.
   \end{itemize}
 
@@ -909,25 +938,28 @@ A continuación se define cada uno de los campos.
     Palabras clave                & $\Box$ & \textbf{Condiciones de acceso} & $\Box$ \\
     \hline
   \end{tabular}
-  \caption{\label{tab:instalaciones} Listado de campos utilizados en la creación de instalaciones. Los ítems \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:instalaciones}.}
+  \caption{\label{tab:instalaciones} Listado de campos utilizados en la creación de instalaciones. Los ítem \textbf{resaltados} son obligatorios. Las definiciones de cada campo se encuentran en la sección \ref{subsec:instalaciones}.}
 \end{table}
 \clearpage
 
-\subsubsection{Como sugerir instalaciones}
+\subsubsection{Cómo sugerir instalaciones}
 
 La sugerencia de instalaciones es una posibilidad que tienen los usuarios encargado de equipo.
-Para realizarla se debe ir a la página de información del perfil de la cuenta, haciendo click sobre el ícono que contiene la cuenta de correo del encargado, esto displiega un menú en el que se deba hacer click sobre ``Mi perfil''.
-En la página que se despliega se encuentar el botón ``SUGERIR INSTALACIÓN'', como se muestra en la figura \ref{fig:sugerir}.
-Al hacer click sobre este, se despliega un asistente donde se deben completar los campos para crear una nueva instalación, cuando los campos estén completos, se debe hacer click sobre el botón ``SUGERIR INSTALACIÓN''.
+Para realizarla, se debe ir a la página de información del perfil de la cuenta, haciendo clic sobre el ícono que contiene la cuenta de correo del encargado.
+Esto despliega un menú en el que se debe hacer clic sobre ``Mi perfil''.
+En la página que se despliega se encuentra el botón ``SUGERIR INSTALACIÓN'', como se muestra en la figura \ref{fig:sugerir}.
+Al hacer clic sobre este, se despliega un asistente donde se debe completar los campos para crear una nueva instalación.
+Cuando los campos estén completos, se debe hacer clic sobre el botón ``SUGERIR INSTALACIÓN''.
 
-Una vez sugerida la instalación, el usuario administrador de universidad debe ``APROBAR'' o ``RECHAZAR'' la instalación porpuesta, esto se hace haciendo click sobre el botón de ``SUGERENCIAS'' en la página de administración de instalaciones (ver figura \ref{fig:instalacion}).
+Una vez sugerida la instalación, el usuario administrador de universidad debe ``APROBAR'' o ``RECHAZAR'' la instalación propuesta.
+Esto se logra haciendo clic sobre el botón de ``SUGERENCIAS'' en la página de administración de instalaciones (ver figura \ref{fig:instalacion}).
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/sugerir.png} 
   \caption{\label{fig:sugerir} Vista del perfil de encargado de equipo.
   En esta página se puede actualizar la información del encargado e iniciar el proceso para sugerir instalaciones nuevas.
-  Las instalaciones sugeridas deben ser aprobadas por un administrador de la misma universidad antes de poder ser utilizadas para registrar equipos o servicios.}
+  Las instalaciones sugeridas deben ser aprobadas por un administrador de la misma universidad antes de poder ser utilizadas para asignarle usuarios encargados de equipos.}
 \end{figure}
 \end{centering}
 
@@ -936,21 +968,23 @@ Una vez sugerida la instalación, el usuario administrador de universidad debe ``
 \chapter{Comunicaciones} % chapter title
 \label{chap:comunicaciones}
 
-La plataforma utiliza la cuenta de correo del usuario para enviar mensajes a otros usuarios de la plataforma, la plataforma no maneja un servicio de correo electrónico propio y por lo tanto tiene capacidades limitadas en este ámbito.
-Los usuarios navegante no pueden comunicarse a través de la plataforma con otros usuarios, sin embargo pueden utilizar las direcciones de correo de los encargados de equipo o de los administradores para comunicarse a través de su cuenta de correo.
+La plataforma utiliza la cuenta de correo del usuario para enviar mensajes a otros usuarios de la plataforma y no maneja un servicio de correo electrónico propio.
+Por lo tanto, tiene capacidades limitadas en este ámbito.
+Los usuarios navegantes no pueden comunicarse por la plataforma con otros usuarios, sin embargo, pueden utilizar las direcciones de correo de los encargados de equipo o de los administradores para comunicarse por de su cuenta de correo.
 
 \section{Correo}
 \label{sec:correo}
 
-Los usuarios encargado de equipo y administradores pueden enviar correos a uno o varios de los usuario de la plataforma utilizando la opción de ``Correo'' (se encuentra dentre del menú despegable de ``Comunicaciones'' para los usuarios administrador).
-La plataforma permite enviar correos a grupos de usuarios definidos por el tipo de usuarios, o de manera individual, la forma de utilización es similar a la de la mayoría de clientes de correo electrónico disponibles.
+Los usuarios encargado de equipo y administradores pueden enviar correos a uno o varios de los usuario de la plataforma con la opción de ``Correo'' (se encuentra dentro del menú despegable de ``Comunicaciones'' para los usuarios administrador).
+La plataforma permite enviar correos a grupos de usuarios definidos por el rol del usuario, o de manera individual.
+La forma de utilización es similar a la de la mayoría de clientes de correo electrónico disponibles.
 
-Para enviar correos se deben agregar las direcciones o los grupos y, una vez completado el mensaje, hacer click sobre el botón ``ENVIAR'' que aparece bajo el campo de composición del cuerpo del correo.
+Para enviar correos se debe agregar las direcciones o los grupos de direcciones y, una vez completado el mensaje, hacer clic sobre el botón ``ENVIAR'' que aparece bajo el campo de composición del cuerpo del correo.
 
 \section{Exportar}
 \label{sec:exportar}
 
-Los usuarios administrador tienen la opción de exportar la información de los equipos y servicios a un formato XML compatible con el estándar CERIF (Common European Research Information Format)\footnote{https://www.eurocris.org/cerif/main-features-cerif}.
+Los administradores tienen la opción de exportar la información de los equipos y servicios a un formato XML compatible con el estándar CERIF (Common European Research Information Format)\footnote{https://www.eurocris.org/cerif/main-features-cerif}.
 Este proceso es demorado.
 
 %----------------------------------------------------
@@ -963,20 +997,20 @@ Este proceso es demorado.
 \end{centering}
 \clearpage % go to recto page
 
-La plataforma tiene la capacidad de entregar reportes de uso a los usuarios encargado de equipo y administrador.
-En el caso de los primeros, las estadísticas se entregan sobre los equipos y servicios asignados al usuario.
-En el caso de los segundos el reporte se entrega sobre todos los equipos y servicios de la institución.
-Los reportes generados se generan de idéntica manera para los dos tipos de usuario.
-Para generar el reporte el usuario debe ir al menú correspondiente (para ``Equipos'', ``Servicios'' o ``Generales'' ---este último presenta la información acumulada de equipos y servicios), y dar el rango de fechas para las que requiere el reporte.
-Por defecto, la plataforma genera un reporte de los últimos 6 meses de actividad.
-Si se desea descargar el reporte en un archivo pdf se debe hacer click sobre el botón ``DESCARGAR PDF''.
+La plataforma tiene la capacidad de entregar reportes de uso, ya sea de un único equipo o servicio o de todos los equipos o servicios a los usuarios encargado de equipo y administrador.
+En el primer caso, las estadísticas se entregan sobre los equipos y servicios asignados al usuario.
+En el segundo caso, el reporte se entrega sobre todos los equipos y servicios de la institución.
+Los reportes se generan de idéntica manera para los dos tipos de usuario.
+Para generar el reporte, el usuario debe ir al menú correspondiente (para ``Equipos'', ``Servicios'' o ``Generales'' ---este último presenta la información acumulada de equipos y servicios), y dar el rango de fechas para las que requiere el reporte.
+Por defecto, la plataforma genera un reporte de los últimos seis meses de actividad.
+Si se desea descargar el reporte en un archivo pdf, se debe hacer clic sobre el botón ``DESCARGAR PDF''.
 La figura \ref{fig:reportes} muestra un ejemplo de vista desde un perfil de administrador de universidad.
 
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/reportes.png} 
   \caption{\label{fig:reportes} Vista de la página de reportes generales desde el perfil de administrador de universidad.
-  En esta página se puede consultar o descargar estadísticas relacionadas con el uso de los equipos o servicios de una istitución.}
+  En esta página se puede consultar o descargar estadísticas relacionadas con el uso de los equipos o servicios de una institución.}
 \end{figure}
 \end{centering}
 
@@ -992,6 +1026,257 @@ Los reportes generados contienen la siguiente información:
 \item Listado de equipos o servicios.
 \end{itemize}
 La descripción de cada ítem se encuentra en la plataforma.
+
+\chapter{Carga masiva de equipos y servicios}
+\label{sec:cargaequipos}
+
+Esta opción se debe utilizar para hacer carga masiva de equipos.
+La carga masiva de datos es una funcionalidad de la plataforma pensada para facilitar la creación de múltiples equipos y/o servicios en pocos pasos.
+Este procedimiento es iterativo, ya que la creación de las configuraciones de equipos, las mediciones, los servicios y las variaciones de servicios tiene prerrequisitos.
+El proceso lógico para completar una carga de equipos o servicios sigue los siguientes pasos:
+\begin{enumerate}
+\item La creación de los equipos básicos.
+\item La creación de las configuraciones y mediciones.
+\item La creación de los servicios.
+\item Finalmente, la creación de las variaciones de servicio.
+\end{enumerate}
+
+Debido a la estructura de la plataforma, es imposible crear un servicio si no existe ya un equipo al cual se pueda asociar.
+El uso de esta herramienta de carga es recomendable solo en casos en los que se tenga una cantidad considerable de equipos y/o servicios a cargar (por ejemplo, más de cinco equipos o cinco servicios).
+Para crear pocos equipos y/o servicios, la plataforma cuenta con un asistente para la creación individual de equipos y servicios (ver secciones \ref{subsec:equipos} y \ref{subsec:servicios}), el cual guía al usuario durante todo el proceso de creación del elemento.
+
+Esta herramienta funciona mediante la carga de hojas de datos de Excel (extensión xlxs; equipos y servicios por separado), las cuales contienen toda la información necesaria para crear los nuevos elementos y asociarlos a una cuenta en la plataforma.
+Este procedimiento cuenta con una validación por parte de la plataforma, la cual resulta en informes detallados de los atributos que se llenaron de forma correcta y de los que no, así como la indicación de si se cargaron o no los equipos y/o servicios que se encontraban en las hojas de datos.
+Debido a la cantidad de información necesaria para crear entidades de este tipo de forma masiva, se recomienda realizar una revisión detallada de la información que se incluirá en estos formatos antes de intentar cargarlos, con el fin de evitar la creación de elementos con información cruzada o generar incomodidades para el usuario.
+
+La carga de equipos y servicios puede realizarse desde los perfiles de encargado de equipo o administrador de universidad.
+Los formatos y el procedimiento contienen sutiles diferencias entre los roles administrativos y el rol de encargado de equipo, asociadas al hecho de que los roles administrativos pueden crear elementos para diferentes cuentas de usuario en un solo paso.
+
+En los cuadros \ref{tab:camposequipos} y \ref{tab:camposervicios} se pueden consultar los campos requeridos para la creación de equipos y servicios, los campos presentados en \textbf{negrilla} son de carácter obligatorio.
+
+
+\section{Carga masiva para encargado de equipo ---equipos}
+\label{subsec:cargamasivaequiposencargado}
+
+Una vez el usuario ha ingresado a la plataforma y se encuentre en la página principal, hacer clic en la pestaña ``Administración'' en el panel izquierdo.
+Esto desplegará dos opciones: ``Infraestructura'' y ``Usuarios/Entidades''.
+Hacer clic sobre la opción ``Infraestructura'', que a su vez despliega cinco opciones: ``Equipos'', ``Carga equipos'', ``Servicios'', ``Carga servicios'' y ``Reservas y solicitudes''.
+Seleccionar la opción ``Carga equipos'', la cual desplegará un panel para la carga de equipos, se muestra un ejemplo en la figura \ref{fig:cargamasivaequipos}.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/cargamasivaequipos.png} 
+  \caption{\label{fig:cargamasivaequipos} Panel de carga de equipos.
+    El recuadro rojo indica la opción seleccionada (Carga de equipos).}
+\end{figure}
+\end{centering}
+
+Después, hacer clic sobre el botón "DESCARGAR FORMATO DE PRIMERA CARGA DE EQUIPOS" (costado superior izquierdo).
+Esto iniciará la descarga del formato de Excel (.xlsx) para ingresar los equipos.
+Este archivo simplifica el primer paso de la carga, ya que en este solo se puede ingresar información de equipos nuevos, sin configuraciones ni mediciones asociadas.
+Aunque es también posible realizar una carga utilizando el archivo ``FORMATO DE CARGA DE EQUIPOS'', se recomienda utilizar el archivo ``FORMATO DE PRIMERA CARGA DE EQUIPOS'' cuando se va a realizar la carga de equipos por primera vez o cuando se inicia un nuevo procedimiento de carga de equipos.
+El archivo de primera carga contiene una sola hoja titulada ``equipos'', la cual contiene las columnas de todos los atributos que conforman la información de un equipo.
+Para más información acerca de los datos necesarios y sus definiciones, consultar la sección \ref{subsec:creacionequipos} y el cuadro \ref{tab:camposequipos}.
+
+Esta hoja contiene en la primera fila los identificadores de cada uno de los atributos, los cuales están asociados a un comentario que explica qué debe incluirse en cada celda, así como un título explicativo que identifica cada atributo en la segunda fila.
+Cada fila representa un nuevo equipo y cada columna contiene la información para los atributos de este.
+\textbf{El ID de equipo debe dejarse en blanco}, ya que la plataforma asignará un ID luego del proceso de carga.
+Las palabras claves y los términos y condiciones generalmente son listados de diferentes frases o párrafos, por lo cual cada frase o párrafo debe terminarse agregando un carácter de punto y coma (``;'').
+Este carácter le permitirá a la plataforma reconocer el final de cada elemento en la lista y presentarlo como una ítem independiente.
+
+Una vez se ha diligenciado el formato para los nuevos equipos, se deben guardar los cambios hechos en el archivo.
+Sobre la plataforma, en la vista de carga de equipos, hacer clic sobre el icono de clip y cargar el archivo de datos recién modificado.
+Cuando se carga el archivo, la plataforma inicia un proceso de verificación, el cual resulta en un reporte detallado del estado de cada equipo y sus atributos introducidos en el formato.
+En la primera parte (se muestra un ejemplo en la figura \ref{fig:verificacioncarga}), se resume la cantidad de equipos detectados, la cantidad total de atributos válidos, inválidos, vacíos, así como la cantidad de equipos que se cargaron (este número corresponde a los equipos válidos) y que no se cargarán (inválidos).
+La tabla que se muestra luego de este resumen indica, para cada equipo, la cantidad de atributos diligenciados, atributos válidos, atributos inválidos, atributos vacíos y si el equipo se cargará o no (si la plataforma indica que sí es válido, entonces se cargará).
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/verificacioncarga.png} 
+  \caption{\label{fig:verificacioncarga} Ejemplo de verificación previa a la carga de equipos.}
+\end{figure}
+\end{centering}
+
+Una vez verificado el reporte, hacer clic en el botón "CARGAR"; la plataforma mostrará un mensaje de segunda confirmación de carga, el cual informa que se reescribirá información para los equipos ya existentes (esta advertencia no aplica cuando se cargan equipos por primera vez o cuando se utiliza el FORMATO DE PRIMERA CARGA DE EQUIPOS).
+Una vez se acepta la segunda confirmación, y si la carga de los equipos es exitosa, entonces la plataforma indicará que se han cargado nuevos equipos.
+Estos equipos pueden necesitar de más información, la cual se debe ingresar desde el panel de equipos (se realiza al final del procedimiento).
+Adicional, la plataforma mostrará un reporte detallado de los equipos cargados y no cargados durante el procedimiento (ver Figura \ref{fig:reportecarga}).
+Tenga en cuenta que todos los reportes generados se pueden descargar (archivos de tipo CVS), utilizando el botón ``DESCARGAR REPORTE DE VERIFICACIÓN'' ubicado debajo de cada tabla.
+Estos reportes indican exactamente sobre qué atributo se encuentra el error, en caso de que exista.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/reportecarga.png} 
+  \caption{\label{fig:reportecarga} Reporte de carga posterior a la carga de equipos.}
+\end{figure}
+\end{centering}
+
+Para continuar con el procedimiento, volver a la parte superior del panel de carga de equipos y hacer clic sobre el botón ``DESCARGAR FORMATO DE CARGA DE EQUIPOS'' (costado superior derecho).
+Esto inicia la descarga del formato en Excel para agregar configuraciones y mediciones a los equipos ya cargados en el primer paso.
+En este archivo de carga se encuentran tres hojas tituladas ``Equipos'', ``Configuraciones'' y ``Mediciones'', en ese orden.
+La hoja de equipos contiene la información de todos los equipos a cargo del usuario.
+Las hojas de configuraciones y mediciones contienen los atributos necesarios para la creación y asociación con los equipos existentes.
+Estas asociaciones se logran mediante el uso del identificador del equipo.
+El identificador del equipo es un código alfanumérico, creado por la plataforma, que identifica de manera única un equipo.
+Este identificador se especifica en la primera columna de la hoja Equipos (ver figura \ref{fig:exceldeconfiguraciones}).
+De forma equivalente, la primera columna de las hojas de configuraciones y mediciones está reservada para la creación de un identificador para cada elemento, por lo que este dato no debe ser ingresado por el usuario.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/exceldeconfiguraciones.png} 
+  \caption{\label{fig:exceldeconfiguraciones} Hojas del archivo de carga de datos para la carga de configuraciones y medidas.
+    El recuadro rojo muestra los identificadores únicos para los equipos cargados.}
+\end{figure}
+\end{centering}
+
+Para diligenciar los datos de configuraciones y mediciones, es importante tener claridad acerca de su relación con el equipo correspondiente.
+En las hojas de configuraciones y de mediciones, la segunda columna se titula ``ID de equipo'' y esta debe contener el identificador único del equipo al que se asociará la configuración o la medición.
+Estos identificadores únicos se encuentran en la primera columna de la hoja Equipos.
+Luego de completar los datos de configuraciones y medidas de los nuevos equipos, guardar los cambios en el archivo.
+Sobre la plataforma, en la vista de carga de equipos, hacer clic sobre el icono de clip y cargar el archivo de datos recién modificado.
+Cuando se carga el archivo, la plataforma inicia un proceso de verificación, el cual resulta en un reporte detallado que ya se describió anteriormente.
+Una vez verificado el reporte, hacer clic en el botón ``CARGAR'' y mostrará un mensaje de segunda confirmación de carga, el cual informa que se reescribirá información para los equipos ya existentes (si no se modificó la información incluida dentro de la hoja de Equipos, entonces no se reescribirá la información de los equipos).
+Una vez se acepta la segunda confirmación, y si la carga es exitosa, entonces la plataforma indicará que se han cargado nuevos equipos con configuraciones y mediciones asociadas.
+
+En este punto, el proceso de carga ha finalizado, pero los equipos cargados requieren de información que no se provee durante la carga.
+Para completar la información siga los siguientes pasos:
+\begin{enumerate}
+\item Hacer clic en la pestaña ``Administración'' en el panel izquierdo.
+\item Esto desplegará dos opciones: ``Infraestructura'' y ``Usuarios/Entidades''.
+\item Hacer clic sobre ``Infraestructura''.
+  Esto despliega cinco opciones: ``Equipos'', ``Carga equipos'', ``Servicios'', ``Carga servicios'' y ``Reservas y solicitudes''.
+\item Seleccionar la opción ``Equipos'', la cual muestra un listado con todos los equipos a cargo de la cuenta (ver sección \ref{subsec:equipos}).
+\end{enumerate}
+
+Los equipos creados mediante los archivos de carga se almacenan por defecto como equipos ``Disponibles'', es decir, equipos accesibles, sobre los cuales se pueden hacer reservas para su uso.
+Por lo anterior, es necesario configurar los parámetros de ``Periodo de antelación a reserva'' y ``Horario de disponibilidad'', así como adjuntar la documentación de aseguramiento de calidad.
+En caso de que se quiera cambiar la disponibilidad del equipo a ``No disponible'', en los detalles del equipo, basta con oprimir el botón ``PONER EQUIPO COMO NO DISPONIBLE'' (ubicado en la parte derecha superior del panel de detalles del equipo).
+Los equipos cargados se mantendrán en estado ``Inactivo'' hasta que se adjunte la información de aseguramiento de calidad y se configure la disponibilidad.
+Si se quiere continuar con la carga de servicios, es altamente recomendable subsanar los requerimientos de los equipos para que cambien su estado a ``Activo'' antes de iniciar el proceso de carga de servicios ya que los equipos inactivos y los servicios asociados a equipos inactivos no pueden ser visualizados desde los buscadores de la plataforma.
+
+Finalmente, si se vuelve al panel de carga de equipos y se descarga el ``FORMATO DE CARGA DE EQUIPOS'', entonces se obtendrá la información completa (equipos, configuraciones y mediciones) de todos los equipos a cargo de la cuenta, se muestra un ejemplo de esta hoja en la figura \ref{fig:formatocargaconid}.
+
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/formatocargaconid.png} 
+  \caption{\label{fig:formatocargaconid} Hojas del archivo de carga de datos luego de la carga de configuraciones y medidas.
+    Los recuadros rojos muestran la relación entre el identificador de un equipo y sus asociaciones con configuraciones y mediciones.}
+\end{figure}
+\end{centering}
+
+\section{Carga masiva para encargado de equipo ---servicios}
+\label{subsec:cargamasivaserviciosencargado}
+
+A continuación, se describe el procedimiento para realizar una carga masiva de servicios desde un perfil de encargado de equipo.
+Tenga en cuenta que \textbf{los servicios solamente pueden cargarse si los equipos a los cuales se asociaron ya existen en la plataforma}.
+
+Una vez el usuario ha ingresado a la plataforma y se encuentre en la página principal, hacer clic en la pestaña ``Administración'' en el panel izquierdo.
+Esto desplegará dos opciones: ``Infraestructura'' y ``Usuarios/Entidades''.
+Hacer clic sobre la opción ``Infraestructura'', que a su vez despliega cinco opciones: ``Equipos'', ``Carga equipos'', ``Servicios'', ``Carga servicios'' y ``Reservas y solicitudes''.
+Seleccionar la opción "Carga servicios", la cual desplegará un panel para la carga de servicios.
+
+Posteriormente, hacer clic sobre el botón ``DESCARGAR FORMATO DE CARGA DE SERVICIOS'' (costado superior derecho).
+Esta acción genera una advertencia, en donde se indica que si es la primera vez que se cargan servicios no se debe incluir la información de variaciones.
+Al aceptar se inicia la descarga del formato de Excel (.xlxs) para ingresar los servicios.
+El archivo de carga contiene cinco hojas: Servicios, Variaciones, Equipos, Configuraciones y Mediciones.
+La hoja de servicios contiene las columnas de todos los atributos que conforman la información de un servicio, mientras que la hoja de variaciones contiene todos los atributos necesarios para generar una variación de servicio.
+
+Para más información acerca de los datos necesarios, consulte la sección \ref{subsec:servicios}.
+Las últimas tres hojas (Equipos, Configuraciones y Mediciones) contienen la información de todos los equipos a cargo de la cuenta y la información de los identificadores de equipos.
+Cualquier cambio realizado sobre estas tres hojas no tendrá ningún efecto sobre la información de la plataforma.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/iddeequiposparaservicios.png} 
+  \caption{\label{fig:iddeequiposparaservicios} Ejemplo de las hojas de Servicios y Equipos del archivo de carga de servicios.
+  Los recuadros y la línea roja indican la relación entre el identificador del equipo (en la hoja de Equipos) y la columna de ID en la hoja de Servicios.}
+\end{figure}
+\end{centering}
+
+La hoja de Servicios contiene, en la primera fila, los identificadores de cada uno de los atributos, los cuales están asociados a un comentario que explica qué debe incluirse en cada celda, así como un título explicativo que identifica cada atributo en la segunda fila.
+Cada fila representa un nuevo servicio y cada columna contiene la información para los atributos del servicio.
+El ID de servicio debe dejarse en blanco, la plataforma asignará un ID luego del proceso de carga.
+
+La plataforma no permite crear servicios desconectados de equipos, la columna titulada ``Relación con equipos'' debe indicar \textbf{a qué equipo ya creado y a cargo de la cuenta} se debe asociar este servicio.
+Esto se logra mediante el ingreso del ID del equipo, el cual puede ser copiado directamente desde la hoja ``Equipos'', se muestra un ejemplo en la figura \ref{fig:iddeequiposparaservicios}.
+Las palabras claves y los términos y condiciones son listados de diferentes frases o párrafos, por lo cual cada frase o párrafo debe terminarse agregando un carácter de punto y coma (``;'').
+Este carácter le permite a la plataforma reconocer el final de cada elemento en la lista y presentarlo como un elemento distinto.
+
+Una vez se ha diligenciado el formato para los nuevos servicios, se debe guardar los cambios hechos en el archivo.
+Sobre la plataforma, en la vista de carga de equipos, hacer clic sobre el icono de clip y cargar el archivo de datos recién modificado.
+Cuando se carga el archivo, la plataforma inicia un proceso de verificación, el cual resulta en un reporte detallado del estado de cada servicio y sus atributos introducidos en el formato.
+En la primera parte, se resume la cantidad de servicios detectados, la cantidad total de atributos válidos, inválidos, vacíos, así como la cantidad de servicios que se cargarán (válidos) y que no se cargarán (inválidos).
+La tabla que se muestra luego de este resumen indica, para cada servicio, la cantidad de atributos diligenciados, atributos válidos, atributos inválidos, atributos vacíos y si el servicio se cargará o no (si la plataforma indica que ``Sí es válido'', se cargará).
+
+Una vez verificado el reporte, haga clic en el botón ``CARGAR''; la plataforma muestra un mensaje de segunda confirmación de carga, el cual informa que se reescribirá información para los servicios ya existentes (esta advertencia no aplica cuando se cargan servicios por primera vez).
+Una vez se acepta la segunda confirmación, y si la carga de los servicios es exitosa, entonces la plataforma indica que se han cargado nuevos servicios.
+Además, la plataforma muestra un reporte detallado de los servicios cargados y no cargados durante el procedimiento.
+Tenga en cuenta que todos los reportes generados se pueden descargar (archivos de tipo CVS), con el botón ``DESCARGAR REPORTE DE VERIFICACIÓN'' ubicado debajo de cada tabla.
+Estos reportes indican exáctamente sobre qué atributo se encuentra el error, en caso de que exista.
+
+Para generar variaciones de los servicios recién cargados, o ya existentes, se debe regresar a la parte superior del panel de carga de equipos y hacer clic de nuevo sobre el botón "DESCARGAR FORMATO DE CARGA DE SERVICIO" (costado superior derecho).
+Esto inicia la descarga del formato en Excel para agregar las variaciones a los servicios ya cargados en el primer paso.
+El archivo es equivalente al descrito en los párrafos anteriores, la única diferencia es que ahora contiene la información de los servicios cargados y sus identificadores en la hoja de Servicios.
+La hoja de Variaciones contiene los atributos necesarios para la creación y asociación con los equipos existentes.
+
+Las asociaciones se logran mediante el uso del identificador del servicio.
+El identificador del servicio es un código alfanumérico, creado por la plataforma, que identifica de manera única e inequívoca un servicio.
+Este identificador se especifica en la primera columna de la hoja Servicios (se puede ver un ejemplo en la figura \ref{fig:idservicios}).
+De forma equivalente, la primera columna de la hoja de variaciones está reservada para la creación de un identificador para cada elemento, por lo que este dato no debe ser ingresado por el usuario.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/idservicios.png} 
+  \caption{\label{fig:idservicios} Ejemplo de hojas del archivo de datos para la carga de variaciones.
+    El recuadro rojo muestra los identificadores únicos para los servicios cargados.}
+\end{figure}
+\end{centering}
+
+Para diligenciar los datos de variaciones, es importante tener claridad acerca de la relación de estas con su servicio correspondiente.
+En la hoja de variaciones, la segunda columna se titula ``ID de servicio'' y debe contener el identificador único del servicio al que se asociará la variación.
+Estos identificadores únicos se encuentran en la primera columna de la hoja ``Servicios'' (ver figuras \ref{fig:idservicios} y \ref{fig:archivoserviciosresultante}).
+Luego de completar los datos de variaciones de los nuevos servicios, se debe guardar los cambios en el archivo.
+Sobre la plataforma, en la vista de carga de servicios, hacer clic sobre el icono de clip y cargar el archivo de datos recién modificado.
+Cuando se carga el archivo, la plataforma inicia un proceso de verificación, el cual resulta en un reporte detallado equivalente al descrito en párrafos anteriores.
+Una vez verificado el reporte, hacer clic en el botón ``CARGAR''; la plataforma muestra un mensaje de segunda confirmación de carga, el cual informa que se reescribirá información para los servicios ya existentes (si no se modificó la información incluida dentro de la hoja de Servicios, entonces no se reescribirá la información de los servicios).
+Una vez se acepta la segunda confirmación, y si la carga es exitosa, entonces la plataforma indicará que se han cargado nuevos servicios con variaciones asociadas.
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/archivoserviciosresultante.png} 
+  \caption{\label{fig:archivoserviciosresultante} Ejemplo de un archivo de carga de servicios resultante luego de haber cargado equipos y servicios.
+    Los recuadros y líneas rojas indican la relación de un equipo (mediante su identificador) con servicios, configuraciones y mediciones.
+    Los recuadros y líneas azules indican la relación de un servicio (mediante su identificador) con sus variaciones.}
+\end{figure}
+\end{centering}
+
+En este punto el proceso de carga ha finalizado.
+Si se vuelve al panel de carga de servicios y se descarga el FORMATO DE CARGA DE SERVICIOS, entonces se obtiene la información completa (servicios, variaciones, equipos, configuraciones y mediciones) de todos los equipos y servicios a cargo de la cuenta.
+
+\section{Carga masiva para administrador de universidad}
+\label{subsec:cargamasivaadministrador}
+
+El procedimiento de carga masiva de equipos o servicios por parte del perfil de administrador de universidad es equivalente al de encargado de equipo excepto por que el administrador debe incluir en los formatos de carga la información que le permite a la plataforma asignar el equipo o servicio a un usuario encargado, es decir que la plataforma no permite la creación de estos objetos si no están asignados a un usuario encargado.
+
+Se debe entonces añadir los campos ``\textbf{Instalación}'' y ``\textbf{Correo de la cuenta del encargado}'' a los ítem de los cuadros \ref{tab:camposequipos} y \ref{tab:camposervicios}.
+Estos ítem son de carácter obligatorio.
+
+Los archivos que se descargan desde la página de cargas masivas (se llega a esta haciendo clic desde la página principal en la pestaña ``Administración'' en el panel izquierdo y continuando con ``Infraestructura'' y ``Carga equipos'' o ``Carga servicios''), ya sea para primera carga o para cargar variaciones o componentes contienen columnas que permiten definir el correo electrónico que identifica al encargado de equipo dentro de la plataforma y la instalación a la que quedará asociado el equipo.
+La Figura \ref{fig:excelcargamasivaadmin} resalta la columna donde se debe añadir el correo electrónico del encargado que quedará responsable del equipo.
+Cada equipo puede tener un encargado diferente.
+
+
+\begin{centering}
+\begin{figure}
+  \includegraphics[width=1\textwidth]{Imagenes/excelcargamasivaadmin.png} 
+  \caption{\label{fig:excelcargamasivaadmin} Ejemplo de archivo .xlxs para la carga de equipos por parte del administrador de universidad.
+    El recuadro rojo señala la columna utilizada para asociar los equipos a las cuenta de encargado de equipo.}
+\end{figure}
+\end{centering}
+
+Como se describió en la Sección \ref{subsec:cargamasivaequiposencargado} y \ref{subsec:cargamasivaserviciosencargado} la carga de equipos o servicios masivos no es completa en el sentido de que queda información por cargar para que el equipo pueda ser ofrecido a los usuarios navegantes de la plataforma.
+Esta información faltante puede ser completada por el encargado de equipo al que se le asignó el equipo o servicio.
 
 \backmatter
 %Meter el modelo CERIF?
