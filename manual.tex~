@@ -77,8 +77,9 @@ Su papel en la plataforma es cargar y mantener actualizada la información de sus
 
 El rol de encargado tiene permisos de gestión y modificación sobre equipos y servicios específicos y puede visualizar estadísticas sobre los mismos; adicionalmente puede sugerir nuevas instalaciones dentro de la plataforma.
 
-Las funciones y procedimientos permitidos para este rol están descritos en las secciones \ref{subsec:equipos}, \ref{subsec:servicios}, \ref{subsec:cargaservicios}, \ref{subsec:reservasysolicitudes} y los capítulos \ref{chap:comunicaciones} y \ref{chap:reportes}.
+Las funciones y procedimientos permitidos para este rol están descritos en las secciones \ref{subsec:equipos}, \ref{subsec:servicios}, \ref{subsec:servicios}, \ref{subsec:reservasysolicitudes} y los capítulos \ref{chap:comunicaciones}, \ref{chap:reportes} y \ref{sec:cargaequipos}.
 Adicionalmente, este rol cuenta con las mismas funcionalidades de los usuarios navegantes.
+
 
 
 \section{Administrador de universidad}
@@ -217,7 +218,7 @@ El buscador simple es la vista por defecto que se obtiene al hacer clic sobre el
 \begin{centering}
 \begin{figure}
   \includegraphics[width=1\textwidth]{Imagenes/buscadorsimple.png} 
-  \caption{\label{fig:buscadorsimple} Buscador simple, se tiene acceso haciendo clic en el ítem de ``Navegación'' en el panel de control. Es la vista que se obtiene por defecto. Se utiliza escribiendo unas pocas letras en el campo ``Palabra clave''. Despliega los equipos y servicios que contienen esta palabra en su nombre o palabraas clave.}
+  \caption{\label{fig:buscadorsimple} Buscador simple, se tiene acceso haciendo clic en el ítem de ``Navegación'' en el panel de control. Es la vista que se obtiene por defecto. Se utiliza escribiendo unas pocas letras en el campo ``Palabra clave''. Despliega los equipos y servicios que contienen esta palabra en su nombre o palabras clave.}
 \end{figure}
 \end{centering}
 
@@ -609,7 +610,7 @@ En este asistente se presentan botones que permiten obtener las estadísticas de 
 \label{subsec:creacionservicios}
 
 Esta opción permite la creación de un servicio mediante un asistente de configuración.
-Crear más de un servicio a la vez es posible mediante el uso de la opción de carga de servicios, pero el uso de la misma solo se aconseja si se van a crear más de cinco servicios a la vez (ver sección \ref{subsec:cargaservicios}).
+Crear más de un servicio a la vez es posible mediante el uso de la opción de carga de servicios, pero el uso de la misma solo se aconseja si se van a crear más de cinco servicios a la vez (ver sección \ref{subsec:cargamasivaserviciosencargado}).
 Para crear un nuevo servicio, haga clic sobre el botón ``NUEVO SERVICIO'' (ver figura \ref{fig:adminservicios}).
 Esto despliega el asistente de creación de servicios, tal como lo muestra la figura \ref{fig:asistentecreacionservicios}.
 Las definiciones de los campos que encuentra en este asistente se encuentran al final de este título.

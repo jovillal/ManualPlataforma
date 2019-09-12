@@ -30,14 +30,15 @@
 \contentsline {section}{\numberline {5.2}Usuarios/Entidades}{60}{section.5.2}
 \contentsline {subsection}{Solicitudes}{61}{section*.14}
 \contentsline {subsection}{Usuarios}{62}{section*.15}
-\contentsline {subsubsection}{Transferencia de equipos por parte del administrador de usuarios}{64}{section*.16}
-\contentsline {subsection}{Instalaciones}{65}{section*.17}
-\contentsline {subsubsection}{C\'omo sugerir instalaciones}{72}{section*.18}
+\contentsline {subsubsection}{Detalles y modificaci\'on de informaci\'on de usuarios}{63}{section*.16}
+\contentsline {subsubsection}{Transferencia de equipos por parte del administrador}{64}{section*.17}
+\contentsline {subsection}{Instalaciones}{65}{section*.18}
+\contentsline {subsubsection}{C\'omo sugerir instalaciones}{72}{section*.19}
 \contentsline {chapter}{\chapternumberline {6}Comunicaciones}{74}{chapter.6}
 \contentsline {section}{\numberline {6.1}Correo}{74}{section.6.1}
 \contentsline {section}{\numberline {6.2}Exportar}{75}{section.6.2}
-\contentsline {chapter}{\chapternumberline {7}Reportes (Estad\IeC {\'\i }sticas)}{77}{chapter.7}
-\contentsline {chapter}{\chapternumberline {8}Carga masiva de equipos y servicios}{80}{chapter.8}
-\contentsline {section}{\numberline {8.1}Carga masiva para encargado de equipo ---equipos}{82}{section.8.1}
-\contentsline {section}{\numberline {8.2}Carga masiva para encargado de equipo ---servicios}{91}{section.8.2}
-\contentsline {section}{\numberline {8.3}Carga masiva para administrador de universidad}{100}{section.8.3}
+\contentsline {chapter}{\chapternumberline {7}Estad\IeC {\'\i }sticas}{76}{chapter.7}
+\contentsline {chapter}{\chapternumberline {8}Carga masiva de equipos y servicios}{79}{chapter.8}
+\contentsline {section}{\numberline {8.1}Carga masiva para encargado de equipo ---equipos}{81}{section.8.1}
+\contentsline {section}{\numberline {8.2}Carga masiva para encargado de equipo ---servicios}{90}{section.8.2}
+\contentsline {section}{\numberline {8.3}Carga masiva para administrador de universidad}{99}{section.8.3}

@@ -48,6 +48,7 @@
      "fig:instalacion"
      "fig:crearinstalacion"
      "tab:instalaciones"
+     "sec:comosugeririnstalaciones"
      "fig:sugerir"
      "chap:comunicaciones"
      "sec:correo"
